@@ -1,19 +1,24 @@
-import React, {useRef} from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import './index.css';
+import "./index.css";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Header = () => {
+  const [collapsed, setCollapsed] = useState(true);
+
+  const toggleNavbar = () => {
+    setCollapsed(!collapsed);
+  };
   return (
     <>
       <header>
@@ -117,20 +122,27 @@ const Header = () => {
                       aria-controls="navbarTogglerDemo01"
                       aria-expanded="false"
                       aria-label="Toggle navigation"
+                      onClick={toggleNavbar}
                     >
                       <i className="fa fa-bars" />
                     </button>
                     <div
-                      className="collapse navbar-collapse"
+                      className={`collapse navbar-collapse ${
+                        collapsed ? "" : "show"
+                      }`}
                       id="navbarTogglerDemo01"
+                      data-aos="ease-in"
                     >
-                      <ul className="navbar-nav mt-2 mt-lg-0">
-                        <li>
+                      <ul
+                        className="navbar-nav mt-2 mt-lg-0"
+                        data-aos="fade-up"
+                      >
+                        <li data-aos="fade-up">
                           <Link className="nav-link" to="/about">
                             About Us
                           </Link>
                         </li>
-                        <li>
+                        <li data-aos="fade-up">
                           <Link className="nav-link" to="/why-readybell">
                             Why Readybell
                           </Link>
@@ -255,311 +267,313 @@ const Header = () => {
       </header>
       <section className="slider-section swiper-container-2">
         <div className="swiper-wrapper">
-        <Swiper
-        // spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 4500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={false}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+          <Swiper
+            // spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 4500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={false}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
           >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">
-                      Readybell Software Services Pvt Limited
-                    </h2>
-                    <p>
-                      An emerging &amp; pioneer IT Services provider in the
-                      field of Cyber Security, Cloud Security, IT Security
-                      Management, CISCO and CompTIA Certification and advanced
-                      training and Computer Based Testing services
-                    </p>
-                    {/* <a to="about.html" class="button_two mt-2">More Details</a> */}
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Readybell Software Services Pvt Limited
+                        </h2>
+                        <p>
+                          An emerging &amp; pioneer IT Services provider in the
+                          field of Cyber Security, Cloud Security, IT Security
+                          Management, CISCO and CompTIA Certification and
+                          advanced training and Computer Based Testing services
+                        </p>
+                        {/* <a to="about.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">
-                      Software Full Stack Developer (MEAN) Bootcamp
-                    </h2>
-                    <p>
-                      We are a pioneer Mean stack training provider providing
-                      Software Full Stack Developer (MEAN) Bootcamp training.Top
-                      demanding software skill: This program covers full gamete
-                      of Software Development (front as well as back end)
-                      technologies, frameworks and tools.
-                    </p>
-                    {/* <a to="cissp.html" class="button_two mt-2">More Details</a> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Software Full Stack Developer (MEAN) Bootcamp
+                        </h2>
+                        <p>
+                          We are a pioneer Mean stack training provider
+                          providing Software Full Stack Developer (MEAN)
+                          Bootcamp training.Top demanding software skill: This
+                          program covers full gamete of Software Development
+                          (front as well as back end) technologies, frameworks
+                          and tools.
+                        </p>
+                        {/* <a to="cissp.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">
-                      JAVA DEVELOPER Certification training
-                    </h2>
-                    <p>
-                      We are a pioneer JAVA DEVELOPER training provider
-                      providing certification and advanced level
-                      training.Specially designed for absolute beginners who
-                      want to build their programming foundation using Java
-                      language.
-                    </p>
-                    {/* <a to="microsoft-azure.html" class="button_two mt-2">More Details</a> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          JAVA DEVELOPER Certification training
+                        </h2>
+                        <p>
+                          We are a pioneer JAVA DEVELOPER training provider
+                          providing certification and advanced level
+                          training.Specially designed for absolute beginners who
+                          want to build their programming foundation using Java
+                          language.
+                        </p>
+                        {/* <a to="microsoft-azure.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">
-                      CLOUD COMPUTING Certification &amp; advanced level
-                      training
-                    </h2>
-                    <p>
-                      We are a pioneer CLOUD COMPUTING training provider
-                      providing certification and advanced level CLOUD COMPUTING
-                      training. Learn Cloud concepts, terminologies, services,
-                      infra management and administration of MS Azure &amp; AWS
-                      Clouds.
-                    </p>
-                    {/* <a to="aws.html" class="button_two mt-2">More Details</a> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          CLOUD COMPUTING Certification &amp; advanced level
+                          training
+                        </h2>
+                        <p>
+                          We are a pioneer CLOUD COMPUTING training provider
+                          providing certification and advanced level CLOUD
+                          COMPUTING training. Learn Cloud concepts,
+                          terminologies, services, infra management and
+                          administration of MS Azure &amp; AWS Clouds.
+                        </p>
+                        {/* <a to="aws.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">
-                      Node.js DEVELOPER (with MongoDB) Certification &amp;
-                      advanced level training
-                    </h2>
-                    <p>
-                      We are a pioneer Node.js DEVELOPER (with MongoDB) training
-                      provider providing certification and advanced level
-                      Node.js DEVELOPER (with MongoDB) training.Learn back end
-                      programming with Node.js with Express.js framework and
-                      MongoDB NoSQL Database.
-                    </p>
-                    {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Node.js DEVELOPER (with MongoDB) Certification &amp;
+                          advanced level training
+                        </h2>
+                        <p>
+                          We are a pioneer Node.js DEVELOPER (with MongoDB)
+                          training provider providing certification and advanced
+                          level Node.js DEVELOPER (with MongoDB) training.Learn
+                          back end programming with Node.js with Express.js
+                          framework and MongoDB NoSQL Database.
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">
-                      Node.js DEVELOPER (with MongoDB) Certification &amp;
-                      advanced level training
-                    </h2>
-                    <p>
-                      We are a pioneer Node.js DEVELOPER (with MongoDB) training
-                      provider providing certification and advanced level
-                      Node.js DEVELOPER (with MongoDB) training.Learn back end
-                      programming with Node.js with Express.js framework and
-                      MongoDB NoSQL Database.
-                    </p>
-                    {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Node.js DEVELOPER (with MongoDB) Certification &amp;
+                          advanced level training
+                        </h2>
+                        <p>
+                          We are a pioneer Node.js DEVELOPER (with MongoDB)
+                          training provider providing certification and advanced
+                          level Node.js DEVELOPER (with MongoDB) training.Learn
+                          back end programming with Node.js with Express.js
+                          framework and MongoDB NoSQL Database.
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">
-                      Node.js DEVELOPER (with MYSQL) Certification &amp;
-                      advanced level training
-                    </h2>
-                    <p>
-                      We are a pioneer Node.js DEVELOPER (with MYSQL) training
-                      provider providing certification and advanced level
-                      Node.js DEVELOPER (with MYSQL) training.Learn back end
-                      programming with Node.js with Express.js framework and
-                      MySQL RDBMS
-                    </p>
-                    {/* <a to="comptia-security.html" class="button_two mt-2">More Details</a> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Node.js DEVELOPER (with MYSQL) Certification &amp;
+                          advanced level training
+                        </h2>
+                        <p>
+                          We are a pioneer Node.js DEVELOPER (with MYSQL)
+                          training provider providing certification and advanced
+                          level Node.js DEVELOPER (with MYSQL) training.Learn
+                          back end programming with Node.js with Express.js
+                          framework and MySQL RDBMS
+                        </p>
+                        {/* <a to="comptia-security.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">CISCO networking training</h2>
-                    <p>
-                      Readybell has a pool of highly experienced CISCO trainers
-                      having years of experience in training CCNA, CCNP and CCIA
-                      courses. Our courses are based on the latest changes in
-                      the CISCO curriculum. We use CISCO recommended training
-                      materials and Lab.
-                    </p>
-                    {/* <a to="ccna.html" class="button_two mt-2">More Details</a> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">CISCO networking training</h2>
+                        <p>
+                          Readybell has a pool of highly experienced CISCO
+                          trainers having years of experience in training CCNA,
+                          CCNP and CCIA courses. Our courses are based on the
+                          latest changes in the CISCO curriculum. We use CISCO
+                          recommended training materials and Lab.
+                        </p>
+                        {/* <a to="ccna.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">
-                      Website Design and Development with UI/UX Certification
-                      training
-                    </h2>
-                    <p>
-                      We are a pioneer Website Design and Development with UI/UX
-                      training provider providing certification and advanced
-                      level Website Design and Development with UI/UX training.
-                      Learn how to develop a full Website with UI/UX
-                    </p>
-                    {/* <a to="comptia-network.html" class="button_two mt-2">More Details</a> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Website Design and Development with UI/UX
+                          Certification training
+                        </h2>
+                        <p>
+                          We are a pioneer Website Design and Development with
+                          UI/UX training provider providing certification and
+                          advanced level Website Design and Development with
+                          UI/UX training. Learn how to develop a full Website
+                          with UI/UX
+                        </p>
+                        {/* <a to="comptia-network.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">
-                      Software Full Stack Developer (MERN) Bootcamp
-                    </h2>
-                    <p>
-                      We are a pioneer mern stack training provider providing
-                      Software Full Stack Developer (mern) Bootcamp training.Top
-                      demanding software skill: This program covers full gamete
-                      of Software Development (front as well as back end)
-                      technologies, frameworks and tools.{" "}
-                    </p>
-                    {/* <a to="it-grooming.html" class="button_two mt-2">More Details</a> */}
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Software Full Stack Developer (MERN) Bootcamp
+                        </h2>
+                        <p>
+                          We are a pioneer mern stack training provider
+                          providing Software Full Stack Developer (mern)
+                          Bootcamp training.Top demanding software skill: This
+                          program covers full gamete of Software Development
+                          (front as well as back end) technologies, frameworks
+                          and tools.{" "}
+                        </p>
+                        {/* <a to="it-grooming.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="slider-area-2 height-300 swiper-slide"
-            style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                    <h2 className="display-3">Computer Based Test Centre</h2>
-                    <p>
-                      Readybell is an authorized Computer Based Testing (CBT)
-                      partner of Pearson VUE &amp; PSI Corporation. We have
-                      state-of-the-art Computer Based Testing exam center in
-                      Salt lake, Kolkata (India) where we conduct exams of
-                      Pearson VUE and PSI clients.
-                    </p>
-                    <p></p>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="slider-area-2 height-300 swiper-slide"
+                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
+              >
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Computer Based Test Centre
+                        </h2>
+                        <p>
+                          Readybell is an authorized Computer Based Testing
+                          (CBT) partner of Pearson VUE &amp; PSI Corporation. We
+                          have state-of-the-art Computer Based Testing exam
+                          center in Salt lake, Kolkata (India) where we conduct
+                          exams of Pearson VUE and PSI clients.
+                        </p>
+                        <p></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+            </SwiperSlide>
+          </Swiper>
         </div>
-        
       </section>
-
-      
     </>
   );
 };
