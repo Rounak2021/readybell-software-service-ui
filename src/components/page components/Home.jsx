@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import "./index.css";
 
-
 const Home = () => {
-
   return (
     <>
       <section className="welcome-section section-pt">
@@ -345,7 +343,11 @@ const Home = () => {
         <div className="two-columns-area">
           <div className="container">
             <div className="row">
-              <div className="col-lg-5 mt-3d-5" data-aos-duration={300}>
+              <div
+                className="col-lg-5 mt-3d-5"
+                data-aos="fade-up"
+                data-aos-duration={300}
+              >
                 <div className="half_column_image">
                   <img
                     src="assets/images/half_column_3.png"
@@ -354,8 +356,15 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-7" data-aos-duration={600}>
-                <div className="half_column_content_2 text-white">
+              <div
+                className="col-lg-7"
+                data-aos="fade-up"
+                data-aos-duration={600}
+              >
+                <div
+                  className="half_column_content_2 text-white"
+                  style={{ textAlign: "left" }}
+                >
                   <h2 className="text-white font-weight-bold">Why Readybell</h2>
                   <p>
                     Readybell was conceptualized and founded to offer this world
