@@ -1,0 +1,28 @@
+h2, h3, h5,h6, ul, li{
+    text-align: left;
+}
+
+.box {
+    transition: ease-in 3s; /* Define the transition */
+  }
+  
+  .box.visible {
+    opacity: 1; /* Make the box visible */
+    transition: ease-in 3s;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
