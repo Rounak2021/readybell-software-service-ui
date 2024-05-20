@@ -1,39 +1,38 @@
-import './App.css';
-import Home from './components/page components/Home';
+import "./App.css";
+import Home from "./components/page components/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./components/assets/css/aos.css"
+import "./components/assets/css/aos.css";
 // import "./components/assets/css/bootstrap.min.css"
-import "./components/assets/css/font-awesome.min.css"
-import "./components/assets/css/jquery.fancybox.min.css"
-import "./components/assets/css/owl.carousel.min.css"
-import "./components/assets/css/style.css"
-import "./components/assets/css/aos.css"
-import "./components/assets/css/swiper.min.css"
-import Footer from './components/page components/Footer';
-import About from './components/page components/about';
-import Header from './components/page components/Header';
-import WhyRreadybell from './components/page components/why-readybell';
-import Affilliations from './components/page components/our-affilliations';
-import Team from './components/page components/our-team';
-import Services from './components/page components/our-services';
-import Contact from './components/page components/contact';
-import { useEffect } from 'react';
+import "./components/assets/css/font-awesome.min.css";
+import "./components/assets/css/jquery.fancybox.min.css";
+import "./components/assets/css/owl.carousel.min.css";
+import "./components/assets/css/style.css";
+import "./components/assets/css/aos.css";
+import "./components/assets/css/swiper.min.css";
+import Footer from "./components/page components/Footer";
+import About from "./components/page components/about";
+import Header from "./components/page components/Header";
+import WhyRreadybell from "./components/page components/why-readybell";
+import Affilliations from "./components/page components/our-affilliations";
+import Team from "./components/page components/our-team";
+import Services from "./components/page components/our-services";
+import Contact from "./components/page components/contact";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Registration from "./components/page components/Registration";
 
 function App() {
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
-  
+
   return (
     <BrowserRouter>
       <div className="App">
         <Header />
         <Routes>
-
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/why-readybell" element={<WhyRreadybell />} />
@@ -41,6 +40,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Registration />} />
 
           {/* <Route path="/asa" element={<Home />} />
           <Route path="/ccna" element={<Home />} />
@@ -62,13 +62,10 @@ function App() {
           <Route path="/ui" element={<Home />} />
           <Route path="/vpn" element={<Home />} />
           <Route path="/why-readybell" element={<Home />} /> */}
-
         </Routes>
         <Footer />
-
       </div>
     </BrowserRouter>
-
   );
 }
 

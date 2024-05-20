@@ -256,6 +256,11 @@ const Header = () => {
                             Contact Us
                           </Link>
                         </li>
+                        <li>
+                          <Link to="/register" className="nav-link">
+                            Register
+                          </Link>
+                        </li>
                       </ul>
                     </div>
                   </nav>
