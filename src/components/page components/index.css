@@ -32,7 +32,7 @@ h2, h3, h5,h6, ul, li{
 
 
   .register{
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-linear-gradient(left, #6F55F6, #EF5869);
     margin-top: 3%;
     padding: 3%;
 }
@@ -54,9 +54,12 @@ h2, h3, h5,h6, ul, li{
     cursor: pointer;
 }
 .register-right{
-    background: #f8f9fa;
-    border-top-left-radius: 10% 50%;
-    border-bottom-left-radius: 10% 50%;
+    background: #ffffff;
+    /* opacity: 1.5; */
+    /* border-top-left-radius: 10% 50%; */
+    /* border-bottom-left-radius: 10% 50%; */
+    border: 1px solid darkorchid;
+    border-radius: 2%;
 }
 .register-left img{
     margin-top: 15%;
@@ -125,6 +128,7 @@ h2, h3, h5,h6, ul, li{
     margin-top: 8%;
     margin-bottom: -15%;
     color: #495057;
+   
 }
 
 
