@@ -5,6 +5,7 @@ import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
 
 
+
 const Registration = () => {
   const navigate = useNavigate();
   const [radioSelecter, setRadioSelecter] = useState("Student");

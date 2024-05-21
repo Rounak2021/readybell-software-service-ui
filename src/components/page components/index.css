@@ -183,4 +183,9 @@ input[type="checkbox"]:checked {
   background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
   }
   
+  .gradient-text {
+    background:white;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
   

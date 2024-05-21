@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./index.css";
+import Background from "./ParticleBackground";
 
 const Home = () => {
   return (
@@ -340,6 +341,7 @@ const Home = () => {
         className="two-columns-section section-ptb"
         style={{ backgroundImage: "url(assets/images/big_bg_3.jpg)" }}
       >
+        <Background/>
         <div className="two-columns-area">
           <div className="container">
             <div className="row">

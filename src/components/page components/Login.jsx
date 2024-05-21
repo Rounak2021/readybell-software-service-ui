@@ -4,6 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import swal from "sweetalert";
 import axios from "axios";
 import logo from "../assets/images/logo.jpg";
+import Background from "./ParticleBackground";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -117,7 +118,7 @@ const Login = () => {
                     </div>
                   </div>
                   <div className="col-lg-6 d-flex align-items-center gradient-custom-2">
-                    <video
+                    {/* <video
                       autoPlay
                       loop
                       muted
@@ -132,24 +133,40 @@ const Login = () => {
                       }}
                     >
                       <source
-                        src="https://videos.pexels.com/video-files/2098988/2098988-sd_640_360_30fps.mp4"
+                        src="https://videos.pexels.com/video-files/2887463/2887463-sd_640_360_25fps.mp4"
                         type="video/mp4"
                       />
-                    </video>
+                    </video> */}
+                    <Background />
                     <div className="text-white px-3 py-4 p-md-5 mx-md-4">
                       <b>
-                        <h4 className="mb-4" data-aos="fade-in">
-                          We are more than just a company
+                        <h4
+                          className="mb-4"
+                          data-aos="fade-in"
+                          style={{ color: "#0a0a3c" }}
+                        >
+                          We are more than just to upskill you
                         </h4>
                       </b>
                       <b>
-                        <p className="small mb-0" data-aos="fade-in">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat.
-                        </p>
+                        <h2
+                          className="gradient-text small mb-0"
+                          data-aos="fade-in"
+                          style={{
+                            fontSize: "16px",
+                            textAlign: "justify",
+                            fontWeight: "bolder",
+                          }}
+                        >
+                          Readybell Software Services Pvt Limited is an IT
+                          service provider pioneering in the filed of IT
+                          Education and Computer Based Testing headquartered in
+                          Kolkata, India. Company imparts niche quality IT
+                          education in the field of Cyber Security, Cloud
+                          Security, IT Security, Networking, Network Security,
+                          IT Fundamental and Hardware courses to IT
+                          professionals as well as to fresh IT career aspirants
+                        </h2>
                       </b>
                     </div>
                   </div>
