@@ -12,12 +12,31 @@ import "./index.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import swal from "sweetalert";
 
 const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
+ 
 
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
+  };
+
+  const handleLogout = () => {
+    swal({
+      title: "Confirmation",
+      text: "Are you sure you want to logout?",
+      icon: "warning",
+      buttons: ["No", "Yes"],
+      closeOnClickOutside: false,
+    }).then((willDelete) => {
+      if (willDelete) {
+        localStorage.clear();
+        setTimeout(() => {
+          window.location.reload();
+        }, 1000);
+      }
+    });
   };
   return (
     <>
@@ -256,10 +275,26 @@ const Header = () => {
                             Contact Us
                           </Link>
                         </li>
+                        {!localStorage.getItem("email") && (
+                          <li>
+                            <Link to="/register" className="nav-link">
+                              Register
+                            </Link>
+                          </li>
+                        )}
                         <li>
-                          <Link to="/register" className="nav-link">
-                            Register
-                          </Link>
+                          {localStorage.getItem("email") ? (
+                            <Link
+                              onClick={() => handleLogout()}
+                              className="nav-link"
+                            >
+                              Welcome {localStorage.getItem("email")}
+                            </Link>
+                          ) : (
+                            <Link to="/login" className="nav-link">
+                              Login
+                            </Link>
+                          )}
                         </li>
                       </ul>
                     </div>

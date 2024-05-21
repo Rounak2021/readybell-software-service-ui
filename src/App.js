@@ -21,6 +21,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Registration from "./components/page components/Registration";
+import Login from "./components/page components/Login";
 
 function App() {
   useEffect(() => {
@@ -41,6 +42,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/register" element={<Registration />} />
+          <Route path="/login" element={<Login />} />
 
           {/* <Route path="/asa" element={<Home />} />
           <Route path="/ccna" element={<Home />} />

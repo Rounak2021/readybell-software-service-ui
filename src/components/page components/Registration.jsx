@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import readybellIcon from "../assets/images/mainlogo.png";
 import axios from "axios";
+import swal from "sweetalert";
+import { useNavigate } from "react-router-dom";
+
 
 const Registration = () => {
+  const navigate = useNavigate();
   const [radioSelecter, setRadioSelecter] = useState("Student");
+  const [error, setError] = useState("");
+
   const [responseData, setResponseData] = useState({
     email: "",
     mobile_number: "",
@@ -25,189 +31,75 @@ const Registration = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    // // if ((name === "name") || (name === "gender") || (name === "address1") || (name === "district") || (name === "pinCode") || (name === "department") || (name === "borough") || (name === "ward") || (name === "epicNo") || (name === "religion") || (name === "caste") || (name === "bankName") || (name === "categoryDesc") || (name === "bankAccountNo") || (name === "bankIfsc") || (name === "ifscCode")) {
-    // //     setError("");
-    // // }
 
-    // if ((name === "firstName") ||
-    //     (name === "lastName") ||
-    //     (name === "fatherName") ||
-    //     (name === "dateOfBirth") ||
-    //     (name === "gender") ||
-    //     (name === "hrmMaritalStatus") ||
-    //     // (name === "hrmSpouseName") ||
-    //     (name === "hrmRecThrough") ||
-    //     (name === "caste") ||
-    //     (name === "religion") ||
-    //     (name === "phoneNo") ||
-    //     (name === "panNo") ||
-    //     (name === "address1") ||
-    //     (name === "pinCode") ||
-    //     (name === "entryMode") ||
-    //     // (name === "bankAccountNo") ||
-    //     (name === "selectedPartyCodeSearched") ||
-    //     (name === "agencyCode") ||
-    //     (name === "partyCode") ||
-    //     // (name === "department") ||
-    //     (name === "workingUnit") ||
-    //     // (name === "wardSectionPart") ||
-    //     // (name === "payeeDepartment") ||
-    //     (name === "designation") ||
-    //     (name === "kmcJoiningDate") ||
-    //     // (name === "presentDeptJoiningDate") ||
-    //     // (name === "tenureStartDate") ||
-    //     (name === "tenureEndDate") ||
-    //     (name === "orderNo") ||
-    //     (name === "orderDate") ||
-    //     (name === "orderByWhom") ||
-    //     (name === "epicNo")
-    // ) {
-    //     setError("");
-    //     setErrorSaveAsDraft("");
-    //     // setErrorPanValidation("");
-
-    //     // setPinCodeValidation("");
-    // }
-
-    // if (name === "entryMode") {
-    //     setEmployeeType(event.target[event.target.selectedIndex].id);
-    //     getDesignation(event.target[event.target.selectedIndex].id);
-    //     getEngagementDetails(value);
-    //     getRemunerationTypeDetails(value);
-    //     if (value === "WBUES") {
-    //         getPartyCodeFromEngagementType(event.target[event.target.selectedIndex].id);
-    //         setSelectedPayeeDepartmentSearched("FINANCE AND ACCOUNTS")
-    //     }
-    //     if (value === "SSK") {
-    //         getPartyCodeFromEngagementType(event.target[event.target.selectedIndex].id);
-    //         // setSelectedPayeeDepartmentSearched("FINANCE AND ACCOUNTS")
-    //     }
-    //     if (value === "UPHCS") {
-    //         getPartyCodeFromEngagementType(event.target[event.target.selectedIndex].id);
-    //         // setSelectedPayeeDepartmentSearched("FINANCE AND ACCOUNTS")
-    //     }
-    //     if (value === "Claim Free") {
-    //         getPartyCodeFromEngagementType(event.target[event.target.selectedIndex].id);
-    //         // setSelectedPayeeDepartmentSearched("FINANCE AND ACCOUNTS")
-    //     }
-    //     if (value === "UPHCS") {
-    //         getBorough("640002");
-    //         setDeptCode("640002");
-    //     }
-    //     if (value === "SSK") {
-    //         getBorough("520001");
-    //         setDeptCode("520001");
-    //     }
-    // }
-
-    // // if (name === 'phoneNo') {
-    // //     const newVal = value.length > 10 ? value.slice(0, 10) : value;
-    // //     setLabourMasterData({ ...labourMasterData, "phoneNo": newVal});
-    // // }
-
-    // // if (name === 'pinCode') {
-    // //     const newVal = value.length > 6 ? value.slice(0, 6) : value;
-    // //     labourMasterData.pinCode = newVal;
-    // // }
-
-    // setBankAccountNumberValidation("");
-    // if (name === "bankAccountNo") {
-    //     if (value < 8 || value >= 18) {
-    //         setBankAccountNumberValidation("Account number can't be greater or less than the desired strength");
-    //     }
-    // }
-
-    // if (name === "workingUnit") {
-    //     // api here
-    //     getWard(value);
-    //     setWorkingUnitDesc(event.target[event.target.selectedIndex].id)
-    // }
-
-    // if (name === "designation") {
-    //     // getRemuneration(value);
-    //     getRemuneration(event.target[event.target.selectedIndex].id);
-    //     setDesignationCode(event.target[event.target.selectedIndex].id)
-    // }
-
-    // if (name === "partyCode") {
-    //     setPartyName(event.target[event.target.selectedIndex].id);
-    // }
-    // if (name === "partyCode") {
-    //     setPartyName(event.target[event.target.selectedIndex].id);
-    // }
-
-    // var re = /^([A-Z]{5})([0-9]{4})([A-Z]{1})$/
-    // setPanNumberValidationErr("");
-    // if (name === "panNo" && !value.match(re)) {
-    //     setPanNumberValidationErr("PAN number format is not correct")
-    // }
-
-    // var epicRe = /^[A-Z]{3}[0-9]{7}$/
-    // setEpicNumberValidationErr("");
-    // if (name === "epicNo" && !value.match(epicRe)) {
-    //     setEpicNumberValidationErr("EPIC number format is not correct")
-    // }
-
-    // setPinCodeValidationErr("");
-    // if (name === "pinCode") {
-    //     setPinCodeValidationErr("Pincode must be of 6 digits")
-    // }
-
-    // if (name === "kmcJoiningDate") {
-    //     setLabourMasterData({ ...labourMasterData, "kmcJoiningDate": value, "presentDeptJoiningDate": value, "tenureStartDate": value });
-    //     // setLabourMasterData({ ...labourMasterData, "presentDeptJoiningDate": value });
-    // } else {
-
+    if (
+      name === "email" ||
+      name === "mobile_number" ||
+      name === "password" ||
+      name === "confirm_password" ||
+      name === "first_name" ||
+      name === "middle_name" ||
+      name === "last_name" ||
+      name === "gender" ||
+      name === "university_name" ||
+      name === "country" ||
+      name === "city" ||
+      name === "state" ||
+      name === "pincode" ||
+      name === "user_category" ||
+      name === "company_name" ||
+      name === "year_of_experience"
+    ) {
+      setError("");
+    }
     setResponseData({ ...responseData, [name]: value });
-
-    // }
   };
 
-  // const registerUser = async (id) => {
-  //   // setLoading(true);
-  //   let config = {
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   };
-  //   const detailRequest = {
-  //     email: responseData.email,
-  //     mobile_number: responseData.mobile_number,
-  //     password: responseData.password,
-  //     confirm_password: responseData.confirm_password,
-  //     first_name: responseData.first_name,
-  //     middle_name: responseData.middle_name,
-  //     last_name: responseData.last_name,
-  //     gender: responseData.gender,
-  //     university_name: responseData.university_name,
-  //     country: responseData.country,
-  //     city: responseData.city,
-  //     state: responseData.state,
-  //     pincode: responseData.pincode,
-  //     user_category: responseData.user_category,
-  //     company_name: responseData.company_name,
-  //     year_of_experience: responseData.year_of_experience,
-  //   };
-
-  //   try {
-  //     const response = await axios.post(
-  //       `http://localhost:5000//readybell_user_register`,
-  //       detailRequest,
-  //       config
-  //     );
-  //   } catch (error) {
-  //     // swal({
-  //     //     title: "Error",
-  //     //     text: `${error}`,
-  //     //     icon: "error",
-  //     //     closeOnClickOutside: false
-  //     // })
-  //     console.log(`Error: ${error}`);
-  //   } finally {
-  //     // setLoading(false);
-  //   }
-  // };
-
+  const handleConfirmationForRegister = () => {
+    if (
+      radioSelecter === "Student"
+        ? responseData.email === "" ||
+          responseData.mobile_number === "" ||
+          responseData.password === "" ||
+          responseData.first_name === "" ||
+          responseData.last_name === "" ||
+          responseData.gender === "" ||
+          responseData.university_name === "" ||
+          responseData.country === "" ||
+          responseData.city === "" ||
+          responseData.state === "" ||
+          responseData.pincode === ""
+        : radioSelecter === "Proffesional"
+        ? responseData.email === "" ||
+          responseData.mobile_number === "" ||
+          responseData.password === "" ||
+          responseData.first_name === "" ||
+          responseData.last_name === "" ||
+          responseData.gender === "" ||
+          responseData.country === "" ||
+          responseData.city === "" ||
+          responseData.state === "" ||
+          responseData.pincode === "" ||
+          responseData.company_name === "" ||
+          responseData.year_of_experience === ""
+        : null
+    ) {
+      setError(`This field is mandatory to fill`);
+    } else {
+      swal({
+        title: "Confirmation",
+        text: "Are you sure you want to register?",
+        icon: "warning",
+        buttons: ["No", "Yes"],
+        closeOnClickOutside: false,
+      }).then((willDelete) => {
+        if (willDelete) {
+          registerUser();
+        }
+      });
+      return;
+    }
+  };
   const registerUser = async () => {
     let config = {
       headers: {
@@ -228,7 +120,7 @@ const Registration = () => {
       city: responseData.city,
       state: responseData.state,
       pincode: responseData.pincode,
-      user_category: responseData.user_category,
+      user_category: radioSelecter,
       company_name: responseData.company_name,
       year_of_experience: responseData.year_of_experience,
     };
@@ -239,7 +131,19 @@ const Registration = () => {
         detailRequest,
         config
       );
-      console.log("Registration successful:", response.data);
+      if (response?.data?.status === 200) {
+        swal({
+          title: "Success",
+          text: "User has been registered successfully",
+          icon: "success",
+          closeOnClickOutside: false,
+        })
+        .then((willDelete) => {
+          if (willDelete) {
+            navigate("/login");
+          }
+        });
+      }
       // Handle successful registration response
     } catch (error) {
       console.error("Registration failed:", error);
@@ -247,57 +151,13 @@ const Registration = () => {
     }
   };
 
-//   -- public.readybell_user_registration definition
-
-// -- Drop table
-
-// -- DROP TABLE public.readybell_user_registration;
-
-// CREATE TABLE public.readybell_user_registration (
-// 	user_id serial4 NOT NULL,
-// 	email varchar(255) NOT NULL,
-// 	mobile_number varchar(13) NOT NULL,
-// 	"password" varchar(255) NOT NULL,
-// 	first_name varchar(255) NOT NULL,
-// 	middle_name varchar(255) NULL,
-// 	last_name varchar(255) NULL,
-// 	gender varchar(1) NULL,
-// 	university_name varchar(100) NULL,
-// 	country varchar(50) NULL,
-// 	city varchar(50) NULL,
-// 	state varchar(50) NULL,
-// 	pincode varchar(6) NULL,
-// 	user_category varchar(20) NULL,
-// 	company_name varchar(100) NULL,
-// 	year_of_experience varchar(2) NULL,
-// 	active_flag bool NULL DEFAULT true,
-// 	created_by varchar(255) NULL DEFAULT NULL::character varying,
-// 	created_date timestamp NULL,
-// 	modified_date timestamp NULL,
-// 	modified_by varchar(255) NULL DEFAULT NULL::character varying,
-// 	CONSTRAINT readybell_user_registration_email_key UNIQUE (email),
-// 	CONSTRAINT readybell_user_registration_mobile_number_check CHECK ((length((mobile_number)::text) = 13)),
-// 	CONSTRAINT readybell_user_registration_pkey PRIMARY KEY (user_id)
-// );
-
-// CREATE TABLE public.readybell_course_mst (
-//   course_id serial4 NOT NULL,
-//   course_name varchar(255) NOT NULL,
-//   course_fees varchar(100) NULL,
-//   active_flag bool NULL DEFAULT true,
-//   created_by varchar(255) NULL DEFAULT NULL::character varying,
-//   created_date timestamp NULL,
-//   modified_date timestamp NULL,
-//   modified_by varchar(255) NULL DEFAULT NULL::character varying,
-//   CONSTRAINT readybell_course_mst_pkey PRIMARY KEY (course_id) -- Removed extra space before (course_id)
-// );
-
+  
 
   return (
     <div>
       <>
         <h2
-          className="section-heading"
+          className=""
           style={{ textAlign: "center", marginTop: "2%", position: "initial" }}
         >
           Register in one step
@@ -325,6 +185,7 @@ const Registration = () => {
                         type="radio"
                         value="Student"
                         onChange={(e) => setRadioSelecter(e.target.value)}
+                        checked={radioSelecter === "Student"}
                       />
                       <label className="form-label" style={{ padding: "10px" }}>
                         Student
@@ -334,6 +195,7 @@ const Registration = () => {
                         type="radio"
                         value="Proffesional"
                         onChange={(e) => setRadioSelecter(e.target.value)}
+                        checked={radioSelecter === "Proffesional"}
                       />
                       <label className="form-label" style={{ padding: "10px" }}>
                         Working Proffesional
@@ -353,6 +215,10 @@ const Registration = () => {
                             placeholder="First Name *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.first_name.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
@@ -362,8 +228,11 @@ const Registration = () => {
                             onChange={handleChange}
                             className="form-control"
                             placeholder="Your Email *"
-                            defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.email.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
@@ -377,6 +246,10 @@ const Registration = () => {
                             placeholder="Gender *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.gender.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
@@ -388,6 +261,10 @@ const Registration = () => {
                             placeholder="Password *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.password.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
@@ -401,6 +278,11 @@ const Registration = () => {
                             placeholder="School/College Name *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.university_name.trim().length ===
+                              0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <div className="form-group">
@@ -413,6 +295,10 @@ const Registration = () => {
                               placeholder="City*"
                               defaultValue=""
                             />
+                            {error.trim().length > 0 &&
+                              responseData.city.trim().length === 0 && (
+                                <p className="text-danger mb-0 p-0">{error}</p>
+                              )}
                           </div>
                         </div>
                         <div className="form-group">
@@ -427,6 +313,10 @@ const Registration = () => {
                               placeholder="Pincode*"
                               defaultValue=""
                             />
+                            {error.trim().length > 0 &&
+                              responseData.pincode.trim().length === 0 && (
+                                <p className="text-danger mb-0 p-0">{error}</p>
+                              )}
                           </div>
                         </div>
                       </div>
@@ -442,12 +332,16 @@ const Registration = () => {
                             placeholder="Last Name *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.last_name.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
                             type="text"
-                            // minLength={10}
-                            // maxLength={10}
+                            minLength={13}
+                            maxLength={13}
                             name="mobile_number"
                             value={responseData.mobile_number}
                             onChange={handleChange}
@@ -455,6 +349,10 @@ const Registration = () => {
                             placeholder="Your Phone *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.mobile_number.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
@@ -485,6 +383,10 @@ const Registration = () => {
                             placeholder="Country*"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.country.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
@@ -496,13 +398,17 @@ const Registration = () => {
                             placeholder="State*"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.state.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
 
                         <button
                           type="submit"
                           className="btnRegister"
                           // defaultValue="Register"
-                          onClick={() => registerUser()}
+                          onClick={() => handleConfirmationForRegister()}
                         >
                           Register
                         </button>
@@ -516,54 +422,97 @@ const Registration = () => {
                         <div className="form-group">
                           <input
                             type="text"
+                            name="first_name"
+                            value={responseData.first_name}
+                            onChange={handleChange}
                             className="form-control"
                             placeholder="First Name *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.first_name.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
                             type="email"
+                            name="email"
+                            value={responseData.email}
+                            onChange={handleChange}
                             className="form-control"
                             placeholder="Your Email *"
-                            defaultValue=""
                           />
-                        </div>
-                        <div className="form-group">
-                          <input
-                            type="email"
-                            className="form-control"
-                            placeholder="Gender *"
-                            defaultValue=""
-                          />
-                        </div>
-                        <div className="form-group">
-                          <input
-                            type="password"
-                            className="form-control"
-                            placeholder="Password *"
-                            defaultValue=""
-                          />
+                          {error.trim().length > 0 &&
+                            responseData.email.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
                             type="text"
                             minLength={10}
                             maxLength={10}
-                            name="txtEmpPhone"
+                            name="gender"
+                            value={responseData.gender}
+                            onChange={handleChange}
+                            className="form-control"
+                            placeholder="Gender *"
+                            defaultValue=""
+                          />
+                          {error.trim().length > 0 &&
+                            responseData.gender.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
+                        </div>
+                        <div className="form-group">
+                          <input
+                            type="password"
+                            name="password"
+                            value={responseData.password}
+                            onChange={handleChange}
+                            className="form-control"
+                            placeholder="Password *"
+                            defaultValue=""
+                          />
+                          {error.trim().length > 0 &&
+                            responseData.password.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
+                        </div>
+                        <div className="form-group">
+                          <input
+                            type="text"
+                            minLength={10}
+                            maxLength={10}
+                            name="company_name"
+                            value={responseData.company_name}
+                            onChange={handleChange}
                             className="form-control"
                             placeholder="Company Name *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.company_name.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <div className="form-group">
                             <input
                               type="text"
                               className="form-control"
+                              name="year_of_experience"
+                              value={responseData.year_of_experience}
+                              onChange={handleChange}
                               placeholder="Total Training experience(If any)"
                               defaultValue=""
                             />
+                            {error.trim().length > 0 &&
+                              responseData.year_of_experience.trim().length ===
+                                0 && (
+                                <p className="text-danger mb-0 p-0">{error}</p>
+                              )}
                           </div>
                         </div>
 
@@ -571,20 +520,35 @@ const Registration = () => {
                           <div className="form-group">
                             <input
                               type="text"
+                              name="city"
+                              value={responseData.city}
+                              onChange={handleChange}
                               className="form-control"
                               placeholder="City*"
                               defaultValue=""
                             />
+                            {error.trim().length > 0 &&
+                              responseData.city.trim().length === 0 && (
+                                <p className="text-danger mb-0 p-0">{error}</p>
+                              )}
                           </div>
                         </div>
                         <div className="form-group">
                           <div className="form-group">
                             <input
                               type="text"
+                              // pincode
+                              name="pincode"
+                              value={responseData.pincode}
+                              onChange={handleChange}
                               className="form-control"
                               placeholder="Pincode*"
                               defaultValue=""
                             />
+                            {error.trim().length > 0 &&
+                              responseData.pincode.trim().length === 0 && (
+                                <p className="text-danger mb-0 p-0">{error}</p>
+                              )}
                           </div>
                         </div>
                       </div>
@@ -592,21 +556,35 @@ const Registration = () => {
                         <div className="form-group">
                           <input
                             type="text"
+                            // last_name
+                            name="last_name"
+                            value={responseData.last_name}
+                            onChange={handleChange}
                             className="form-control"
                             placeholder="Last Name *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.last_name.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
                             type="text"
-                            minLength={10}
-                            maxLength={10}
-                            name="txtEmpPhone"
+                            minLength={13}
+                            maxLength={13}
+                            name="mobile_number"
+                            value={responseData.mobile_number}
+                            onChange={handleChange}
                             className="form-control"
                             placeholder="Your Phone *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.mobile_number.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
@@ -627,37 +605,46 @@ const Registration = () => {
                             defaultValue=""
                           />
                         </div>
-                        <div className="form-group">
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Years of Experience*"
-                            defaultValue=""
-                          />
-                        </div>
 
                         <div className="form-group">
                           <input
                             type="text"
+                            name="country"
+                            value={responseData.country}
+                            onChange={handleChange}
                             className="form-control"
                             placeholder="Country*"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.country.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
                             type="text"
+                            name="state"
+                            value={responseData.state}
+                            onChange={handleChange}
                             className="form-control"
                             placeholder="State*"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.state.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
 
-                        <input
+                        <button
                           type="submit"
                           className="btnRegister"
-                          defaultValue="Register"
-                        />
+                          // defaultValue="Register"
+                          onClick={() => handleConfirmationForRegister()}
+                        >
+                          Register
+                        </button>
                       </div>
                     </div>
                   )}
