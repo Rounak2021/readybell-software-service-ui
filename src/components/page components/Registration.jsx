@@ -4,11 +4,11 @@ import axios from "axios";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
 
-
-
 const Registration = () => {
   const navigate = useNavigate();
   const [radioSelecter, setRadioSelecter] = useState("Student");
+  const [confirm_password_error, setconfirm_password_error] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
 
   const [responseData, setResponseData] = useState({
@@ -28,6 +28,7 @@ const Registration = () => {
     user_category: "",
     company_name: "",
     year_of_experience: "",
+    date_of_birth: "",
   });
 
   const handleChange = (event) => {
@@ -49,10 +50,12 @@ const Registration = () => {
       name === "pincode" ||
       name === "user_category" ||
       name === "company_name" ||
+      name === "date_of_birth" ||
       name === "year_of_experience"
     ) {
       setError("");
     }
+
     setResponseData({ ...responseData, [name]: value });
   };
 
@@ -69,6 +72,7 @@ const Registration = () => {
           responseData.country === "" ||
           responseData.city === "" ||
           responseData.state === "" ||
+          responseData.date_of_birth === "" ||
           responseData.pincode === ""
         : radioSelecter === "Proffesional"
         ? responseData.email === "" ||
@@ -82,6 +86,7 @@ const Registration = () => {
           responseData.state === "" ||
           responseData.pincode === "" ||
           responseData.company_name === "" ||
+          responseData.date_of_birth === "" ||
           responseData.year_of_experience === ""
         : null
     ) {
@@ -100,6 +105,46 @@ const Registration = () => {
       });
       return;
     }
+  };
+
+  const handleConfirmPassword = (value) => {
+    setconfirm_password_error("");
+    if (value !== responseData.password) {
+      setConfirmPassword(value);
+      setconfirm_password_error("Password and Confirm Password should match");
+    } else {
+      setConfirmPassword(value);
+    }
+  };
+
+  const handleRadioSelecter = (value) => {
+    handleResetForm();
+    setRadioSelecter(value);
+  };
+
+  const handleResetForm = () => {
+    setResponseData({
+      email: "",
+      mobile_number: "",
+      password: "",
+      confirm_password: "",
+      first_name: "",
+      middle_name: "",
+      last_name: "",
+      gender: "",
+      university_name: "",
+      country: "",
+      city: "",
+      state: "",
+      pincode: "",
+      user_category: "",
+      company_name: "",
+      year_of_experience: "",
+      date_of_birth: "",
+    });
+    setConfirmPassword("");
+    setconfirm_password_error("");
+    setError("");
   };
   const registerUser = async () => {
     let config = {
@@ -121,6 +166,7 @@ const Registration = () => {
       city: responseData.city,
       state: responseData.state,
       pincode: responseData.pincode,
+      date_of_birth: responseData.date_of_birth,
       user_category: radioSelecter,
       company_name: responseData.company_name,
       year_of_experience: responseData.year_of_experience,
@@ -132,27 +178,35 @@ const Registration = () => {
         detailRequest,
         config
       );
+      if (response?.data?.status === 401) {
+        const a = response?.data?.message;
+        swal({
+          title: "Warning",
+          text: { a },
+          icon: "warning",
+          closeOnClickOutside: false,
+        });
+      }
+
       if (response?.data?.status === 200) {
         swal({
           title: "Success",
           text: "User has been registered successfully",
           icon: "success",
           closeOnClickOutside: false,
-        })
-        .then((willDelete) => {
+        }).then((willDelete) => {
           if (willDelete) {
             navigate("/login");
           }
         });
       }
+
       // Handle successful registration response
     } catch (error) {
       console.error("Registration failed:", error);
       // Handle registration error
     }
   };
-
-  
 
   return (
     <div>
@@ -185,7 +239,7 @@ const Registration = () => {
                         name="abc"
                         type="radio"
                         value="Student"
-                        onChange={(e) => setRadioSelecter(e.target.value)}
+                        onChange={(e) => handleRadioSelecter(e.target.value)}
                         checked={radioSelecter === "Student"}
                       />
                       <label className="form-label" style={{ padding: "10px" }}>
@@ -195,7 +249,7 @@ const Registration = () => {
                         name="abc"
                         type="radio"
                         value="Proffesional"
-                        onChange={(e) => setRadioSelecter(e.target.value)}
+                        onChange={(e) => handleRadioSelecter(e.target.value)}
                         checked={radioSelecter === "Proffesional"}
                       />
                       <label className="form-label" style={{ padding: "10px" }}>
@@ -360,19 +414,35 @@ const Registration = () => {
                             type="date"
                             minLength={10}
                             maxLength={10}
-                            name="txtEmpPhone"
+                            name="date_of_birth"
+                            value={responseData.date_of_birth}
+                            onChange={handleChange}
                             className="form-control"
                             placeholder="Date of Birth *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.date_of_birth.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
                             type="password"
                             className="form-control"
                             placeholder="Confirm Password *"
+                            name="confirm_password"
+                            value={confirmPassword}
+                            onChange={(e) =>
+                              handleConfirmPassword(e.target.value)
+                            }
                             defaultValue=""
                           />
+                          {confirmPassword.trim().length > 0 && (
+                            <p className="text-danger mb-0 p-0">
+                              {confirm_password_error}
+                            </p>
+                          )}
                         </div>
                         <div className="form-group">
                           <input
@@ -592,19 +662,35 @@ const Registration = () => {
                             type="date"
                             minLength={10}
                             maxLength={10}
-                            name="txtEmpPhone"
+                            name="date_of_birth"
+                            value={responseData.date_of_birth}
+                            onChange={handleChange}
                             className="form-control"
                             placeholder="Date of Birth *"
                             defaultValue=""
                           />
+                          {error.trim().length > 0 &&
+                            responseData.date_of_birth.trim().length === 0 && (
+                              <p className="text-danger mb-0 p-0">{error}</p>
+                            )}
                         </div>
                         <div className="form-group">
                           <input
                             type="password"
                             className="form-control"
                             placeholder="Confirm Password *"
+                            name="confirm_password"
+                            value={confirmPassword}
+                            onChange={(e) =>
+                              handleConfirmPassword(e.target.value)
+                            }
                             defaultValue=""
                           />
+                          {confirmPassword.trim().length > 0 && (
+                            <p className="text-danger mb-0 p-0">
+                              {confirm_password_error}
+                            </p>
+                          )}
                         </div>
 
                         <div className="form-group">
