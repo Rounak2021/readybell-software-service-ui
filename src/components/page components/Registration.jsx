@@ -3,6 +3,7 @@ import readybellIcon from "../assets/images/mainlogo.png";
 import axios from "axios";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
+import { Oval } from "react-loader-spinner"; // Import the spinner
 
 const Registration = () => {
   const navigate = useNavigate();
@@ -10,6 +11,7 @@ const Registration = () => {
   const [confirm_password_error, setconfirm_password_error] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false); // State to manage loading spinner
 
   const [responseData, setResponseData] = useState({
     email: "",
@@ -147,6 +149,7 @@ const Registration = () => {
     setError("");
   };
   const registerUser = async () => {
+    setLoading(true);
     let config = {
       headers: {
         "Content-Type": "application/json",
@@ -179,6 +182,7 @@ const Registration = () => {
         config
       );
       if (response?.data?.status === 401) {
+        setLoading(false);
         const a = response?.data?.message;
         swal({
           title: "Warning",
@@ -203,6 +207,7 @@ const Registration = () => {
 
       // Handle successful registration response
     } catch (error) {
+      setLoading(false);
       console.error("Registration failed:", error);
       // Handle registration error
     }
@@ -480,8 +485,22 @@ const Registration = () => {
                           className="btnRegister"
                           // defaultValue="Register"
                           onClick={() => handleConfirmationForRegister()}
+                          disabled={loading}
                         >
-                          Register
+                          {loading ? (
+                            <Oval
+                              height={20}
+                              width={20}
+                              color="#fff"
+                              visible={true}
+                              ariaLabel="oval-loading"
+                              secondaryColor="#ccc"
+                              strokeWidth={2}
+                              strokeWidthSecondary={2}
+                            />
+                          ) : (
+                            "Register"
+                          )}
                         </button>
                       </div>
                     </div>
@@ -729,8 +748,22 @@ const Registration = () => {
                           className="btnRegister"
                           // defaultValue="Register"
                           onClick={() => handleConfirmationForRegister()}
+                          disabled={loading}
                         >
-                          Register
+                          {loading ? (
+                            <Oval
+                              height={20}
+                              width={20}
+                              color="#fff"
+                              visible={true}
+                              ariaLabel="oval-loading"
+                              secondaryColor="#ccc"
+                              strokeWidth={2}
+                              strokeWidthSecondary={2}
+                            />
+                          ) : (
+                            "Register"
+                          )}
                         </button>
                       </div>
                     </div>

@@ -5,12 +5,14 @@ import swal from "sweetalert";
 import axios from "axios";
 import logo from "../assets/images/mainlogo2.PNG";
 import Background from "./ParticleBackground";
+import { Oval } from "react-loader-spinner"; // Import the spinner
 
 const Login = () => {
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const [email, setEmail] = useState(localStorage.getItem("email") || "");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false); // State to manage loading spinner
 
   // const loginUser = async () => {
   //   let config = {
@@ -64,56 +66,58 @@ const Login = () => {
   // };
 
   const loginUser = async () => {
+    setLoading(true); // Show spinner
     let config = {
-        headers: {
-            "Content-Type": "application/json",
-        },
+      headers: {
+        "Content-Type": "application/json",
+      },
     };
     const detailRequest = {
-        email: email,
-        password: password,
+      email: email,
+      password: password,
     };
 
     try {
-        const response = await axios.post(
-            "http://localhost:5000/login",
-            detailRequest,
-            config
-        );
-        if (response?.data?.status === 200) {
-            const name = `${response?.data?.first_name} ${response?.data?.last_name}`;
-            localStorage.setItem("email", name);
-            setTimeout(() => {
-                window.location.reload();
-            }, 5000);
-            swal({
-                title: "Success",
-                text: "You have been logged in successfully",
-                icon: "success",
-                closeOnClickOutside: false,
-            }).then((willDelete) => {
-                if (willDelete) {
-                    navigate("/about");
-                }
-            });
-        }
-        if (response?.data?.status === 401) {
-            const message = response?.data?.message;
-            swal({
-                title: "Warning",
-                text: message,
-                icon: "warning",
-                closeOnClickOutside: false,
-            });
-        }
+      const response = await axios.post(
+        "http://localhost:5000/login",
+        detailRequest,
+        config
+      );
+      if (response?.data?.status === 200) {
+        const name = `${response?.data?.first_name} ${response?.data?.last_name}`;
+        localStorage.setItem("email", name);
+        setTimeout(() => {
+          window.location.reload();
+        }, 5000);
+        swal({
+          title: "Success",
+          text: "You have been logged in successfully",
+          icon: "success",
+          closeOnClickOutside: false,
+        }).then((willDelete) => {
+          if (willDelete) {
+            navigate("/about");
+          }
+        });
+      }
+      if (response?.data?.status === 401) {
+        setLoading(false); 
+        const message = response?.data?.message;
+        swal({
+          title: "Warning",
+          text: message,
+          icon: "warning",
+          closeOnClickOutside: false,
+        });
+      }
 
-        // Handle successful registration response
+      // Handle successful registration response
     } catch (error) {
-        console.error("Registration failed:", error);
-        // Handle registration error
+      setLoading(false); // Hide spinner
+      console.error("Registration failed:", error);
+      // Handle registration error
     }
-};
-
+  };
 
   return (
     <div>
@@ -157,8 +161,22 @@ const Login = () => {
                         <button
                           className="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
                           onClick={loginUser}
+                          disabled={loading} // Disable button while loading
                         >
-                          Log in
+                          {loading ? (
+                            <Oval
+                              height={20}
+                              width={20}
+                              color="#fff"
+                              visible={true}
+                              ariaLabel="oval-loading"
+                              secondaryColor="#ccc"
+                              strokeWidth={2}
+                              strokeWidthSecondary={2}
+                            />
+                          ) : (
+                            "Log in"
+                          )}
                         </button>
                       </div>
                       <div className="d-flex align-items-center justify-content-center pb-4">
