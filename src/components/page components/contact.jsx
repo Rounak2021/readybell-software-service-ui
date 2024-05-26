@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
 import swal from "sweetalert";
+import { Oval } from "react-loader-spinner"; // Import the spinner
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false); // State to manage loading spinner
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -20,6 +22,7 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
+    setLoading(true);
     e.preventDefault();
 
     emailjs
@@ -30,6 +33,7 @@ const Contact = () => {
         "XjJmG8Lg1JZkwBqu_"
       )
       .then((response) => {
+        setLoading(false);
         swal({
           title: "Success",
           text: "Message sent successfully! We will get back to you soon",
@@ -38,6 +42,7 @@ const Contact = () => {
         });
       })
       .catch((error) => {
+        setLoading(false);
         swal({
           title: "Failure",
           text: "Failed to send message, please try again later.",
@@ -154,7 +159,20 @@ const Contact = () => {
                         </div>
                       </div>
                       <div className="col-md-12 mx-auto text-center">
-                        <button type="submit">Send Message</button>
+                        <button type="submit" disabled={loading}>{loading ? (
+                            <Oval
+                              height={20}
+                              width={20}
+                              color="#fff"
+                              visible={true}
+                              ariaLabel="oval-loading"
+                              secondaryColor="#ccc"
+                              strokeWidth={2}
+                              strokeWidthSecondary={2}
+                            />
+                          ) : (
+                            "Send Message"
+                          )}</button>
                       </div>
                     </div>
                   </form>
