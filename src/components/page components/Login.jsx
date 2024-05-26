@@ -3,7 +3,7 @@ import "./index.css";
 import { useNavigate, Link } from "react-router-dom";
 import swal from "sweetalert";
 import axios from "axios";
-import logo from "../assets/images/logo.jpg";
+import logo from "../assets/images/mainlogo2.PNG";
 import Background from "./ParticleBackground";
 
 const Login = () => {

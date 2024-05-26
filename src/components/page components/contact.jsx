@@ -1,7 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.send(
+      'service_i1o9kbb',
+      'template_9byr6oj',
+      formState,
+      'XjJmG8Lg1JZkwBqu_'
+    ).then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      alert('Message sent successfully!');
+    }).catch((error) => {
+      console.error('FAILED...', error);
+      alert('Failed to send message, please try again.');
+    });
+
+    // Clear form after submission
+    setFormState({
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: ''
+    });
+  };
+
   return (
     <>
       <section className="semi_dark_bg py-3">
@@ -32,15 +74,18 @@ const Contact = () => {
               <div className="main-content">
                 <div className="contact-from-wrapper-2">
                   <h2 className="section-heading">Get In Touch</h2>
-                  <form action="#" className="contact-form mt-4">
+                  <form onSubmit={handleSubmit} className="contact-form mt-4">
                     <div className="row">
                       <div className="col-md-6">
                         <div className="form-group">
                           <input
                             type="text"
                             className="form-control"
+                            name="name"
                             placeholder="Enter Your Name"
-                            required=""
+                            value={formState.name}
+                            onChange={handleChange}
+                            required
                           />
                         </div>
                       </div>
@@ -49,8 +94,11 @@ const Contact = () => {
                           <input
                             type="email"
                             className="form-control"
+                            name="email"
                             placeholder="Enter Your Email"
-                            required=""
+                            value={formState.email}
+                            onChange={handleChange}
+                            required
                           />
                         </div>
                       </div>
@@ -59,18 +107,23 @@ const Contact = () => {
                           <input
                             type="text"
                             className="form-control"
-                            id="phone_number"
+                            name="phone"
                             placeholder="Enter Phone Number"
-                            required=""
+                            value={formState.phone}
+                            onChange={handleChange}
+                            required
                           />
                         </div>
                       </div>
                       <div className="col-md-6">
                         <div className="form-group">
                           <input
-                            type="subject"
+                            type="text"
                             className="form-control"
+                            name="subject"
                             placeholder="Enter Subject"
+                            value={formState.subject}
+                            onChange={handleChange}
                           />
                         </div>
                       </div>
@@ -79,11 +132,12 @@ const Contact = () => {
                           <textarea
                             name="message"
                             className="form-control"
-                            id="message"
                             cols={30}
                             rows={6}
                             placeholder="Write Your Message"
-                            defaultValue={""}
+                            value={formState.message}
+                            onChange={handleChange}
+                            required
                           />
                         </div>
                       </div>
