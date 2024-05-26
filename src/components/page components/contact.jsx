@@ -1,46 +1,58 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
+import swal from "sweetalert";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (e) => {
     setFormState({
       ...formState,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send(
-      'service_i1o9kbb',
-      'template_9byr6oj',
-      formState,
-      'XjJmG8Lg1JZkwBqu_'
-    ).then((response) => {
-      console.log('SUCCESS!', response.status, response.text);
-      alert('Message sent successfully!');
-    }).catch((error) => {
-      console.error('FAILED...', error);
-      alert('Failed to send message, please try again.');
-    });
+    emailjs
+      .send(
+        "service_i1o9kbb",
+        "template_9byr6oj",
+        formState,
+        "XjJmG8Lg1JZkwBqu_"
+      )
+      .then((response) => {
+        swal({
+          title: "Success",
+          text: "Message sent successfully! We will get back to you soon",
+          icon: "success",
+          closeOnClickOutside: false,
+        });
+      })
+      .catch((error) => {
+        swal({
+          title: "Failure",
+          text: "Failed to send message, please try again later.",
+          icon: "error",
+          closeOnClickOutside: false,
+        });
+      });
 
     // Clear form after submission
     setFormState({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
     });
   };
 
