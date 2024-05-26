@@ -12,55 +12,108 @@ const Login = () => {
   const [email, setEmail] = useState(localStorage.getItem("email") || "");
   const [password, setPassword] = useState("");
 
+  // const loginUser = async () => {
+  //   let config = {
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   };
+  //   const detailRequest = {
+  //     email: email,
+  //     password: password,
+  //   };
+
+  //   try {
+  //     const response = await axios.post(
+  //       "http://localhost:5000/login",
+  //       detailRequest,
+  //       config
+  //     );
+  //     if (response?.data?.status === 200) {
+  //       const name = `${response?.data?.first_name} + ${response?.data?.last_name}`;
+  //       localStorage.setItem("email", name);
+  //       setTimeout(() => {
+  //         window.location.reload();
+  //       }, 5000);
+  //       swal({
+  //         title: "Success",
+  //         text: "You have been logged in successfully",
+  //         icon: "success",
+  //         closeOnClickOutside: false,
+  //       }).then((willDelete) => {
+  //         if (willDelete) {
+  //           navigate("/about");
+  //         }
+  //       });
+  //     }
+  //     if (response?.data?.status === 401) {
+  //       const a = response?.data?.message;
+  //       swal({
+  //         title: "Warning",
+  //         text: { a },
+  //         icon: "warning",
+  //         closeOnClickOutside: false,
+  //       });
+  //     }
+
+  //     // Handle successful registration response
+  //   } catch (error) {
+  //     console.error("Registration failed:", error);
+  //     // Handle registration error
+  //   }
+  // };
+
   const loginUser = async () => {
     let config = {
-      headers: {
-        "Content-Type": "application/json",
-      },
+        headers: {
+            "Content-Type": "application/json",
+        },
     };
     const detailRequest = {
-      email: email,
-      password: password,
+        email: email,
+        password: password,
     };
 
     try {
-      const response = await axios.post(
-        "http://localhost:5000/login",
-        detailRequest,
-        config
-      );
-      if (response?.data?.status === 200) {
-        localStorage.setItem("email", response?.data?.email);
-        setTimeout(() => {
-          window.location.reload();
-        }, 5000);
-        swal({
-          title: "Success",
-          text: "You have been logged in successfully",
-          icon: "success",
-          closeOnClickOutside: false,
-        }).then((willDelete) => {
-          if (willDelete) {
-            navigate("/about");
-          }
-        });
-      }
-      if (response?.data?.status === 401) {
-        const a = response?.data?.message;
-        swal({
-          title: "Warning",
-          text: { a },
-          icon: "warning",
-          closeOnClickOutside: false,
-        });
-      }
+        const response = await axios.post(
+            "http://localhost:5000/login",
+            detailRequest,
+            config
+        );
+        if (response?.data?.status === 200) {
+            const name = `${response?.data?.first_name} ${response?.data?.last_name}`;
+            localStorage.setItem("email", name);
+            setTimeout(() => {
+                window.location.reload();
+            }, 5000);
+            swal({
+                title: "Success",
+                text: "You have been logged in successfully",
+                icon: "success",
+                closeOnClickOutside: false,
+            }).then((willDelete) => {
+                if (willDelete) {
+                    navigate("/about");
+                }
+            });
+        }
+        if (response?.data?.status === 401) {
+            const message = response?.data?.message;
+            swal({
+                title: "Warning",
+                text: message,
+                icon: "warning",
+                closeOnClickOutside: false,
+            });
+        }
 
-      // Handle successful registration response
+        // Handle successful registration response
     } catch (error) {
-      console.error("Registration failed:", error);
-      // Handle registration error
+        console.error("Registration failed:", error);
+        // Handle registration error
     }
-  };
+};
+
 
   return (
     <div>

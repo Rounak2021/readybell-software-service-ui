@@ -32,6 +32,15 @@ const Header = () => {
     });
   };
 
+  // Add jQuery script to handle dropdown click for mobile
+  React.useEffect(() => {
+    $(".dropdown-toggle").click(function () {
+      if ($(window).width() < 768) {
+        $(this).next(".dropdown-menu").slideToggle();
+      }
+    });
+  }, []);
+
   return (
     <>
       <header className="header">

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./index.css";
 import Background from "./ParticleBackground";
+import homeSideIcon from "../assets/images/home_side_icon.jpg";
 
 const Home = () => {
   return (
@@ -41,11 +42,12 @@ const Home = () => {
                 //
                 //   data-aos-duration={600}
               >
-                <div className="half_column_image">
+                <div className="half_column_image" style={{boxShadow:"rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px"}} >
                   <img
-                    src="assets/images/half_column_2.jpg"
+                    src={homeSideIcon}
                     alt="welcome"
                     className="img-fluid"
+                    style={{ height: "345px", width: "1458px" }}
                   />
                 </div>
               </div>
@@ -63,99 +65,99 @@ const Home = () => {
                     <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
-                          <h4>Node.js DEVELOPER (with MongoDB)</h4>
+                          <h4>
+                            Artificial Intelligence, Generative AI, Machine
+                            Learning, Data Science
+                          </h4>
                           <p>
-                            This program is designed for absolute beginners as
-                            well as experienced software professionals who want
-                            to build their programming foundation/advance career
-                            with Node.js and MongoDB. After this program the
-                            student will able to build real-time, high
-                            performance, and scalable server side applications
-                            with Node.js...
+                            We provide premium quality education in the filed of
+                            Artificial Intelligence, Generative AI, Machine
+                            Learning, Data Science for all levels of personnel
+                            starting from experienced working professionals to
+                            school level students willing to
+                            learn/upgrade/upskill into the field of Artificial
+                            Intelligence.
                           </p>
-                          <Link to="/node" className="rounded-btn">
+                          {/* <Link to="/ai" className="rounded-btn">
                             <i className="fas fa-angle-right" />
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </div>
                     <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
-                          <h4>Software Full Stack Developer (MEAN) Bootcamp</h4>
+                          <h4>Microsoft Azure AI Certification Courses</h4>
                           <p>
-                            A full stack developer is a professional who, as the
-                            name suggests, can handle a “full stack” of
-                            development technologies and have proficiency over
-                            both front end (user interface) and back end
-                            (business logic and workflows) coding disciplines,
-                            frameworks, Database and best practice Frameworks
-                            (both front end...
+                            We provide Certification Training on Microsoft
+                            Certified: Azure AI Fundamentals AI-900T00-A:
+                            Microsoft Azure AI Fundamentals (for beginners) &
+                            Microsoft Certified: Azure AI Engineer Associate
+                            AI-102T00-A: Designing and Implementing a Microsoft
+                            Azure AI Solution
                           </p>
-                          <Link to="/mean" className="rounded-btn">
+                          {/* <Link to="/ml" className="rounded-btn">
                             <i className="fas fa-angle-right" />
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </div>
                     <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
-                          <h4>Software Full Stack Developer (MERN) Bootcamp</h4>
+                          <h4>
+                            Artificial Intelligence Projects and Assignments
+                          </h4>
                           <p>
-                            A full stack developer is a professional who, as the
-                            name suggests, can handle a “full stack” of
-                            development technologies and have proficiency over
-                            both front end (user interface) and back end
-                            (business logic and workflows) coding disciplines,
-                            frameworks, Database and best practice Frameworks
-                            (both front end...
+                            We have pool of highly qualified, experienced
+                            professionals to design/solution/execute projects
+                            and assignments of any level of complexity in the
+                            field of Data Science and Artificial Intelligence
+                            from any corner of the globe. Please reach out to us
+                            to experience our quality output
                           </p>
-                          <Link to="/mern" className="rounded-btn">
+                          {/* <Link to="/mern" className="rounded-btn">
                             <i className="fas fa-angle-right" />
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </div>
                     <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
-                          <h4>Node.js DEVELOPER (with MYSQL)</h4>
+                          <h4>TOGAF Certification</h4>
                           <p>
-                            A full stack developer is a professional who, as the
-                            name suggests, can handle a “full stack” of
-                            development technologies and have proficiency over
-                            both front end (user interface) and back end
-                            (business logic and workflows) coding disciplines,
-                            frameworks, Database and best practice Frameworks
-                            (both front end...
+                            We provide TOGAF® Foundation and Practitioner
+                            training by highly experienced TOGAF® Certified
+                            professionals having 10+ years of experience in the
+                            field. This will help aspiring Enterprise Architects
+                            understand how TOGAF® can address an enterprise's
+                            requirements.
                           </p>
-                          <Link to="/node-sql" className="rounded-btn">
+                          {/* <Link to="/node-sql" className="rounded-btn">
                             <i className="fas fa-angle-right" />
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </div>
                     <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
-                          <h4>JAVA DEVELOPER</h4>
+                          <h4>PMI ACP and PMI PMP Certification Course</h4>
                           <p>
-                            Specially designed for absolute beginners who want
-                            to build their programming foundation using Java
-                            language. Programming using an Object-Oriented
-                            language is an absolute essential skill for a
-                            software engineer. This program will help building a
-                            strong programming foundation and gradually attain
-                            proficiency in building OO (Object Oriented)...
+                            We provide certification training in PMI Agile
+                            Certified Practitioner (PMI-ACP)® & Project
+                            Management Professional (PMP)® by highly experienced
+                            PMI ACP and PMP Certified professionals having 15+
+                            years of experience in the field
                           </p>
-                          <Link to="/java" className="rounded-btn">
+                          {/* <Link to="/java" className="rounded-btn">
                             <i className="fas fa-angle-right" />
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>Python Developer</h4>
@@ -173,8 +175,8 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> */}
+                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>Website Design and Development with UI/UX</h4>
@@ -190,8 +192,8 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> */}
+                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>CLOUD COMPUTING</h4>
@@ -208,8 +210,8 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> */}
+                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>CISCO CCNA</h4>
@@ -227,8 +229,8 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> */}
+                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>CISCO CCNP Enterprise 350-401 ENCOR</h4>
@@ -243,8 +245,8 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> */}
+                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>CISCO CCNP Security Core (350-701) SCOR</h4>
@@ -260,8 +262,8 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> */}
+                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>CCNP Secure Solutions with VPN 300-730 SVPN</h4>
@@ -277,8 +279,8 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> */}
+                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>CCIE Security VPN</h4>
@@ -295,8 +297,8 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> */}
+                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>CCIE Security FTD FMC</h4>
@@ -312,8 +314,8 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> */}
+                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>CCIE Security ASA</h4>
@@ -329,7 +331,7 @@ const Home = () => {
                           </Link>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -341,7 +343,7 @@ const Home = () => {
         className="two-columns-section section-ptb"
         style={{ backgroundImage: "url(assets/images/big_bg_3.jpg)" }}
       >
-        <Background/>
+        <Background />
         <div className="two-columns-area">
           <div className="container">
             <div className="row">
@@ -382,7 +384,7 @@ const Home = () => {
                     world. Readybell was founded with the vision of its mentor
                     and committed to assure:
                   </p>
-                  <Link to="#" className="button_two mt-2">
+                  <Link to="/register" className="button_two mt-2">
                     Join Now
                   </Link>
                 </div>
@@ -454,7 +456,7 @@ const Home = () => {
                     Readybell has a state-of-the-art computer-based testing
                     facility at its Salt Lake Kolkata office.
                   </p>
-                  <Link to="/affilliations" className="link_btn mt-2">
+                  <Link to="/affiliations" className="link_btn mt-2">
                     Read More <i className="fa fa-angle-right" />{" "}
                   </Link>
                 </div>
@@ -478,7 +480,7 @@ const Home = () => {
                     programs to help people achieve success in their academic,
                     personal, and work lives.{" "}
                   </p>
-                  <Link to="/affilliations" className="link_btn mt-2">
+                  <Link to="/affiliations" className="link_btn mt-2">
                     Read More <i className="fa fa-angle-right" />{" "}
                   </Link>
                 </div>

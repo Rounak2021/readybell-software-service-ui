@@ -92,69 +92,30 @@ const Footer = () => {
                     {/* <div class="col-12"><h3>Training List</h3></div> */}
                     <div className="col-6">
                       <div className="widget-list">
-                        <h3>Software Training</h3>
+                        <h3>Software Courses</h3>
                         <ul>
                           <li>
-                            <Link to="/mean">MEAN Full Stack Development</Link>
+                            <Link to="/ai">Artificial Intelligence</Link>
                           </li>
                           <li>
-                            <Link to="/mern">MERN Full Stack Development</Link>
+                            <Link to="/ml">Machine Learning</Link>
                           </li>
                           <li>
-                            <Link to="/cloudcomputing">cloudcomputing</Link>
+                            <Link to="/data-science">Data Science</Link>
                           </li>
                           <li>
-                            <Link to="/node">NODE.JS Developer(MongoDB)</Link>
+                            <Link to="/gen-ai">Generative AI</Link>
                           </li>
                           <li>
-                            <Link to="/node-sql">NODE.JS Developer(MySql)</Link>
+                            <Link to="/togaf">TOGAF</Link>
                           </li>
                           <li>
-                            <Link to="/java">
-                              Java Developer with DS JDBC MySql
+                            <Link to="/pmi-acp">
+                              PMI ACP (Agile Certification)
                             </Link>
                           </li>
                           <li>
-                            <Link to="/python">Python Developer</Link>
-                          </li>
-                          <li>
-                            <Link to="/ui">
-                              Website Design and Development with UI/UX
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="col-6">
-                      <div className="widget-list">
-                        <h3>CISCO Training</h3>
-                        <ul>
-                          <li>
-                            <Link to="/ccna">CISCO CCNA</Link>
-                          </li>
-                          <li>
-                            <Link to="/ccnp-encor">
-                              CISCO CCNP Enterprise 350-401 ENCOR
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/ccnp-scor">
-                              CISCO CCNP Security Core (350-701) SCOR
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/ccnp-vpn">
-                              CCNP Secure Solutions VPN 300-730 SVPN
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/vpn">CCIE Security VPN</Link>
-                          </li>
-                          <li>
-                            <Link to="/ftd-fmc">CCIE Security FTD FMC</Link>
-                          </li>
-                          <li>
-                            <Link to="/asa">CCIE Security ASA</Link>
+                            <Link to="/pmi-pmp">PMI PMP</Link>
                           </li>
                         </ul>
                       </div>

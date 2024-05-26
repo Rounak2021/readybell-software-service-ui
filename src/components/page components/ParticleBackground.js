@@ -64,7 +64,7 @@ const ParticleBackground = () => {
         };
     }, []);
 
-    return <div ref={mountRef} className="three-js-container" style={{ position: 'absolute', width: '96%', height: '100%', zIndex: 1 }} />;
+    return <div ref={mountRef} className="three-js-container" style={{ position: 'absolute', width: '96%', height: '100%', zIndex: 0 }} />;
 };
 
 const Background = () => {
