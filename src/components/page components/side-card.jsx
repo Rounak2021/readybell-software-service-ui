@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const Sidecard = () => {
   return (
     <>
@@ -10,89 +11,41 @@ export const Sidecard = () => {
               <div className="side-menu">
                 <ul>
                   <li>
-                    <a href="mean.html">
-                      <i className="far fa-check-square" /> MEAN Full Stack
-                      Developmen
-                    </a>
+                    <Link to="/ai">
+                      <i className="far fa-check-square" /> Artificial
+                      Intelligence
+                    </Link>
                   </li>
                   <li>
-                    <a href="mern.html">
-                      <i className="far fa-check-square" /> MERN Full Stack
-                      Development
-                    </a>
+                    <Link to="/ml">
+                      <i className="far fa-check-square" /> Machine Learning
+                    </Link>
                   </li>
                   <li>
-                    <a href="cloudcomputing.html">
-                      <i className="far fa-check-square" /> cloudcomputing
-                    </a>
+                    <Link to="/data-science">
+                      <i className="far fa-check-square" /> Data Science
+                    </Link>
                   </li>
                   <li>
-                    <a href="node.html">
-                      <i className="far fa-check-square" /> NODE.JS
-                      Developer(MongoDB)
-                    </a>
+                    <Link to="/gen-ai">
+                      <i className="far fa-check-square" /> Generative AI
+                    </Link>
                   </li>
                   <li>
-                    <a href="nodeSql.html">
-                      <i className="far fa-check-square" /> NODE.JS
-                      Developer(MySql)
-                    </a>
+                    <Link to="/togaf">
+                      <i className="far fa-check-square" /> TOGAF
+                    </Link>
                   </li>
                   <li>
-                    <a href="java.html">
-                      <i className="far fa-check-square" /> Java Developer with
-                      DS JDBC MySql
-                    </a>
+                    <Link to="/pmi-acp">
+                      <i className="far fa-check-square" /> PMI ACP (Agile
+                      Certification)
+                    </Link>
                   </li>
                   <li>
-                    <a href="python.html">
-                      <i className="far fa-check-square" /> Python Developer
-                    </a>
-                  </li>
-                  <li>
-                    <a href="ui.html">
-                      <i className="far fa-check-square" /> Website Design and
-                      Development with UI/UX
-                    </a>
-                  </li>
-                  <li>
-                    <a href="ccna.html">
-                      <i className="far fa-check-square" /> CISCO CCNA
-                    </a>
-                  </li>
-                  <li>
-                    <a href="ccnp-encor.html">
-                      <i className="far fa-check-square" /> CISCO CCNP
-                      Enterprise 350-401 ENCOR
-                    </a>
-                  </li>
-                  <li>
-                    <a href="ccnp-scor.html">
-                      <i className="far fa-check-square" /> CISCO CCNP Security
-                      Core (350-701) SCOR
-                    </a>
-                  </li>
-                  <li>
-                    <a href="ccnp-vpn.html">
-                      <i className="far fa-check-square" /> CCNP Secure
-                      Solutions VPN 300-730 SVPN
-                    </a>
-                  </li>
-                  <li>
-                    <a href="vpn.html">
-                      <i className="far fa-check-square" /> CCIE Security VPN
-                    </a>
-                  </li>
-                  <li>
-                    <a href="ftd-fmc.html">
-                      <i className="far fa-check-square" /> CCIE Security FTD
-                      FMC
-                    </a>
-                  </li>
-                  <li>
-                    <a href="asa.html">
-                      <i className="far fa-check-square" /> CCIE Security ASA
-                    </a>
+                    <Link to="/pmi-pmp">
+                      <i className="far fa-check-square" /> PMI PMP
+                    </Link>
                   </li>
                 </ul>
               </div>

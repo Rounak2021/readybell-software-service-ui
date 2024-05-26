@@ -34,16 +34,6 @@ const Login = () => {
         setTimeout(() => {
           window.location.reload();
         }, 5000);
-        // setEmail(response?.data?.email);
-        if (response?.data?.status === 401) {
-          const a = response?.data?.message;
-          swal({
-            title: "Warning",
-            text: { a },
-            icon: "warning",
-            closeOnClickOutside: false,
-          });
-        }
         swal({
           title: "Success",
           text: "You have been logged in successfully",
@@ -51,8 +41,17 @@ const Login = () => {
           closeOnClickOutside: false,
         }).then((willDelete) => {
           if (willDelete) {
-            navigate("/");
+            navigate("/about");
           }
+        });
+      }
+      if (response?.data?.status === 401) {
+        const a = response?.data?.message;
+        swal({
+          title: "Warning",
+          text: { a },
+          icon: "warning",
+          closeOnClickOutside: false,
         });
       }
 

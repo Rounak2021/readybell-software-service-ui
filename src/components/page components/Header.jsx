@@ -1,22 +1,15 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import "./index.css";
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import swal from "sweetalert";
 
 const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
- 
 
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
@@ -38,9 +31,10 @@ const Header = () => {
       }
     });
   };
+
   return (
     <>
-      <header>
+      <header className="header">
         <div className="header-top dark_2_bg">
           <div className="container">
             <div className="row">
@@ -60,7 +54,8 @@ const Header = () => {
                     </p>
                     <p style={{ paddingTop: "1em" }}>
                       <i className="fas fa-envelope" />{" "}
-                      info@readybellsoftware.com
+                      {/* info@readybellsoftware.com */}
+                      readybell3@gmail.com
                     </p>
                   </div>
                 </div>
@@ -166,105 +161,57 @@ const Header = () => {
                             Why Readybell
                           </Link>
                         </li>
-                        <li>
-                          <Link className="nav-link" to="/affiliations">
-                            Our Affiliations
+                        <li className="nav-item dropdown">
+                          <Link
+                            className="nav-link dropdown-toggle"
+                            to="#"
+                            id="navbarDropdownMenuLink"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Software Courses
                           </Link>
+                          <div
+                            className="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink"
+                          >
+                            <Link className="dropdown-item" to="/ai">
+                              Artificial Intelligence
+                            </Link>
+                            <Link className="dropdown-item" to="/ml">
+                              Machine Learning
+                            </Link>
+                            <Link className="dropdown-item" to="/data-science">
+                              Data Science
+                            </Link>
+                            <Link to="/gen-ai" className="dropdown-item">
+                              Generative AI
+                            </Link>
+                            <Link to="/togaf" className="dropdown-item">
+                              TOGAF
+                            </Link>
+                            <Link to="/pmi-acp" className="dropdown-item">
+                              PMI ACP (Agile Certification)
+                            </Link>
+                            <Link to="/pmi-pmp" className="dropdown-item">
+                              PMI PMP
+                            </Link>
+                          </div>
                         </li>
+
                         <li>
                           <Link to="/team" className="nav-link">
                             Our Team
                           </Link>
                         </li>
                         <li>
-                          <Link to="/services" className="nav-link">
-                            Our Services
+                          <Link className="nav-link" to="/affiliations">
+                            Our Affiliations
                           </Link>
                         </li>
-                        <li className="nav-item dropdown">
-                          {/* <Link
-                          className="nav-link dropdown-toggle"
-                          to="#"
-                          id="navbarDropdownMenuLink"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          Software Courses
-                        </Link> */}
-                          <div
-                            className="dropdown-menu"
-                            aria-labelledby="navbarDropdownMenuLink"
-                          >
-                            <Link className="dropdown-item" to="/node">
-                              Node with MongoDB
-                            </Link>
-                            <Link className="dropdown-item" to="/node-sql">
-                              Node with SQL
-                            </Link>
-                            <Link className="dropdown-item" to="/java">
-                              Java
-                            </Link>
-                            <Link
-                              className="dropdown-item"
-                              to="/cloudcomputing"
-                            >
-                              CLOUD COMPUTING
-                            </Link>
-                            <Link className="dropdown-item" to="/mean">
-                              MEAN STACK
-                            </Link>
-                            <Link className="dropdown-item" to="/mern">
-                              MERN STACK
-                            </Link>
-                            <Link className="dropdown-item" to="/python">
-                              Python
-                            </Link>
-                            <Link className="dropdown-item" to="/ui">
-                              UI / UX
-                            </Link>
-                          </div>
-                        </li>
-                        <li className="nav-item dropdown">
-                          {/* <Link
-                          className="nav-link dropdown-toggle"
-                          to="#"
-                          id="navbarDropdownMenuLink"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          Cisco
-                        </Link> */}
-                          <div
-                            className="dropdown-menu"
-                            aria-labelledby="navbarDropdownMenuLink"
-                          >
-                            <Link className="dropdown-item" to="/ccna">
-                              CISCO CCNA
-                            </Link>
-                            <Link className="dropdown-item" to="/ccnp-encor">
-                              CISCO CCNP Enterprise 350-401 ENCOR
-                            </Link>
-                            <Link className="dropdown-item" to="/ccnp-scor">
-                              CISCO CCNP Security Core (350-701) SCOR
-                            </Link>
-                            <Link className="dropdown-item" to="/ccnp-vpn">
-                              CCNP Secure Solutions VPN 300-730 SVPN
-                            </Link>
-                            <Link className="dropdown-item" to="/vpn">
-                              CCIE Security VPN
-                            </Link>
-                            <Link className="dropdown-item" to="/ftd-fmc">
-                              CCIE Security FTD FMC
-                            </Link>
-                            <Link className="dropdown-item" to="/asa">
-                              CCIE Security ASA
-                            </Link>
-                          </div>
-                        </li>
+
                         <li>
                           <Link to="/affiliations" className="nav-link">
                             Computer Based Testing Centre
@@ -308,7 +255,6 @@ const Header = () => {
       <section className="slider-section swiper-container-2">
         <div className="swiper-wrapper">
           <Swiper
-            // spaceBetween={30}
             centeredSlides={true}
             autoplay={{
               delay: 4500,
@@ -331,13 +277,16 @@ const Header = () => {
                     <div className="col-lg-12">
                       <div className="slider-content-2 py-lg-5 py-md-4 py-3">
                         <h2 className="display-3">
-                          Readybell Software Services Pvt Limited
+                          Artificial Intelligence, Generative AI, Machine
+                          Learning, Data Science
                         </h2>
                         <p>
-                          An emerging &amp; pioneer IT Services provider in the
-                          field of Cyber Security, Cloud Security, IT Security
-                          Management, CISCO and CompTIA Certification and
-                          advanced training and Computer Based Testing services
+                          We provide premium quality education in the filed of
+                          Artificial Intelligence, Generative AI, Machine
+                          Learning, Data Science for all levels of personnel
+                          starting from experienced working professionals to
+                          school level students willing to learn/upgrade/upskill
+                          into the field of Artificial Intelligence.
                         </p>
                         {/* <a to="about.html" class="button_two mt-2">More Details</a> */}
                       </div>
@@ -356,15 +305,15 @@ const Header = () => {
                     <div className="col-lg-12">
                       <div className="slider-content-2 py-lg-5 py-md-4 py-3">
                         <h2 className="display-3">
-                          Software Full Stack Developer (MEAN) Bootcamp
+                          Microsoft Azure AI Certification Courses
                         </h2>
                         <p>
-                          We are a pioneer Mean stack training provider
-                          providing Software Full Stack Developer (MEAN)
-                          Bootcamp training.Top demanding software skill: This
-                          program covers full gamete of Software Development
-                          (front as well as back end) technologies, frameworks
-                          and tools.
+                          We provide Certification Training on Microsoft
+                          Certified: Azure AI Fundamentals AI-900T00-A:
+                          Microsoft Azure AI Fundamentals (for beginners) &
+                          Microsoft Certified: Azure AI Engineer Associate
+                          AI-102T00-A: Designing and Implementing a Microsoft
+                          Azure AI Solution
                         </p>
                         {/* <a to="cissp.html" class="button_two mt-2">More Details</a> */}
                       </div>
@@ -383,14 +332,15 @@ const Header = () => {
                     <div className="col-lg-12">
                       <div className="slider-content-2 py-lg-5 py-md-4 py-3">
                         <h2 className="display-3">
-                          JAVA DEVELOPER Certification training
+                          Artificial Intelligence Projects and Assignments
                         </h2>
                         <p>
-                          We are a pioneer JAVA DEVELOPER training provider
-                          providing certification and advanced level
-                          training.Specially designed for absolute beginners who
-                          want to build their programming foundation using Java
-                          language.
+                          We have pool of highly qualified, experienced
+                          professionals to design/solution/execute projects and
+                          assignments of any level of complexity in the field of
+                          Data Science and Artificial Intelligence from any
+                          corner of the globe. Please reach out to us to
+                          experience our quality output
                         </p>
                         {/* <a to="microsoft-azure.html" class="button_two mt-2">More Details</a> */}
                       </div>
@@ -408,16 +358,13 @@ const Header = () => {
                   <div className="row">
                     <div className="col-lg-12">
                       <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                        <h2 className="display-3">
-                          CLOUD COMPUTING Certification &amp; advanced level
-                          training
-                        </h2>
+                        <h2 className="display-3">TOGAF Certification</h2>
                         <p>
-                          We are a pioneer CLOUD COMPUTING training provider
-                          providing certification and advanced level CLOUD
-                          COMPUTING training. Learn Cloud concepts,
-                          terminologies, services, infra management and
-                          administration of MS Azure &amp; AWS Clouds.
+                          We provide TOGAF® Foundation and Practitioner training
+                          by highly experienced TOGAF® Certified professionals
+                          having 10+ years of experience in the field. This will
+                          help aspiring Enterprise Architects understand how
+                          TOGAF® can address an enterprise's requirements.
                         </p>
                         {/* <a to="aws.html" class="button_two mt-2">More Details</a> */}
                       </div>
@@ -436,149 +383,16 @@ const Header = () => {
                     <div className="col-lg-12">
                       <div className="slider-content-2 py-lg-5 py-md-4 py-3">
                         <h2 className="display-3">
-                          Node.js DEVELOPER (with MongoDB) Certification &amp;
-                          advanced level training
+                          PMI ACP and PMI PMP Certification Course
                         </h2>
                         <p>
-                          We are a pioneer Node.js DEVELOPER (with MongoDB)
-                          training provider providing certification and advanced
-                          level Node.js DEVELOPER (with MongoDB) training.Learn
-                          back end programming with Node.js with Express.js
-                          framework and MongoDB NoSQL Database.
+                          We provide certification training in PMI Agile
+                          Certified Practitioner (PMI-ACP)® & Project Management
+                          Professional (PMP)® by highly experienced PMI ACP and
+                          PMP Certified professionals having 15+ years of
+                          experience in the field
                         </p>
                         {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div
-                className="slider-area-2 height-300 swiper-slide"
-                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-              >
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                        <h2 className="display-3">
-                          Node.js DEVELOPER (with MongoDB) Certification &amp;
-                          advanced level training
-                        </h2>
-                        <p>
-                          We are a pioneer Node.js DEVELOPER (with MongoDB)
-                          training provider providing certification and advanced
-                          level Node.js DEVELOPER (with MongoDB) training.Learn
-                          back end programming with Node.js with Express.js
-                          framework and MongoDB NoSQL Database.
-                        </p>
-                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div
-                className="slider-area-2 height-300 swiper-slide"
-                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-              >
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                        <h2 className="display-3">
-                          Node.js DEVELOPER (with MYSQL) Certification &amp;
-                          advanced level training
-                        </h2>
-                        <p>
-                          We are a pioneer Node.js DEVELOPER (with MYSQL)
-                          training provider providing certification and advanced
-                          level Node.js DEVELOPER (with MYSQL) training.Learn
-                          back end programming with Node.js with Express.js
-                          framework and MySQL RDBMS
-                        </p>
-                        {/* <a to="comptia-security.html" class="button_two mt-2">More Details</a> */}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div
-                className="slider-area-2 height-300 swiper-slide"
-                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-              >
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                        <h2 className="display-3">CISCO networking training</h2>
-                        <p>
-                          Readybell has a pool of highly experienced CISCO
-                          trainers having years of experience in training CCNA,
-                          CCNP and CCIA courses. Our courses are based on the
-                          latest changes in the CISCO curriculum. We use CISCO
-                          recommended training materials and Lab.
-                        </p>
-                        {/* <a to="ccna.html" class="button_two mt-2">More Details</a> */}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div
-                className="slider-area-2 height-300 swiper-slide"
-                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-              >
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                        <h2 className="display-3">
-                          Website Design and Development with UI/UX
-                          Certification training
-                        </h2>
-                        <p>
-                          We are a pioneer Website Design and Development with
-                          UI/UX training provider providing certification and
-                          advanced level Website Design and Development with
-                          UI/UX training. Learn how to develop a full Website
-                          with UI/UX
-                        </p>
-                        {/* <a to="comptia-network.html" class="button_two mt-2">More Details</a> */}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div
-                className="slider-area-2 height-300 swiper-slide"
-                style={{ backgroundImage: "url(assets/images/slider_bg.jpg)" }}
-              >
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
-                        <h2 className="display-3">
-                          Software Full Stack Developer (MERN) Bootcamp
-                        </h2>
-                        <p>
-                          We are a pioneer mern stack training provider
-                          providing Software Full Stack Developer (mern)
-                          Bootcamp training.Top demanding software skill: This
-                          program covers full gamete of Software Development
-                          (front as well as back end) technologies, frameworks
-                          and tools.{" "}
-                        </p>
-                        {/* <a to="it-grooming.html" class="button_two mt-2">More Details</a> */}
                       </div>
                     </div>
                   </div>
@@ -599,12 +413,12 @@ const Header = () => {
                         </h2>
                         <p>
                           Readybell is an authorized Computer Based Testing
-                          (CBT) partner of Pearson VUE &amp; PSI Corporation. We
-                          have state-of-the-art Computer Based Testing exam
-                          center in Salt lake, Kolkata (India) where we conduct
-                          exams of Pearson VUE and PSI clients.
+                          (CBT) Partner of Pearson Vue and PSI Corporation. We
+                          have State-of-the-art Computer Based Testing Exam
+                          Centre in Salt Lake, Kolkata (India) where we conduct
+                          exams of Pearson Vue and PSI clients.
                         </p>
-                        <p></p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
                       </div>
                     </div>
                   </div>

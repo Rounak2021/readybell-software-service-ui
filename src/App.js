@@ -22,6 +22,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Registration from "./components/page components/Registration";
 import Login from "./components/page components/Login";
+import AI from "./components/page components/ai";
+import ML from "./components/page components/ml";
+import DataScience from "./components/page components/data-science";
+import GenAi from "./components/page components/gen-ai";
+import TOGAF from "./components/page components/togaf";
+import PMIacp from "./components/page components/pmi-acp";
+import PMIpmp from "./components/page components/pmi-pmp";
 
 function App() {
   useEffect(() => {
@@ -43,6 +50,13 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/ai" element={<AI />} />
+          <Route path="/ml" element={<ML />} />
+          <Route path="/data-science" element={<DataScience />} />
+          <Route path="/gen-ai" element={<GenAi />} />
+          <Route path="/togaf" element={<TOGAF />} />
+          <Route path="/pmi-acp" element={<PMIacp />} />
+          <Route path="/pmi-pmp" element={<PMIpmp />} />
 
           {/* <Route path="/asa" element={<Home />} />
           <Route path="/ccna" element={<Home />} />

@@ -28,6 +28,16 @@ h2, h3, h5,h6, ul, li{
     align-items: center;
   }
 
+  .header {
+    position: relative;
+    z-index: 10; /* Ensure header is above other elements */
+  }
+  
+  .swiper-container-2 {
+    position: relative;
+    z-index: 1; /* Ensure swiper is below the header */
+  }
+  
   
 
 
