@@ -198,4 +198,25 @@ input[type="checkbox"]:checked {
     -webkit-background-clip: text;
     color: transparent;
   }
+
+  /* CSS for the sub-dropdown */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+/* Ensure the sub-dropdown is hidden by default */
+.sub-dropdown-menu {
+  display: none;
+}
+
+.sub-dropdown-menu.show {
+  display: block;
+}
+
   

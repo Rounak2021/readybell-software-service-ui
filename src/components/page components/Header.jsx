@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,9 +7,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import swal from "sweetalert";
+import logo from "../assets/images/mainlogo2.PNG";
 
 const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [subDropdownOpen, setSubDropdownOpen] = useState(false);
 
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
@@ -32,13 +35,25 @@ const Header = () => {
     });
   };
 
-  // Add jQuery script to handle dropdown click for mobile
-  React.useEffect(() => {
-    $(".dropdown-toggle").click(function () {
-      if ($(window).width() < 768) {
-        $(this).next(".dropdown-menu").slideToggle();
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+  const toggleSubDropdown = () => {
+    setSubDropdownOpen(!subDropdownOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setDropdownOpen(false);
       }
-    });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
@@ -83,7 +98,7 @@ const Header = () => {
                   >
                     <Link to="/">
                       <img
-                        src="assets/images/mainlogo2.PNG"
+                        src={logo}
                         alt="logo"
                         className="img-fluid"
                         style={{ width: "50%" }}
@@ -170,31 +185,90 @@ const Header = () => {
                             Why Readybell
                           </Link>
                         </li>
-                        <li className="nav-item dropdown">
+                        <li data-aos="fade-up">
+                          <Link className="nav-link" to="/services">
+                            Our Services
+                          </Link>
+                        </li>
+                        <li
+                          className={`nav-item dropdown ${
+                            dropdownOpen ? "show" : ""
+                          }`}
+                        >
                           <Link
                             className="nav-link dropdown-toggle"
                             to="#"
                             id="navbarDropdownMenuLink"
                             role="button"
-                            data-toggle="dropdown"
+                            onClick={toggleDropdown}
                             aria-haspopup="true"
-                            aria-expanded="false"
+                            aria-expanded={dropdownOpen ? "true" : "false"}
                           >
                             Software Courses
                           </Link>
                           <div
-                            className="dropdown-menu"
+                            className={`dropdown-menu ${
+                              dropdownOpen ? "show" : ""
+                            }`}
                             aria-labelledby="navbarDropdownMenuLink"
                           >
-                            <Link className="dropdown-item" to="/ai">
-                              Artificial Intelligence
-                            </Link>
-                            <Link className="dropdown-item" to="/ml">
-                              Machine Learning
-                            </Link>
-                            <Link className="dropdown-item" to="/data-science">
-                              Data Science
-                            </Link>
+                            <div className="dropdown-submenu">
+                              <Link
+                                className="dropdown-item dropdown-toggle"
+                                to="#"
+                                id="navbarDropdownMenuLinkAI"
+                                role="button"
+                                onClick={toggleSubDropdown}
+                                aria-haspopup="true"
+                                aria-expanded={
+                                  subDropdownOpen ? "true" : "false"
+                                }
+                              >
+                                Artificial Intelligence, Machine Learning <br />{" "}
+                                and Data Science
+                              </Link>
+                              <div
+                                className={`dropdown-menu sub-dropdown-menu ${
+                                  subDropdownOpen ? "show" : ""
+                                }`}
+                                aria-labelledby="navbarDropdownMenuLinkAI"
+                              >
+                                <Link className="dropdown-item" to="/ai-900t00">
+                                  AI-900T00-A: Microsoft Azure AI Fundamentals
+                                </Link>
+                                <Link
+                                  className="dropdown-item"
+                                  to="/ai-102t00"
+                                >
+                                  AI-102T00-A: Designing and Implementing a{" "}
+                                  <br />
+                                  Microsoft Azure AI Solution
+                                </Link>
+                                <Link
+                                  className="dropdown-item"
+                                  to="/ai-beginner"
+                                >
+                                  AI, ML, Data Science Beginner Course with or{" "}
+                                  <br />
+                                  without Microsoft AI &amp; Cloud Certification
+                                </Link>
+                                <Link
+                                  className="dropdown-item"
+                                  to="/ai-intermediate"
+                                >
+                                  AI, ML, Data Science Intermediate Course with{" "}
+                                  <br />
+                                  or without Microsoft AI Certification
+                                </Link>
+                                <Link
+                                  className="dropdown-item"
+                                  to="/ai-advanced"
+                                >
+                                  AI, ML, Data Science Advanced Course
+                                </Link>
+                              </div>
+                            </div>
+
                             <Link to="/gen-ai" className="dropdown-item">
                               Generative AI
                             </Link>
@@ -209,7 +283,6 @@ const Header = () => {
                             </Link>
                           </div>
                         </li>
-
                         <li>
                           <Link to="/team" className="nav-link">
                             Our Team
@@ -220,7 +293,6 @@ const Header = () => {
                             Our Affiliations
                           </Link>
                         </li>
-
                         <li>
                           <Link to="/affiliations" className="nav-link">
                             Computer Based Testing Centre
@@ -240,10 +312,7 @@ const Header = () => {
                         )}
                         <li>
                           {localStorage.getItem("email") ? (
-                            <Link
-                              onClick={() => handleLogout()}
-                              className="nav-link"
-                            >
+                            <Link onClick={handleLogout} className="nav-link">
                               Welcome {localStorage.getItem("email")}
                             </Link>
                           ) : (

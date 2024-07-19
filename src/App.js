@@ -29,6 +29,11 @@ import GenAi from "./components/page components/gen-ai";
 import TOGAF from "./components/page components/togaf";
 import PMIacp from "./components/page components/pmi-acp";
 import PMIpmp from "./components/page components/pmi-pmp";
+import Ai900Too from "./components/page components/ai-900too";
+import Ai102Too from "./components/page components/ai-102t00";
+import AiBeginner from "./components/page components/ai-beginner";
+import AiIntermediate from "./components/page components/ai-intermediate";
+import AiAdvanced from "./components/page components/ai-advanced";
 
 function App() {
   useEffect(() => {
@@ -57,6 +62,13 @@ function App() {
           <Route path="/togaf" element={<TOGAF />} />
           <Route path="/pmi-acp" element={<PMIacp />} />
           <Route path="/pmi-pmp" element={<PMIpmp />} />
+
+          
+          <Route path="/ai-900t00" element={<Ai900Too />} />
+          <Route path="/ai-102t00" element={<Ai102Too />} />
+          <Route path="/ai-beginner" element={<AiBeginner />} />
+          <Route path="/ai-intermediate" element={<AiIntermediate />} />
+          <Route path="/ai-advanced" element={<AiAdvanced />} />
 
           {/* <Route path="/asa" element={<Home />} />
           <Route path="/ccna" element={<Home />} />

@@ -4,6 +4,7 @@ import axios from "axios";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
 import { Oval } from "react-loader-spinner"; // Import the spinner
+import { triggerConfetti } from "./Confetti";
 
 const Registration = () => {
   const navigate = useNavigate();
@@ -193,6 +194,7 @@ const Registration = () => {
       }
 
       if (response?.data?.status === 200) {
+        triggerConfetti();
         swal({
           title: "Success",
           text: "User has been registered successfully",

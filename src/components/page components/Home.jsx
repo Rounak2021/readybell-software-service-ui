@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./index.css";
 import Background from "./ParticleBackground";
-import homeSideIcon from "../assets/images/home_side_icon.jpg";
+import homeSideIcon from "../assets/images/ai_image.jpg";
 
 const Home = () => {
   return (
@@ -18,19 +18,24 @@ const Home = () => {
                 >
                   <h2 className="font-weight-bold">About ReadyBell</h2>
                   <p>
-                    Readybell Software Services Pvt Limited is an IT service
-                    provider pioneering in the filed of IT Education and
-                    Computer Based Testing headquartered in Kolkata, India.
-                    Company imparts niche quality IT education in the field of
-                    Cyber Security, Cloud Security, IT Security, Networking,
-                    Network Security, IT Fundamental and Hardware courses to IT
-                    professionals as well as to fresh IT career aspirants.
+                    Readybell, established in 2017 and headquartered in Kolkata,
+                    India, is swiftly emerging as a frontrunner in the training
+                    and consulting domain. With a core focus on advancing
+                    knowledge and skills in cutting-edge digital technologies,
+                    Readybell caters to a global audience of students and
+                    professionals. Our commitment lies in delivering top-tier
+                    classroom and online training, alongside comprehensive
+                    project assistance, in fields such as Artificial
+                    Intelligence (AI), Machine Learning (ML), Data Science,
+                    Generative AI, and Agile Project Management.
                   </p>
                   <p>
-                    Readybell has both 100% Online as well as Online-Classroom
-                    based training option. Our training facility is equipped
-                    with latest training infrastructure and processes to ensure
-                    a smooth and interruption free training delivery.
+                    Readybell serves as an authorized Computer Based Testing
+                    (CBT) partner of industry leaders Pearson VUE and PSI
+                    Corporation. Our cutting-edge testing center in Salt Lake,
+                    Kolkata, adheres to the highest standards in conducting
+                    online computer-based exams, ensuring a secure and reliable
+                    testing environment for certification and licensure exams.
                   </p>
                   <Link to="/about" className="button_two">
                     Read More
@@ -42,7 +47,13 @@ const Home = () => {
                 //
                 //   data-aos-duration={600}
               >
-                <div className="half_column_image" style={{boxShadow:"rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px"}} >
+                <div
+                  className="half_column_image"
+                  style={{
+                    boxShadow:
+                      "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px",
+                  }}
+                >
                   <img
                     src={homeSideIcon}
                     alt="welcome"

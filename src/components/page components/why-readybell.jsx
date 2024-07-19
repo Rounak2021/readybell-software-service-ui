@@ -36,36 +36,31 @@ const WhyRreadybell = () => {
                   <h2>Why Readybell</h2>
                 </div>
                 <p>
-                  Readybell was conceptualized and founded to offer this world a
-                  quality services and products in the field of IT. In view of
-                  that Readybell engaged a pool of very highly qualified and
-                  experienced IT professionals having rish experience in their
-                  respective fields as well as having a complete knowledge of
-                  the technical architecture around their matter of expertise.
-                  Readybell’s founders are highly qualified professionals from
-                  reputed educational institutes of India and the mentor has
-                  over 26 years of global IT experience having delivered
-                  numerous large IT Programs across the world. Readybell was
-                  founded with the vision of its mentor and committed to assure:
+                  Readybell stands out for its exceptional training services
+                  delivered by industry veterans with decades of experience. We
+                  exclusively engage trainers from premier educational
+                  institutes who are passionate about teaching and deeply
+                  knowledgeable in their subjects. This dedication ensures a
+                  100% success ratio for our students. Our interactive learning
+                  approach includes mock tests, roleplays, quizzes, and other
+                  activities, supported by 24/7 learning assistance. Students
+                  also benefit from extensive networking opportunities and
+                  mentoring from highly experienced industry experts, opening
+                  doors to numerous job prospects.
                 </p>
-                <div className="theme-list-3 mb-4">
-                  <ul>
-                    <li>Quality education services to their students</li>
-                    <li>Follow global training best practices</li>
-                    <li>Deploy best-of-the-class training faculty</li>
-                    <li>Deploy state-of-the-art training infrastructure </li>
-                    <li>Maintain transparency with partners</li>
-                  </ul>
-                </div>
+
                 <p>
-                  Readybell trainers are Certified in multiple disciplines and
-                  are globally reputed professionals in their respective fields.
-                  We ensure we engage those trainers who are true Technical
-                  Architects so that they provide students an end-to-end view of
-                  a topic. This ensures students learn the entre gamete of the
-                  subject and walks out of the institute with an end-to-end view
-                  of the subjects they enrolled for and therefore they are able
-                  to deliver their tasks get a feel of the subject and they{" "}
+                  Founded with the vision of delivering top-tier services in
+                  niche Information Technology, Readybell brings together highly
+                  qualified IT professionals with rich experience and
+                  comprehensive technical knowledge. Our founders, alumni of
+                  reputed Indian educational institutes, and a mentor with over
+                  30 years of global IT experience, have successfully delivered
+                  large-scale IT programs worldwide. Readybell is committed to
+                  providing quality education services, following global
+                  training best practices, deploying top-notch training faculty,
+                  and maintaining state-of-the-art training infrastructure.
+                  Transparency with customers and partners is a core value.
                 </p>
                 <img
                   src="assets/images/whyus.jpg"
@@ -73,59 +68,35 @@ const WhyRreadybell = () => {
                   className="float-right ml-3 mb-2 img-fluid"
                 />
                 <p>
-                  In order to strengthen their vision towards providing
-                  best-of-the-class IT services, Readybell was selected by
-                  CompTIA, the global leader in the filed of IT certification
-                  for delivering their training courses. Readybell ensures all
-                  the CompTIA trainings are imparted strictly following their
-                  recommended training infrastructure, their official training
-                  materials and official Lab.{" "}
+                  Our trainers, who are true architects in their fields, ensure
+                  students gain a holistic understanding of their subjects. This
+                  comprehensive approach prepares students to excel in their
+                  roles with a thorough grasp of their topics. The unique
+                  feature of Readybell lies in our trainers' profiles and our
+                  global reach for placements. Our industry-expert trainers
+                  bring extensive experience and subject matter expertise,
+                  combined with knowledge of global best practices and a strict,
+                  quality-driven delivery methodology. Transparency and ethical
+                  interactions with students and customers further distinguish
+                  Readybell as a reliable IT service provider.
                 </p>
                 <p>
-                  Readybell is an authorized Computer-Based-Testing center of
-                  Pearson VUE and PSI Corporation. Here also we ensure we
-                  strictly follow the recommended guidelines of Pearson VUE and
-                  PSI for conducting their exams.
+                  Readybell’s training courses are designed to be 100%
+                  job-oriented, equipping entry-level associates with extensive
+                  theoretical knowledge and practical skills that align with
+                  actual job requirements. We support job-seeking students with
+                  suitable opportunities both within and outside India. For
+                  experienced professionals, our trainers tailor the training to
+                  their technical background, current job, and learning
+                  objectives, ensuring the training adds value to their careers
+                  and helps them achieve their goals.
                 </p>
                 <p>
-                  For the areas where Readybell does not have official
-                  partnership, we ensure the best practices followed for those
-                  areas as well and deploy the same.
-                </p>
-                <p>
-                  The main unique feature of Readybell is the their trainer’s
-                  profiles. All our trainers are Certified and multiple
-                  disciplines. Our trainers’ vast experience, their in-depth
-                  subject matter expertise, global best practices knowledge
-                  amalgamated with strict quality and process oriented delivery
-                  methodology, transparency and ethical transactions with their
-                  students and customers make Readybell a unique IT Service
-                  provider which students and customers can fully rely on.
-                </p>
-                <p>
-                  Readybell training courses are 100% job oriented training
-                  courses where the entry level associates are prepared with
-                  extensive theory and hands on trainings with practical work
-                  scenarios which enables the students to corelate the training
-                  with actual job content. Readybell assists their job hunting
-                  students with appropriate job opportunities within and outside
-                  India.
-                </p>
-                <p>
-                  For experience professionals our trainers first understand
-                  their technical background, their current job and what they
-                  target to learn. Our training delivery to the experienced
-                  professionals are designed accordingly and in such a way that
-                  the trainings are adding value to their current job and they
-                  achieve their target knowledge helping them progressing in
-                  their career.{" "}
-                </p>
-                <p>
-                  In the area of Computer Based Test, Readybell’s
-                  state-of-the-art Exam facility makes positions them uniquely
-                  in that filed and a exam center of choice. We comply to 100%
-                  guidance of Pearson VUE and PSI Corporation to ensure 100%
-                  error free and comfortable test/exam experience.{" "}
+                  In the realm of Computer Based Tests, Readybell’s
+                  state-of-the-art exam facility adheres to Pearson VUE and PSI
+                  Corporation guidelines, ensuring an error-free and comfortable
+                  testing experience. This positions Readybell as a preferred
+                  exam center in the field.
                 </p>
               </div>
               {/* <div className="col-md-4">
