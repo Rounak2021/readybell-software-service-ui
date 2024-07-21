@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Sidecard } from "./side-card";
-import logo from "../assets/images/ai900t.png";
+import logo from "../assets/images/data-analytics.jpg";
 
 const AiBeginner = () => {
   return (
@@ -41,44 +41,40 @@ const AiBeginner = () => {
                     <h2>About the Course</h2>
                   </div>
                   <p>
-                    Machine Learning is a branch of Artificial Intelligence (AI)
-                    where computers are taught to imitate human intelligence in
-                    that they solve complex tasks. This curriculum consists of
-                    courses that provide you with a solid theoretical
-                    understanding and considerable practice of the main
-                    algorithms, uses, and best practices related to Machine
-                    Learning. Topics covered include Supervised and Unsupervised
-                    learning, Regression, Classification, Clustering, Deep
-                    learning and Reinforcement learning.
+                    Learn the in-demand skills used by professional data
+                    scientists including databases, data visualization,
+                    statistical analysis, predictive modeling, machine learning
+                    algorithms, and data mining. Also work with the latest
+                    languages, tools,and libraries including Python, SQL,
+                    Jupyter notebooks, Github, Rstudio, Pandas, Numpy,
+                    ScikitLearn, Matplotlib, and more
                   </p>
 
                   <p>
-                    Ensemble Learning, Linear Regression, Machine Learning,
-                    Feature Engineering, Ridge Regression, Statistical
-                    Hypothesis Testing, Machine Learning (ML) Algorithms,
-                    Supervised Learning, Unsupervised Learning, Regression
-                    Analysis, Exploratory Data Analysis, Artificial Intelligence
-                    (AI), Classification, Clustering, Linear Regression,
-                    Decision Tree, Survival Analysis, K-means clustering,
-                    DBSCAN, Dimensionality Reduction, Jupyter Notebooks, Pandas,
-                    NumPy, Matplotlib, Seaborn, ipython-sql, Scikit- learn,
-                    ScipPy, Keras, and TensorFlow,
+                    Model Selection, Data Analysis, Python Programming, Data
+                    Visualization, Predictive Modelling, Data Science, Numpy,
+                    Pandas, Seaborn, Dashboards and Charts, dash, Matplotlib,
+                    Cloud Databases, Relational Database Management System
+                    (RDBMS), SQL, Jupyter notebooks, Machine Learning,
+                    regression, Hierarchical Clustering, classification, SciPy
+                    and scikit-learn, CRISP-DM, Methodology, Data Mining,
+                    Github, Jupyter Notebook, K-Means Clustering, Data Science
+                    Methodology, Big Data, Deep Learning, Quering Databases,
+                    Data Generation
                   </p>
                   <h3>Pre-Requisites</h3>
-                  <p>
-                    Working knowledge in Linear Algebra, Basic Statistics and
-                    Maths and Python Programming
-                  </p>
+                  <p>NA</p>
 
                   <h3>Target Audience</h3>
                   <p>
-                    Anyone aspiring for/advancing career into Machine
-                    Learning/Artificial Intelligence Jobs
+                    Anyone aspiring for/advancing career into Data Science/AI/ML
+                    Jobs
                   </p>
                   <h3>Course Cetification</h3>
-                  <p>READYBELL AI Engineer Certificate</p>
+                  <p>READYBELL Data Scientist Certificate</p>
                   <img
                     src={logo}
+                    style={{ width: "50%" }}
                     alt=""
                     className="float-right ml-3 mb-2 img-fluid"
                   />
@@ -103,7 +99,7 @@ const AiBeginner = () => {
                   </p>
                   <h3>Course Fee Structure and Refuncd Policy</h3>
                   <p>
-                    INR 69,500/- + Taxes. Get a 3-day free trial during which
+                    INR 49,900/- + Taxes. Get a 3-day free trial during which
                     you can cancel at no penalty. After that, we don’t give
                     refunds
                   </p>
@@ -112,7 +108,7 @@ const AiBeginner = () => {
                     Mock Interviews (pertaining to the course) from Industry
                     Leaders, Job leads with extensive interactions with Industry
                     Leaders working in the course relevant field, Job Guidance,
-                    Techniques of resume preparation, Networking,
+                    Techniques of resume preparation, Networking.
                   </p>
                 </div>
                 {/* <div className="col-md-4">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Sidecard } from "./side-card";
-import logo from "../assets/images/ai900t.png";
+import logo from "../assets/images/data-analytics.jpg";
 const AiAdvanced = () => {
   return (
     <div>
@@ -68,6 +68,7 @@ const AiAdvanced = () => {
                   <p>READYBELL AI Engineer Certificate</p>
                   <img
                     src={logo}
+                    style={{ width: "50%" }}
                     alt=""
                     className="float-right ml-3 mb-2 img-fluid"
                   />
