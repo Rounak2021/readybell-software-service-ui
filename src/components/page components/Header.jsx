@@ -190,7 +190,7 @@ const Header = () => {
                             Our Services
                           </Link>
                         </li>
-                        <li
+                        {/* <li
                           className={`nav-item dropdown ${
                             dropdownOpen ? "show" : ""
                           }`}
@@ -282,7 +282,86 @@ const Header = () => {
                               PMI PMP
                             </Link>
                           </div>
+                        </li> */}
+
+                        <li className="nav-item dropdown">
+                          <Link
+                            className="nav-link dropdown-toggle"
+                            to="#"
+                            id="navbarDropdownMenuLink"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Software Courses
+                          </Link>
+                          <div
+                            className="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink"
+                          >
+                            <div className="dropdown-submenu">
+                              <Link
+                                className="dropdown-item dropdown-toggle"
+                                to="#"
+                                id="navbarDropdownMenuLinkAI"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                Artificial Intelligence, Machine Learning <br />{" "}
+                                and Data Science
+                              </Link>
+                              <div
+                                className="dropdown-menu sub-dropdown-menu"
+                                aria-labelledby="navbarDropdownMenuLinkAI"
+                              >
+                                <Link className="dropdown-item" to="/ai-900t00">
+                                  AI-900T00-A: Microsoft Azure AI Fundamentals
+                                </Link>
+                                <Link className="dropdown-item" to="/ai-102t00">
+                                  AI-102T00-A: Designing and Implementing a{" "}
+                                  <br />
+                                  Microsoft Azure AI Solution
+                                </Link>
+                                <Link
+                                  className="dropdown-item"
+                                  to="/ai-beginner"
+                                >
+                                  AI, ML, Data Science Beginner Course with or{" "}
+                                  <br />
+                                  without Microsoft AI & Cloud Certification
+                                </Link>
+                                <Link
+                                  className="dropdown-item"
+                                  to="/ai-intermediate"
+                                >
+                                  AI, ML, Data Science Intermediate Course with{" "}
+                                  <br />
+                                  or without Microsoft AI Certification
+                                </Link>
+                                <Link
+                                  className="dropdown-item"
+                                  to="/ai-advanced"
+                                >
+                                  AI, ML, Data Science Advanced Course
+                                </Link>
+                              </div>
+                            </div>
+                            <Link to="/gen-ai" className="dropdown-item">
+                              Generative AI
+                            </Link>
+                            <Link to="/togaf" className="dropdown-item">
+                              TOGAF
+                            </Link>
+                            <Link to="/pmi-acp" className="dropdown-item">
+                              PMI ACP (Agile Certification)
+                            </Link>
+                            <Link to="/pmi-pmp" className="dropdown-item">
+                              PMI PMP
+                            </Link>
+                          </div>
                         </li>
+
                         <li>
                           <Link to="/team" className="nav-link">
                             Our Team

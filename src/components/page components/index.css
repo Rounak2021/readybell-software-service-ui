@@ -199,7 +199,41 @@ input[type="checkbox"]:checked {
     color: transparent;
   }
 
-  /* CSS for the sub-dropdown */
+
+/* .dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+
+.sub-dropdown-menu {
+  display: none;
+}
+
+.sub-dropdown-menu.show {
+  display: block;
+} */
+
+/* Make sure your dropdowns are hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f8f9fa;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+/* Show the dropdown menu when hovering over the parent item */
+.nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Style for the sub-dropdown */
 .dropdown-submenu {
   position: relative;
 }
@@ -210,13 +244,25 @@ input[type="checkbox"]:checked {
   margin-top: -1px;
 }
 
-/* Ensure the sub-dropdown is hidden by default */
-.sub-dropdown-menu {
-  display: none;
-}
-
-.sub-dropdown-menu.show {
+/* Show the sub-dropdown menu when hovering over the parent item */
+.dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
 
+/* Ensure links inside dropdowns are styled appropriately */
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f8f9fa;
+  color: #16181b;
+}
+
+
   
+
