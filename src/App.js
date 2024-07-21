@@ -35,6 +35,9 @@ import AiBeginner from "./components/page components/ai-beginner";
 import AiIntermediate from "./components/page components/ai-intermediate";
 import AiAdvanced from "./components/page components/ai-advanced";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 function App() {
   useEffect(() => {
     AOS.init();

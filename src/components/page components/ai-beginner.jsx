@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Sidecard } from "./side-card";
 import logo from "../assets/images/data-analytics.jpg";
 
 const AiBeginner = () => {
+  const [activeAccordion, setActiveAccordion] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveAccordion(activeAccordion === index ? null : index);
+  };
   return (
     <div>
       <>
@@ -110,110 +115,306 @@ const AiBeginner = () => {
                     Leaders working in the course relevant field, Job Guidance,
                     Techniques of resume preparation, Networking.
                   </p>
-                </div>
-                {/* <div className="col-md-4">
-            <aside className="sticky-menu">
-              <div className="card">
-                <div className="card-body">
-                  <h3>Training Courses</h3>
-                  <hr />
-                  <div className="side-menu">
-                    <ul>
-                      <li>
-                        <a href="mean.html">
-                          <i className="far fa-check-square" /> MEAN Full
-                          Stack Developmen
-                        </a>
-                      </li>
-                      <li>
-                        <a href="mern.html">
-                          <i className="far fa-check-square" /> MERN Full
-                          Stack Development
-                        </a>
-                      </li>
-                      <li>
-                        <a href="cloudcomputing.html">
-                          <i className="far fa-check-square" />{" "}
-                          cloudcomputing
-                        </a>
-                      </li>
-                      <li>
-                        <a href="node.html">
-                          <i className="far fa-check-square" /> NODE.JS
-                          Developer(MongoDB)
-                        </a>
-                      </li>
-                      <li>
-                        <a href="nodeSql.html">
-                          <i className="far fa-check-square" /> NODE.JS
-                          Developer(MySql)
-                        </a>
-                      </li>
-                      <li>
-                        <a href="java.html">
-                          <i className="far fa-check-square" /> Java
-                          Developer with DS JDBC MySql
-                        </a>
-                      </li>
-                      <li>
-                        <a href="python.html">
-                          <i className="far fa-check-square" /> Python
-                          Developer
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ui.html">
-                          <i className="far fa-check-square" /> Website
-                          Design and Development with UI/UX
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ccna.html">
-                          <i className="far fa-check-square" /> CISCO CCNA
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ccnp-encor.html">
-                          <i className="far fa-check-square" /> CISCO CCNP
-                          Enterprise 350-401 ENCOR
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ccnp-scor.html">
-                          <i className="far fa-check-square" /> CISCO CCNP
-                          Security Core (350-701) SCOR
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ccnp-vpn.html">
-                          <i className="far fa-check-square" /> CCNP Secure
-                          Solutions VPN 300-730 SVPN
-                        </a>
-                      </li>
-                      <li>
-                        <a href="vpn.html">
-                          <i className="far fa-check-square" /> CCIE
-                          Security VPN
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ftd-fmc.html">
-                          <i className="far fa-check-square" /> CCIE
-                          Security FTD FMC
-                        </a>
-                      </li>
-                      <li>
-                        <a href="asa.html">
-                          <i className="far fa-check-square" /> CCIE
-                          Security ASA
-                        </a>
-                      </li>
-                    </ul>
+
+                  {/* ---- */}
+                  <h3>Course Syllabus</h3>
+                  {/* ---- */}
+                  <div className="accordion" id="accordionExample">
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingOne">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 1 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(1)}
+                        >
+                          Linear Algebra, Basic Statistics and Maths for Machine
+                          Learning
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 1 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>
+                              Microsoft Azure AI Fundamentals: AI Overview
+                              Microsoft
+                            </li>
+                            <li>
+                              Azure AI Fundamentals: Computer Vision Microsoft
+                              Azure
+                            </li>
+                            <li>
+                              AI Fundamentals: Natural Language Processing
+                            </li>
+                            <li>
+                              Microsoft Azure AI Fundamentals: Document
+                              Intelligence and Knowledge Mining Microsoft Azure
+                              AI Fundamentals: Generative AI
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingTwo">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 2 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(2)}
+                        >
+                          Introduction to Data Science
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 2 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">Accordian Item #2</div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingThree">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 3 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(3)}
+                        >
+                          Data Science Tools
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 3 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          This is the third item's accordion body.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingFour">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 4 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(4)}
+                        >
+                          Data Science Methodology
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 4 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          This is the third item's accordion body.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingFive">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 5 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(5)}
+                        >
+                          Python for Data Science, AI & Development
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 5 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          This is the third item's accordion body.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingSix">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 6 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(6)}
+                        >
+                          Databases and SQL For Data Science with Python
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 6 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          This is the third item's accordion body.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingSeven">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 7 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(7)}
+                        >
+                          Data Analysis With Python
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 7 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          This is the third item's accordion body.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingEight">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 8 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(8)}
+                        >
+                          Data Visualization With Python
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 8 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingEight"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          This is the third item's accordion body.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingNine">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 9 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(9)}
+                        >
+                          Machine Learning With Python
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 9 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingNine"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          This is the third item's accordion body.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingTen">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 10 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(10)}
+                        >
+                          Applied Data Science Capstone
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 10 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingTen"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          This is the third item's accordion body.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingEleven">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 11 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(11)}
+                        >
+                          Capstone Project
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 11 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingEleven"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          This is the third item's accordion body.
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </aside>
-          </div> */}
+
                 <Sidecard />
               </div>
             </div>
