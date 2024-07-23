@@ -142,23 +142,68 @@ const AiBeginner = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
+                          <p className="text-left">
+                            <b>Linear Algebra for Machine Learning</b>
+                          </p>
                           <ul>
-                            <li>
-                              Microsoft Azure AI Fundamentals: AI Overview
-                              Microsoft
-                            </li>
-                            <li>
-                              Azure AI Fundamentals: Computer Vision Microsoft
-                              Azure
-                            </li>
-                            <li>
-                              AI Fundamentals: Natural Language Processing
-                            </li>
-                            <li>
-                              Microsoft Azure AI Fundamentals: Document
-                              Intelligence and Knowledge Mining Microsoft Azure
-                              AI Fundamentals: Generative AI
-                            </li>
+                            <li>Linear Polynomial</li>
+                            <li>Notation</li>
+                            <li>Operations</li>
+                            <li>Vectors</li>
+                            <li>Matrices</li>
+                            <li>Matrix Factorization</li>
+                          </ul>
+                          <p>
+                            <b>Statistics</b>
+                          </p>
+                          <ul>
+                            <li>Measure of central tendency</li>
+                            <li>Measure of spread</li>
+                            <li>Five points summary</li>
+                            <li>Probability Distributions</li>
+                            <li>Bayes’ theorem</li>
+                            <li>Central limit theorem</li>
+                            <li>Basics of sample and event space</li>
+                            <li>Axioms of probability</li>
+                            <li>Total Probability theorem and Bayes Theorem</li>
+                            <li>Random variables</li>
+                            <li>PMF (Probability Mass Function)</li>
+                            <li>CDF (Cumulative Distribution Function)</li>
+                            <p className="mb-0">
+                              <b>Discrete Distributions</b>
+                            </p>
+                            <li>Bernoulli</li>
+                            <li>Binomial</li>
+                            <li>Geometric</li>
+                            <li>Expectation and its properties</li>
+                            <li>Variance and its properties</li>
+                            <p className="mb-0">
+                              <b>Continuous Distributions</b>{" "}
+                            </p>
+                            <li>Uniform</li>
+                            <li>Exponential</li>
+                            <li>Normal</li>
+                            <li>Sampling from continuous distributions</li>
+                            <li>Correlation</li>
+                            <li>Covariance</li>
+                            <li>Confidence intervals</li>
+                            <p className="mb-0">
+                              <b>Hypothesis testing</b>{" "}
+                            </p>
+                            <li>F-test</li>
+                            <li>Z-test</li>
+                            <li>t-test</li>
+                            <li>ANOVA</li>
+                            <li>Chi-square test</li>
+                            <p className="mb-0">
+                              <b>Descriptive Statistics</b>
+                            </p>
+                            <li>Mean</li>
+                            <li>Median</li>
+                            <li>Mode</li>
+                            <li>Variance</li>
+                            <li>Standard Deviation</li>
+                            <b>Total Duration : 8 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -183,7 +228,18 @@ const AiBeginner = () => {
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                       >
-                        <div className="accordion-body">Accordian Item #2</div>
+                        <div className="accordion-body">
+                          <ul>
+                            <li>
+                              Explain Data Science & What Data Scientists do
+                            </li>
+                            <li>Data Science Topics</li>
+                            <li>Applications and Careers in Data Science</li>
+                            <li>Data Literacy for Data Science</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 8 Hrs.</b>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="accordion-item">
@@ -207,7 +263,15 @@ const AiBeginner = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          This is the third item's accordion body.
+                          <ul>
+                            <li>Overview of Data Science Tools</li>
+                            <li>Languages of Data Science</li>
+                            <li>Packages, APIs, Data Sets and Models</li>
+                            <li>Jupyter Notebooks & JupyterLab</li>
+                            <li>GitHub</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 12 Hrs.</b>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -232,7 +296,19 @@ const AiBeginner = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          This is the third item's accordion body.
+                          <ul>
+                            <li>
+                              From Problem to Approach and From Requirements to
+                              Collection
+                            </li>
+                            <li>
+                              From Understanding to Preparation and From
+                              Modelling to Evaluation
+                            </li>
+                            <li>Deployment and Final Evaluation</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 4 Hrs.</b>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -258,7 +334,39 @@ const AiBeginner = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          This is the third item's accordion body.
+                          <ul>
+                            <li>
+                              Setting Up Python Environment - Installing
+                              Anaconda/Jupyter Notebooks/Google Colab
+                            </li>
+                            <li>
+                              Syntax, Variables, Data Types, Expressions and
+                              Statements
+                            </li>
+                            <li>
+                              Functions, Modules, Conditionals, Loops,
+                              Branching, Recursion, Iteration
+                            </li>
+                            <li>Strings, Lists, Tuples, Dictionaries</li>
+                            <li>Files and Error Handling</li>
+                            <li>Working with Data in Python</li>
+                            <li>Computation with Python – NumPy/SciPy</li>
+                            <li>
+                              Data Manipulation and Visualisation in Python-
+                              Pandas/Matplotlib
+                            </li>
+                            <li>Introduction to Scikit-learn</li>
+                            <li>
+                              Advanced Visualization with Seaborn: Statistical
+                              Plots, Multivariate Analysis
+                            </li>
+                            <li>
+                              Collect data by the use of APIs and Web Scraping
+                              in Python – BeautifulSoup
+                            </li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 16 Hrs.</b>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -283,7 +391,13 @@ const AiBeginner = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          This is the third item's accordion body.
+                          <ul>
+                            <li>SQL</li>
+                            <li>Relational Database and Tables</li>
+                            <li>Accessing Databases with Python</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 8 Hrs.</b>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -308,7 +422,15 @@ const AiBeginner = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          This is the third item's accordion body.
+                          <ul>
+                            <li>Data Importing</li>
+                            <li>Data Wrangling</li>
+                            <li>Exploratory Data Analysis</li>
+                            <li>Model Development</li>
+                            <li>Model Evaluation and Refinement</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 8 Hrs.</b>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -333,7 +455,14 @@ const AiBeginner = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          This is the third item's accordion body.
+                          <ul>
+                            <li>Introduction to Data Visualization Tools</li>
+                            <li>Basis and Specialized Visualization Tools</li>
+                            <li>Advanced Visualizations and Geospatial Data</li>
+                            <li>Creating Dashboards with Plotly and Dash</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 12 Hrs.</b>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -358,7 +487,15 @@ const AiBeginner = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          This is the third item's accordion body.
+                          <ul>
+                            <li>Introduction to Machine Learning</li>
+                            <li>Regression</li>
+                            <li>Classification</li>
+                            <li>Linear Classification</li>
+                            <li>Clustering</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 12 Hrs.</b>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -383,7 +520,15 @@ const AiBeginner = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          This is the third item's accordion body.
+                          <ul>
+                            <li>Introduction</li>
+                            <li>Exploratory Data Analysis</li>
+                            <li>Interactive Visual Analytics and Dashboard</li>
+                            <li>Predictive Analysis (Classification)</li>
+                            <li>Present your Data-Driven Insights</li>
+                            <li>Present your Data-Driven Insights</li>
+                            <b>Total Duration : 12 Hrs.</b>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -408,7 +553,10 @@ const AiBeginner = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          This is the third item's accordion body.
+                          <ul>
+                            <li>Data Science Capstone Project</li>
+                            <b>Total Duration : 12 Hrs.</b>
+                          </ul>
                         </div>
                       </div>
                     </div>

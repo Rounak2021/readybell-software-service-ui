@@ -112,6 +112,131 @@ const AiIntermediate = () => {
                     Leaders working in the course relevant field, Job Guidance,
                     Techniques of resume preparation, Networking
                   </p>
+
+                  {/* ---- */}
+                  <h3>Course Syllabus</h3>
+                  {/* ---- */}
+                  <div className="accordion" id="accordionExample">
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingOne">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 1 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(1)}
+                        >
+                        Python For Machine Learning
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 1 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          
+                          <ul>
+                            <li>Introduction to Machine Learning</li>
+                            <li>Machine Learning in different industries</li>
+                            <li>Supervised vs unsupervised learning, and the usage of each algorithm</li>
+                            <li>Using Python libraries for implementing Machine Learning models</li>
+                            <li>Matrices</li>
+                            <li>Matrix Factorization</li>
+                          </ul>
+                          <p>
+                            <b>Statistics</b>
+                          </p>
+                          <ul>
+                            <li>Measure of central tendency</li>
+                            <li>Measure of spread</li>
+                            <li>Five points summary</li>
+                            <li>Probability Distributions</li>
+                            <li>Bayes’ theorem</li>
+                            <li>Central limit theorem</li>
+                            <li>Basics of sample and event space</li>
+                            <li>Axioms of probability</li>
+                            <li>Total Probability theorem and Bayes Theorem</li>
+                            <li>Random variables</li>
+                            <li>PMF (Probability Mass Function)</li>
+                            <li>CDF (Cumulative Distribution Function)</li>
+                            <p className="mb-0">
+                              <b>Discrete Distributions</b>
+                            </p>
+                            <li>Bernoulli</li>
+                            <li>Binomial</li>
+                            <li>Geometric</li>
+                            <li>Expectation and its properties</li>
+                            <li>Variance and its properties</li>
+                            <p className="mb-0">
+                              <b>Continuous Distributions</b>{" "}
+                            </p>
+                            <li>Uniform</li>
+                            <li>Exponential</li>
+                            <li>Normal</li>
+                            <li>Sampling from continuous distributions</li>
+                            <li>Correlation</li>
+                            <li>Covariance</li>
+                            <li>Confidence intervals</li>
+                            <p className="mb-0">
+                              <b>Hypothesis testing</b>{" "}
+                            </p>
+                            <li>F-test</li>
+                            <li>Z-test</li>
+                            <li>t-test</li>
+                            <li>ANOVA</li>
+                            <li>Chi-square test</li>
+                            <p className="mb-0">
+                              <b>Descriptive Statistics</b>
+                            </p>
+                            <li>Mean</li>
+                            <li>Median</li>
+                            <li>Mode</li>
+                            <li>Variance</li>
+                            <li>Standard Deviation</li>
+                            <b>Total Duration : 8 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingTwo">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 2 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(2)}
+                        >
+                          Introduction to Data Science
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 2 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>
+                              Explain Data Science & What Data Scientists do
+                            </li>
+                            <li>Data Science Topics</li>
+                            <li>Applications and Careers in Data Science</li>
+                            <li>Data Literacy for Data Science</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 8 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 {/* <div className="col-md-4">
             <aside className="sticky-menu">
