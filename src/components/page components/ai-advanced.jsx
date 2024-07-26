@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Sidecard } from "./side-card";
 import logo from "../assets/images/data-analytics.jpg";
 const AiAdvanced = () => {
+  const [activeAccordion, setActiveAccordion] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveAccordion(activeAccordion === index ? null : index);
+  };
   return (
     <div>
       <>
@@ -104,6 +109,212 @@ const AiAdvanced = () => {
                     Leaders working in the course relevant field, Job Guidance,
                     Techniques of resume preparation, Networking.
                   </p>
+                  {/* ---- */}
+                  <h3>Course Syllabus</h3>
+                  {/* ---- */}
+                  <div className="accordion" id="accordionExample">
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingOne">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 1 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(1)}
+                        >
+                          Machine Learning With Python
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 1 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>Introduction to Machine Learning</li>
+                            <li>Regression</li>
+                            <li>Classification</li>
+                            <li>Linear Classification</li>
+                            <li>Clustering</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 12 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingTwo">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 2 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(2)}
+                        >
+                          Deep Learning & Neural Networks with Keras
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 2 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>
+                              Introduction to Neural Networks and Deep Learning
+                            </li>
+                            <li>Artificial Neural Networks (ANN)</li>
+                            <li>Keras and Deep Learning Libraries</li>
+                            <li>Deep Learning Models</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 8 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingThree">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 3 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(3)}
+                        >
+                          Computer Vision and Image Processing
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 3 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>Introduction to Computer Vision</li>
+                            <li>Image Processing With OpenCV and Pillow</li>
+                            <li>Machine Learning Image Classification</li>
+                            <li>
+                              Neural Networks and Deep Learning For Image
+                              Classification
+                            </li>
+                            <li>Object Detection</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 18 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingFour">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 4 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(4)}
+                        >
+                          Deep Neural Networks with PyTorch
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 4 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>Tensor and Datasets</li>
+                            <li>Linear Regression</li>
+                            <li>Linear Regression PyTorch Way</li>
+                            <li>Multiple I/O Linear Regression</li>
+                            <li>Logistic Regression For Classification</li>
+                            <li>Softmax Regression</li>
+                            <li>Shallow Neural Networks</li>
+                            <li>Deep Networks</li>
+                            <li>Convolutional Neural Network</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 26 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingFive">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 5 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(5)}
+                        >
+                          Building Deep Learning Models with TensorFlow
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 5 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>Introduction</li>
+                            <li>Supevised Learning Models</li>
+                            <li>Unsupevised Learning Models</li>
+                            <li>Unsupevised Learning Models & Scaling</li>
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 6 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingSix">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 6 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(6)}
+                        >
+                          Capstone Project
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 6 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>AI Capstone Project with Deep Learning</li>
+                            <b>Total Duration : 12 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 {/* <div className="col-md-4">
             <aside className="sticky-menu">

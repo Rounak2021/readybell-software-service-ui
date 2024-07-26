@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { Sidecard } from "./side-card";
 import logo from "../assets/images/data-analytics.jpg";
 const AiIntermediate = () => {
+  const [activeAccordion, setActiveAccordion] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveAccordion(activeAccordion === index ? null : index);
+  };
+
   return (
     <div>
       <>
@@ -126,7 +132,7 @@ const AiIntermediate = () => {
                           type="button"
                           onClick={() => toggleAccordion(1)}
                         >
-                        Python For Machine Learning
+                          Python For Machine Learning
                         </button>
                       </h2>
                       <div
@@ -138,12 +144,17 @@ const AiIntermediate = () => {
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
-                          
                           <ul>
                             <li>Introduction to Machine Learning</li>
                             <li>Machine Learning in different industries</li>
-                            <li>Supervised vs unsupervised learning, and the usage of each algorithm</li>
-                            <li>Using Python libraries for implementing Machine Learning models</li>
+                            <li>
+                              Supervised vs unsupervised learning, and the usage
+                              of each algorithm
+                            </li>
+                            <li>
+                              Using Python libraries for implementing Machine
+                              Learning models
+                            </li>
                             <li>Matrices</li>
                             <li>Matrix Factorization</li>
                           </ul>
