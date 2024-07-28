@@ -11,8 +11,8 @@ const Ai102Too = () => {
             <div className="row justify-content-between">
               <div className="col-md-7">
                 <h5 className="mb-0">
-                  AI-102T00-A: Designing and Implementing a Microsoft Azure AI
-                  Solution
+                  MICROSOFT CERTIFICATION - AI-102T00-A DESIGNING AND
+                  IMPLEMENTING A MICROSOFT AZURE AI SOLUTION
                 </h5>
               </div>
               <div className="col-md-5">
@@ -20,8 +20,8 @@ const Ai102Too = () => {
                   <Link className="text-dark" to="/" data-aos="fade-up">
                     Home
                   </Link>{" "}
-                  - AI-102T00-A: Designing and Implementing a Microsoft Azure AI
-                  Solution
+                  - MICROSOFT CERTIFICATION - AI-102T00-A DESIGNING AND
+                  IMPLEMENTING A MICROSOFT AZURE AI SOLUTION
                 </span>
               </div>
             </div>

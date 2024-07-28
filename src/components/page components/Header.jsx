@@ -234,7 +234,8 @@ const Header = () => {
                                 aria-labelledby="navbarDropdownMenuLinkAI"
                               >
                                 <Link className="dropdown-item" to="/ai-900t00">
-                                  AI-900T00-A: Microsoft Azure AI Fundamentals
+                                  MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS AI-
+900T00-A
                                 </Link>
                                 <Link
                                   className="dropdown-item"
@@ -316,12 +317,13 @@ const Header = () => {
                                 aria-labelledby="navbarDropdownMenuLinkAI"
                               >
                                 <Link className="dropdown-item" to="/ai-900t00">
-                                  AI-900T00-A: Microsoft Azure AI Fundamentals
+                                  MICROSOFT CERTIFICATION - MICROSOFT AZURE AI <br/>
+                                  FUNDAMENTALS AI- 900T00-A
                                 </Link>
                                 <Link className="dropdown-item" to="/ai-102t00">
-                                  AI-102T00-A: Designing and Implementing a{" "}
-                                  <br />
-                                  Microsoft Azure AI Solution
+                                  MICROSOFT CERTIFICATION - AI-102T00- <br />A
+                                  DESIGNING AND IMPLEMENTING A MICROSOFT AZURE
+                                  AI SOLUTION
                                 </Link>
                                 <Link
                                   className="dropdown-item"
