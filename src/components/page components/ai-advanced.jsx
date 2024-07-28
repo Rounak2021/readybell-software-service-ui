@@ -15,14 +15,14 @@ const AiAdvanced = () => {
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-md-7">
-                <h5 className="mb-0">AI, ML, Data Science Advanced Course</h5>
+                <h5 className="mb-0">ARTIFICIAL INTELLIGENCE (AI) ENGINEER</h5>
               </div>
               <div className="col-md-5">
                 <span>
                   <Link className="text-dark" to="/" data-aos="fade-up">
                     Home
                   </Link>{" "}
-                  - AI, ML, Data Science Advanced Course
+                  - ARTIFICIAL INTELLIGENCE (AI) ENGINEER
                 </span>
               </div>
             </div>

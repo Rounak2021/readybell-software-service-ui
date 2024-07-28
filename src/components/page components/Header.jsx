@@ -343,10 +343,13 @@ const Header = () => {
                                   className="dropdown-item"
                                   to="/ai-advanced"
                                 >
-                                  AI, ML, Data Science Advanced Course
+                                  ARTIFICIAL INTELLIGENCE (AI) ENGINEER
                                 </Link>
                               </div>
                             </div>
+                            <Link to="/gen-ai" className="dropdown-item">
+                              Python for Data Science
+                            </Link>
                             <Link to="/gen-ai" className="dropdown-item">
                               Generative AI
                             </Link>
