@@ -31,22 +31,22 @@ export const Sidecard = () => {
                       <i className="far fa-check-square" /> Generative AI
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/togaf">
                       <i className="far fa-check-square" /> TOGAF
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/pmi-acp">
                       <i className="far fa-check-square" /> PMI ACP (Agile
                       Certification)
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/pmi-pmp">
                       <i className="far fa-check-square" /> PMI PMP
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

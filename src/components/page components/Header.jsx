@@ -350,15 +350,15 @@ const Header = () => {
                             <Link to="/gen-ai" className="dropdown-item">
                               Generative AI
                             </Link>
-                            <Link to="/togaf" className="dropdown-item">
+                            {/* <Link to="/togaf" className="dropdown-item">
                               TOGAF
-                            </Link>
+                            </Link> */}
                             <Link to="/pmi-acp" className="dropdown-item">
                               PMI ACP (Agile Certification)
                             </Link>
-                            <Link to="/pmi-pmp" className="dropdown-item">
+                            {/* <Link to="/pmi-pmp" className="dropdown-item">
                               PMI PMP
-                            </Link>
+                            </Link> */}
                           </div>
                         </li>
 

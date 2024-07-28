@@ -107,17 +107,17 @@ const Footer = () => {
                           <li>
                             <Link to="/gen-ai">Generative AI</Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link to="/togaf">TOGAF</Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link to="/pmi-acp">
                               PMI ACP (Agile Certification)
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link to="/pmi-pmp">PMI PMP</Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
