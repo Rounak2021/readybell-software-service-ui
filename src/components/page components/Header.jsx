@@ -79,7 +79,7 @@ const Header = () => {
                     <p style={{ paddingTop: "1em" }}>
                       <i className="fas fa-envelope" />{" "}
                       {/* info@readybellsoftware.com */}
-                      readybell3@gmail.com
+                      info@readybellsoftware.com
                     </p>
                   </div>
                 </div>

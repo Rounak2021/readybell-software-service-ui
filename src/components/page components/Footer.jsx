@@ -30,7 +30,7 @@ const Footer = () => {
                         <p>
                           +91-33-79642872, +91-9674552097
                           <br />
-                          readybell3@gmail.com
+                          info@readybellsoftware.com
                         </p>
                       </div>
                       <div className="social-accounts">
