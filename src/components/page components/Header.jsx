@@ -540,7 +540,7 @@ const Header = () => {
                     <div className="col-lg-12">
                       <div className="slider-content-2 py-lg-5 py-md-4 py-3">
                         <h2 className="display-3">
-                          PMI ACP and PMI PMP Certification Course
+                          PMI ACP Certification Course
                         </h2>
                         <p>
                           We provide certification training in PMI Agile
