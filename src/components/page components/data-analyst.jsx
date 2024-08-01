@@ -15,14 +15,14 @@ const DataAnalyst = () => {
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-md-7">
-                <h5 className="mb-0">ARTIFICIAL INTELLIGENCE (AI) ENGINEER</h5>
+                <h5 className="mb-0">DATA ANALYST</h5>
               </div>
               <div className="col-md-5">
                 <span>
                   <Link className="text-dark" to="/" data-aos="fade-up">
                     Home
                   </Link>{" "}
-                  - ARTIFICIAL INTELLIGENCE (AI) ENGINEER
+                  - DATA ANALYST
                 </span>
               </div>
             </div>
@@ -41,56 +41,41 @@ const DataAnalyst = () => {
                     <h2>About the Course</h2>
                   </div>
                   <p>
-                    Master fundamental concepts of machine learning and deep
-                    learning, including supervised and unsupervised learning,
-                    using Python programming language. Apply popular machine
-                    learning and deep learning libraries such as SciPy,
-                    ScikitLearn, Keras, PyTorch, and Tensorflow to industry
-                    problems involving object recognition, computer vision,
-                    image and video processing, text analytics, natural language
-                    processing (NLP), recommender systems, and other types of
-                    classifiers
+                    Learn the latest skills and tools used by professional data
+                    analysts including Excel spreadsheets, Python, Pandas,
+                    Numpy, Jupyter Notebooks, and more. Also work with a variety
+                    of data sources and project scenarios to gain practical
+                    experience with data manipulation and applying analytical
+                    skills.
                   </p>
 
                   <p>
-                    Artificial Intelligence (AI), Image Processing, Opencv,
-                    Computer Vision, Deep Learning, Machine Learning,
-                    regression, Hierarchical Clustering, classification, SciPy
-                    and scikit-learn, Artificial Neural Network, keras.
+                    Data Analysis, Querying Databases, Data Generation, Data
+                    Augmenting, Data Science, Python Programming, Pandas,
+                    Jupyter notebooks, Numpy, Dashboards and Charts, dash, Data
+                    Visualization, Matplotlib, Dashboard, SQL and RDBMS, Model
+                    Selection, Predictive Modelling, Microsoft Excel, Pivot
+                    Table, Cloud Databases, Relational Database Management
+                    System (RDBMS), SQL, Microsoft Power BI, Predictive,
+                    Prescriptive Analytics for Decision Making
                   </p>
                   <h3>Pre-Requisites</h3>
-                  <p>
-                    Working knowledge in Linear Algebra, Basic Statistics and
-                    Maths and Python for Data Science, AI & Development
-                  </p>
+                  <p>NA</p>
 
                   <h3>Target Audience</h3>
                   <p>
-                    Anyone aspiring for/advancing career into Artificial
-                    Intelligence/AI/ML Jobs{" "}
+                    Anyone aspiring for/advancing into Data Analyst/Data
+                    Science/AI/ML Jobs
                   </p>
                   <h3>Course Cetification</h3>
-                  <p>READYBELL AI Engineer Certificate</p>
+                  <p>READYBELL Data Analyst Certificate</p>
                   <img
                     src={logo}
                     style={{ width: "50%" }}
                     alt=""
                     className="float-right ml-3 mb-2 img-fluid"
                   />
-                  <p>
-                    Our trainers, who are true architects in their fields,
-                    ensure students gain a holistic understanding of their
-                    subjects. This comprehensive approach prepares students to
-                    excel in their roles with a thorough grasp of their topics.
-                    The unique feature of Readybell lies in our trainers'
-                    profiles and our global reach for placements. Our
-                    industry-expert trainers bring extensive experience and
-                    subject matter expertise, combined with knowledge of global
-                    best practices and a strict, quality-driven delivery
-                    methodology. Transparency and ethical interactions with
-                    students and customers further distinguish Readybell as a
-                    reliable IT service provider.
-                  </p>
+
                   <h3>Mode of Training</h3>
                   <p>
                     Instructor-led 100% Online or Online + Classroom (Salt Lake,
@@ -98,7 +83,7 @@ const DataAnalyst = () => {
                   </p>
                   <h3>Course Fee Structure and Refuncd Policy</h3>
                   <p>
-                    INR 37,900/- + Taxes. Get a 3-day free trial during which
+                    INR 46,900/- + Taxes. Get a 3-day free trial during which
                     you can cancel at no penalty. After that, we don’t give
                     refunds
                   </p>
@@ -122,7 +107,8 @@ const DataAnalyst = () => {
                           type="button"
                           onClick={() => toggleAccordion(1)}
                         >
-                          Machine Learning With Python
+                          Linear Algebra, Basic Statistics and Maths for Machine
+                          Learning
                         </button>
                       </h2>
                       <div
@@ -135,13 +121,44 @@ const DataAnalyst = () => {
                       >
                         <div className="accordion-body">
                           <ul>
-                            <li>Introduction to Machine Learning</li>
-                            <li>Regression</li>
-                            <li>Classification</li>
-                            <li>Linear Classification</li>
-                            <li>Clustering</li>
+                            <li>
+                              Linear Algebra for Machine Learning: Linear
+                              Polynomial, Notation, Operations, Vectors,
+                              Matrices, Matrix Factorization
+                            </li>
+                            <li>
+                              Measure of central tendency, the measure of
+                              spread, five points summary
+                            </li>
+                            <li>
+                              Probability Distributions, Bayes’ theorem, central
+                              limit theorem.
+                            </li>
+                            <li>Basics of sample and event space</li>
+                            <li>Axioms of probability</li>
+                            <li>Total Probability theorem and Bayes Theorem</li>
+                            <li>Random variables, PMF and CDF</li>
+                            <li>
+                              Discrete Distributions - Bernoulli, Binomial and
+                              Geometric Expectation and its properties
+                            </li>
+                            <li>Variance and its properties</li>
+                            <li>
+                              Continuous Distributions - uniform, exponential
+                              and normal Sampling from continuous distributions
+                            </li>
+                            <li>
+                              Correlation, covariance, confidence intervals,
+                              hypothesis testing, F-test, Z-test, t- test,
+                              ANOVA, chi-square test, etc.
+                            </li>
+                            <li>
+                              Descriptive Statistics: Mean, Median, Mode,
+                              Variance, and Standard Deviation
+                            </li>
+
                             <li>Quiz/Project</li>
-                            <b>Total Duration : 12 Hrs.</b>
+                            <b>Total Duration : 8 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -155,7 +172,7 @@ const DataAnalyst = () => {
                           type="button"
                           onClick={() => toggleAccordion(2)}
                         >
-                          Deep Learning & Neural Networks with Keras
+                          Introduction to Data Analytics
                         </button>
                       </h2>
                       <div
@@ -168,12 +185,10 @@ const DataAnalyst = () => {
                       >
                         <div className="accordion-body">
                           <ul>
-                            <li>
-                              Introduction to Neural Networks and Deep Learning
-                            </li>
-                            <li>Artificial Neural Networks (ANN)</li>
-                            <li>Keras and Deep Learning Libraries</li>
-                            <li>Deep Learning Models</li>
+                            <li>Introduction to Data Science</li>
+                            <li>Data Analysis</li>
+                            <li>Microsoft Excel Spreadsheets</li>
+                            <li>Data Visualization</li>
                             <li>Quiz/Project</li>
                             <b>Total Duration : 8 Hrs.</b>
                           </ul>
@@ -190,7 +205,7 @@ const DataAnalyst = () => {
                           type="button"
                           onClick={() => toggleAccordion(3)}
                         >
-                          Computer Vision and Image Processing
+                          Excel Basics for Data Analysis
                         </button>
                       </h2>
                       <div
@@ -203,16 +218,18 @@ const DataAnalyst = () => {
                       >
                         <div className="accordion-body">
                           <ul>
-                            <li>Introduction to Computer Vision</li>
-                            <li>Image Processing With OpenCV and Pillow</li>
-                            <li>Machine Learning Image Classification</li>
+                            <li>Data Analysis using Microsoft Excel</li>
                             <li>
-                              Neural Networks and Deep Learning For Image
-                              Classification
+                              Getting Started With Using Microsoft Excel
+                              Spreadsheets
                             </li>
-                            <li>Object Detection</li>
+                            <li>
+                              Cleaning & Wrangling Data using Microsoft Excel
+                              Spreadsheets
+                            </li>
+
                             <li>Quiz/Project</li>
-                            <b>Total Duration : 18 Hrs.</b>
+                            <b>Total Duration : 8 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -226,7 +243,7 @@ const DataAnalyst = () => {
                           type="button"
                           onClick={() => toggleAccordion(4)}
                         >
-                          Deep Neural Networks with PyTorch
+                          Data Visualization and Dashboards with Excel
                         </button>
                       </h2>
                       <div
@@ -239,17 +256,14 @@ const DataAnalyst = () => {
                       >
                         <div className="accordion-body">
                           <ul>
-                            <li>Tensor and Datasets</li>
-                            <li>Linear Regression</li>
-                            <li>Linear Regression PyTorch Way</li>
-                            <li>Multiple I/O Linear Regression</li>
-                            <li>Logistic Regression For Classification</li>
-                            <li>Softmax Regression</li>
-                            <li>Shallow Neural Networks</li>
-                            <li>Deep Networks</li>
-                            <li>Convolutional Neural Network</li>
+                            <li>Visualizing Data With Microsoft Excel</li>
+                            <li>
+                              Creating Visualizations and Dashboards With
+                              Microsoft Excel
+                            </li>
                             <li>Quiz/Project</li>
-                            <b>Total Duration : 26 Hrs.</b>
+
+                            <b>Total Duration : 8 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -263,7 +277,7 @@ const DataAnalyst = () => {
                           type="button"
                           onClick={() => toggleAccordion(5)}
                         >
-                          Building Deep Learning Models with TensorFlow
+                          Python for Data Science, AI & Development
                         </button>
                       </h2>
                       <div
@@ -276,12 +290,38 @@ const DataAnalyst = () => {
                       >
                         <div className="accordion-body">
                           <ul>
-                            <li>Introduction</li>
-                            <li>Supevised Learning Models</li>
-                            <li>Unsupevised Learning Models</li>
-                            <li>Unsupevised Learning Models & Scaling</li>
+                            <li>
+                              Setting Up Python Environment - Installing
+                              Anaconda/Jupyter Notebooks/Google Colab
+                            </li>
+                            <li>
+                              Syntax, Variables, Data Types, Expressions and
+                              Statements
+                            </li>
+                            <li>
+                              Functions, Modules, Conditionals, Loops,
+                              Branching, Recursion, Iteration
+                            </li>
+                            <li>Strings, Lists, Tuples, Dictionaries</li>
+                            <li>Files and Error Handling</li>
+                            <li>Working with Data in Python</li>
+                            <li>Computation with Python – NumPy/SciPy</li>
+                            <li>
+                              Data Manipulation and Visualisation in Python-
+                              Pandas/Matplotlib
+                            </li>
+                            <li>Introduction to Scikit-learn</li>
+                            <li>
+                              Advanced Visualization with Seaborn: Statistical
+                              Plots, Multivariate Analysis
+                            </li>
+                            <li>
+                              Collect data by the use of APIs and Web Scraping
+                              in Python – BeautifulSoup
+                            </li>
+
                             <li>Quiz/Project</li>
-                            <b>Total Duration : 6 Hrs.</b>
+                            <b>Total Duration : 16 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -295,7 +335,7 @@ const DataAnalyst = () => {
                           type="button"
                           onClick={() => toggleAccordion(6)}
                         >
-                          Capstone Project
+                          Data Analysis With Python
                         </button>
                       </h2>
                       <div
@@ -308,7 +348,171 @@ const DataAnalyst = () => {
                       >
                         <div className="accordion-body">
                           <ul>
-                            <li>AI Capstone Project with Deep Learning</li>
+                            <li>Data Importing</li>
+                            <li>Data Wrangling</li>
+                            <li>Exploratory Data Analysis</li>
+                            <li>Model Development</li>
+                            <li>Model Evaluation and Refinement</li>
+
+                            <li>Quiz/Project</li>
+                            <b>Total Duration : 8 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingSeven">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 7 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(7)}
+                        >
+                          Data Visualization With Python
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 7 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>Introduction to Data Visualization Tools</li>
+                            <li>Basis and Specialized Visualization Tools</li>
+                            <li>Advanced Visualizations and Geospatial Data</li>
+                            <li>Creating Dashboards with Plotly and Dash</li>
+                            <li>
+                              <li>Quiz/Project</li>
+                            </li>
+
+                            <b>Total Duration : 12 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingNine">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 9 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(9)}
+                        >
+                          Power BI
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 9 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingNine"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>Data Visualization with Microsoft Power BI</li>
+
+                            <b>Total Duration : 4 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headinTen">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 10 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(10)}
+                        >
+                          Types of Data Analytics
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 10 ? "show" : ""
+                        }`}
+                        aria-labelledby="headinTen"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>Descriptive Analytics</li>
+                            <li>Diagnostic Analytics</li>
+                            <li>Predictive Analytics</li>
+                            <li>Prescriptive Analytics</li>
+
+                            <b>Total Duration : 2 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingEleven">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 11 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(11)}
+                        >
+                          Predictive and Prescriptive Analytics
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 11 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingEleven"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>
+                              Predictive, Prescriptive Analytics for Decision
+                              Making
+                            </li>
+
+                            <b>Total Duration : 12 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingTwelve">
+                        <button
+                          className={`accordion-button ${
+                            activeAccordion === 12 ? "" : "collapsed"
+                          }`}
+                          type="button"
+                          onClick={() => toggleAccordion(12)}
+                        >
+                          Capstone Project
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 12 ? "show" : ""
+                        }`}
+                        aria-labelledby="headingTwelve"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>Capstone Project on Python</li>
+
                             <b>Total Duration : 12 Hrs.</b>
                           </ul>
                         </div>
@@ -316,109 +520,7 @@ const DataAnalyst = () => {
                     </div>
                   </div>
                 </div>
-                {/* <div className="col-md-4">
-            <aside className="sticky-menu">
-              <div className="card">
-                <div className="card-body">
-                  <h3>Training Courses</h3>
-                  <hr />
-                  <div className="side-menu">
-                    <ul>
-                      <li>
-                        <a href="mean.html">
-                          <i className="far fa-check-square" /> MEAN Full
-                          Stack Developmen
-                        </a>
-                      </li>
-                      <li>
-                        <a href="mern.html">
-                          <i className="far fa-check-square" /> MERN Full
-                          Stack Development
-                        </a>
-                      </li>
-                      <li>
-                        <a href="cloudcomputing.html">
-                          <i className="far fa-check-square" />{" "}
-                          cloudcomputing
-                        </a>
-                      </li>
-                      <li>
-                        <a href="node.html">
-                          <i className="far fa-check-square" /> NODE.JS
-                          Developer(MongoDB)
-                        </a>
-                      </li>
-                      <li>
-                        <a href="nodeSql.html">
-                          <i className="far fa-check-square" /> NODE.JS
-                          Developer(MySql)
-                        </a>
-                      </li>
-                      <li>
-                        <a href="java.html">
-                          <i className="far fa-check-square" /> Java
-                          Developer with DS JDBC MySql
-                        </a>
-                      </li>
-                      <li>
-                        <a href="python.html">
-                          <i className="far fa-check-square" /> Python
-                          Developer
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ui.html">
-                          <i className="far fa-check-square" /> Website
-                          Design and Development with UI/UX
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ccna.html">
-                          <i className="far fa-check-square" /> CISCO CCNA
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ccnp-encor.html">
-                          <i className="far fa-check-square" /> CISCO CCNP
-                          Enterprise 350-401 ENCOR
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ccnp-scor.html">
-                          <i className="far fa-check-square" /> CISCO CCNP
-                          Security Core (350-701) SCOR
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ccnp-vpn.html">
-                          <i className="far fa-check-square" /> CCNP Secure
-                          Solutions VPN 300-730 SVPN
-                        </a>
-                      </li>
-                      <li>
-                        <a href="vpn.html">
-                          <i className="far fa-check-square" /> CCIE
-                          Security VPN
-                        </a>
-                      </li>
-                      <li>
-                        <a href="ftd-fmc.html">
-                          <i className="far fa-check-square" /> CCIE
-                          Security FTD FMC
-                        </a>
-                      </li>
-                      <li>
-                        <a href="asa.html">
-                          <i className="far fa-check-square" /> CCIE
-                          Security ASA
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </aside>
-          </div> */}
+
                 <Sidecard />
               </div>
             </div>

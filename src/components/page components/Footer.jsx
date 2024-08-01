@@ -3,7 +3,6 @@ import "./index.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  
   return (
     <>
       <footer>
@@ -96,28 +95,62 @@ const Footer = () => {
                         <h3>Software Courses</h3>
                         <ul>
                           <li>
-                            <Link to="/ai">Artificial Intelligence</Link>
+                            <Link to="/ai-900t00">
+                              <i className="far fa-check-square" /> Microsoft
+                              AI- 900T00-A
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/ml">Machine Learning</Link>
+                            <Link to="/ai-102t00">
+                              <i className="far fa-check-square" /> Microsoft
+                              AI-102T00
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/data-science">Data Science</Link>
+                            <Link to="/ai-advanced">
+                              <i className="far fa-check-square" /> Artificial
+                              Intelligence Engineer
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/gen-ai">Generative AI</Link>
+                            <Link to="/python-data-science">
+                              <i className="far fa-check-square" /> Python for
+                              Data Science
+                            </Link>
                           </li>
-                          {/* <li>
-                            <Link to="/togaf">TOGAF</Link>
-                          </li> */}
                           <li>
-                            <Link to="/pmi-acp">
-                              PMI ACP (Agile Certification)
+                            <Link to="/data-analyst">
+                              <i className="far fa-check-square" /> Data Analyst
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/gen-ai">
+                              <i className="far fa-check-square" /> Generative
+                              AI
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/ms-copilot">
+                              <i className="far fa-check-square" />
+                              Microsoft Copilot
                             </Link>
                           </li>
                           {/* <li>
-                            <Link to="/pmi-pmp">PMI PMP</Link>
-                          </li> */}
+                    <Link to="/togaf">
+                      <i className="far fa-check-square" /> TOGAF
+                    </Link>
+                  </li> */}
+                          <li>
+                            <Link to="/pmi-acp">
+                              <i className="far fa-check-square" /> PMI ACP
+                              (Agile Certification)
+                            </Link>
+                          </li>
+                          {/* <li>
+                    <Link to="/pmi-pmp">
+                      <i className="far fa-check-square" /> PMI PMP
+                    </Link>
+                  </li> */}
                         </ul>
                       </div>
                     </div>

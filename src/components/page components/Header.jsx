@@ -317,7 +317,8 @@ const Header = () => {
                                 aria-labelledby="navbarDropdownMenuLinkAI"
                               >
                                 <Link className="dropdown-item" to="/ai-900t00">
-                                  MICROSOFT CERTIFICATION - MICROSOFT AZURE AI <br/>
+                                  MICROSOFT CERTIFICATION - MICROSOFT AZURE AI{" "}
+                                  <br />
                                   FUNDAMENTALS AI- 900T00-A
                                 </Link>
                                 <Link className="dropdown-item" to="/ai-102t00">
@@ -325,22 +326,7 @@ const Header = () => {
                                   DESIGNING AND IMPLEMENTING A MICROSOFT AZURE
                                   AI SOLUTION
                                 </Link>
-                                <Link
-                                  className="dropdown-item"
-                                  to="/ai-beginner"
-                                >
-                                  AI, ML, Data Science Beginner Course with or{" "}
-                                  <br />
-                                  without Microsoft AI & Cloud Certification
-                                </Link>
-                                <Link
-                                  className="dropdown-item"
-                                  to="/ai-intermediate"
-                                >
-                                  AI, ML, Data Science Intermediate Course with{" "}
-                                  <br />
-                                  or without Microsoft AI Certification
-                                </Link>
+
                                 <Link
                                   className="dropdown-item"
                                   to="/ai-advanced"
@@ -349,7 +335,10 @@ const Header = () => {
                                 </Link>
                               </div>
                             </div>
-                            <Link to="/python-data-science" className="dropdown-item">
+                            <Link
+                              to="/python-data-science"
+                              className="dropdown-item"
+                            >
                               Python for Data Science
                             </Link>
                             <Link to="/data-analyst" className="dropdown-item">
@@ -357,6 +346,10 @@ const Header = () => {
                             </Link>
                             <Link to="/gen-ai" className="dropdown-item">
                               Generative AI
+                            </Link>
+                            <Link to="/ms-copilot" className="dropdown-item">
+                              MICROSOFT COPILOT: AI IN EXCEL, WORD, POWERPOINT &
+                              MORE
                             </Link>
                             {/* <Link to="/togaf" className="dropdown-item">
                               TOGAF

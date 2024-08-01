@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Sidecard } from "./side-card";
-import logo from "../assets/images/data-analytics.jpg";
+import logo from "../assets/images/pmi-acp.png";
 
 const PMIacp = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -88,19 +88,7 @@ const PMIacp = () => {
                   alt=""
                   className="float-right ml-3 mb-2 img-fluid"
                 />
-                <p>
-                  Our trainers, who are true architects in their fields, ensure
-                  students gain a holistic understanding of their subjects. This
-                  comprehensive approach prepares students to excel in their
-                  roles with a thorough grasp of their topics. The unique
-                  feature of Readybell lies in our trainers' profiles and our
-                  global reach for placements. Our industry-expert trainers
-                  bring extensive experience and subject matter expertise,
-                  combined with knowledge of global best practices and a strict,
-                  quality-driven delivery methodology. Transparency and ethical
-                  interactions with students and customers further distinguish
-                  Readybell as a reliable IT service provider.
-                </p>
+                
                 <h3>Mode of Training</h3>
                 <p>
                   Instructor-led 100% Online or Online + Classroom (Salt Lake,

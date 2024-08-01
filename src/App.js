@@ -38,6 +38,7 @@ import AiAdvanced from "./components/page components/ai-advanced";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PythonDataScience from "./components/page components/python-data-science";
 import DataAnalyst from "./components/page components/data-analyst";
+import MsCopilot from "./components/page components/ms-copilot";
 
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
           <Route path="/togaf" element={<TOGAF />} />
           <Route path="/pmi-acp" element={<PMIacp />} />
           <Route path="/pmi-pmp" element={<PMIpmp />} />
+          <Route path="/ms-copilot" element={<MsCopilot />} />
 
           
           <Route path="/ai-900t00" element={<Ai900Too />} />
