@@ -349,8 +349,11 @@ const Header = () => {
                                 </Link>
                               </div>
                             </div>
-                            <Link to="/gen-ai" className="dropdown-item">
+                            <Link to="/python-data-science" className="dropdown-item">
                               Python for Data Science
+                            </Link>
+                            <Link to="/data-analyst" className="dropdown-item">
+                              Data Analyst
                             </Link>
                             <Link to="/gen-ai" className="dropdown-item">
                               Generative AI

@@ -36,6 +36,8 @@ import AiIntermediate from "./components/page components/ai-intermediate";
 import AiAdvanced from "./components/page components/ai-advanced";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PythonDataScience from "./components/page components/python-data-science";
+import DataAnalyst from "./components/page components/data-analyst";
 
 
 function App() {
@@ -61,6 +63,8 @@ function App() {
           <Route path="/ai" element={<AI />} />
           <Route path="/ml" element={<ML />} />
           <Route path="/data-science" element={<DataScience />} />
+          <Route path="/python-data-science" element={<PythonDataScience />} />
+          <Route path="/data-analyst" element={<DataAnalyst />} />
           <Route path="/gen-ai" element={<GenAi />} />
           <Route path="/togaf" element={<TOGAF />} />
           <Route path="/pmi-acp" element={<PMIacp />} />
