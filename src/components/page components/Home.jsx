@@ -2,6 +2,13 @@ import { Link } from "react-router-dom";
 import "./index.css";
 import Background from "./ParticleBackground";
 import homeSideIcon from "../assets/images/ai_image.jpg";
+import file1 from "../assets/images/pdf/Build Next-Generation AI Solutions with Generative AI (1).pdf";
+import file2 from "../assets/images/pdf/Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A.pdf";
+import file3 from "../assets/images/pdf/Build Next-Generation AI Solutions with Generative AI (1).pdf";
+import file4 from "../assets/images/pdf/PMI Agile Certified Practitioner (PMI ACP) - Certification Course.pdf";
+import file5 from "../assets/images/pdf/Python for Data Science, AI & Development.pdf";
+import file6 from "../assets/images/pdf/Microsoft Copilot - AI in Excel, Word, PowerPoint & More.pdf";
+import file7 from "../assets/images/pdf/Data Analyst.pdf";
 
 const Home = () => {
   return (
@@ -89,7 +96,7 @@ const Home = () => {
                             learn/upgrade/upskill into the field of Artificial
                             Intelligence.
                           </p>
-                          <a href="assets/images/pdf/Build Next-Generation AI Solutions with Generative AI.pdf" target={"_blank"}> Read More +</a>
+                          <Link to = {file1} target={"_blank"}> Read More +</Link>
                         </div>
                       </div>
                     </div>
@@ -105,7 +112,7 @@ const Home = () => {
                             AI-102T00-A: Designing and Implementing a Microsoft
                             Azure AI Solution
                           </p>
-                          <a href="assets/images/pdf/Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A.pdf" target={"_blank"}> Read More +</a>
+                          <Link to = {file2} target={"_blank"}> Read More +</Link>
                         </div>
                       </div>
                     </div>
@@ -123,7 +130,7 @@ const Home = () => {
                             from any corner of the globe. Please reach out to us
                             to experience our quality output
                           </p>
-                          <a href="assets/images/pdf/ .pdf" target={"_blank"}> Read More +</a>
+                          <Link to = {file3} target={"_blank"}> Read More +</Link>
                         </div>
                       </div>
                     </div>                   
@@ -138,7 +145,8 @@ const Home = () => {
                             PMI ACP and PMP Certified professionals having 15+
                             years of experience in the field
                           </p>
-                          <a href="assets/images/pdf/PMI Agile Certified Practitioner (PMI ACP) - Certification Course.pdf" target={"_blank"}> Read More +</a>
+                          {/* <a href="assets/images/pdf/PMI Agile Certified Practitioner (PMI ACP) - Certification Course.pdf" target={"_blank"}> Read More +</a> */}
+                          <Link to = {file4} target={"_blank"}> Read More +</Link>
                         </div>
                       </div>
                     </div>
@@ -154,7 +162,8 @@ const Home = () => {
                            with Python Data structures like List and Tuples, as well as logic concepts like 
                            conditions and branching.
                           </p>
-                          <a href="assets/images/pdf/Python for Data Science, AI & Development.pdf" target={"_blank"}> Read More +</a>
+                          {/* <a href="assets/images/pdf/Python for Data Science, AI & Development.pdf" target={"_blank"}> Read More +</a> */}
+                          <Link to = {file5} target={"_blank"}> Read More +</Link>
                         </div>
                       </div>
                     </div> 
@@ -169,7 +178,8 @@ const Home = () => {
                           to improve employee productivity using everyday applications such as Word, Excel, 
                           Outlook, Teams, or PowerPoint. Learn ChatGPT in Microsoft 365: Generative AI,
                           </p>
-                          <a href="assets/images/pdf/Microsoft Copilot - AI in Excel, Word, PowerPoint & More.pdf" target={"_blank"}> Read More +</a>
+                          {/* <a href="assets/images/pdf/Microsoft Copilot - AI in Excel, Word, PowerPoint & More.pdf" target={"_blank"}> Read More +</a> */}
+                          <Link to = {file6} target={"_blank"}> Read More +</Link>
                         </div>
                       </div>
                     </div> 
@@ -182,8 +192,8 @@ const Home = () => {
 Pandas, Numpy, Jupyter Notebooks, and more. Also work with a variety of data sources and project 
 scenarios to gain practical experience with data manipulation and applying analytical skills.
                           </p>
-                          <a href="assets/images/pdf/Data Analyst.pdf" target={"_blank"}> Read More +</a>
-                          
+                          {/* <a href="assets/images/pdf/Data Analyst.pdf" target={"_blank"}> Read More +</a> */}
+                          <Link to = {file7} target={"_blank"}> Read More +</Link>
                         </div>
                       </div>
                     </div> 
