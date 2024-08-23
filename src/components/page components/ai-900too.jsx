@@ -16,8 +16,7 @@ const Ai900Too = () => {
             <div className="row justify-content-between">
               <div className="col-md-7">
                 <h5 className="mb-0">
-                  MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS AI-
-900T00-A
+                  MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS AI-900T00-A
                 </h5>
               </div>
               <div className="col-md-5">
@@ -25,8 +24,7 @@ const Ai900Too = () => {
                   <Link className="text-dark" to="/" data-aos="fade-up">
                     Home
                   </Link>{" "}
-                  - MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS AI-
-900T00-A
+                  - MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS AI-900T00-A
                 </span>
               </div>
             </div>
@@ -131,6 +129,7 @@ const Ai900Too = () => {
                       </div>
                     </div>
                   </div>
+                  <div><a class="dropdown-item colr-1" href="/register"> Register For this Course </a></div>
                   </div>
                 </div>
                 <Sidecard />

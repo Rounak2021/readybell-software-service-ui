@@ -2308,7 +2308,8 @@ body p {
 }
 
 .single-service-4 {
-	transition: all .4s linear 0s
+	transition: all .4s linear 0s;
+	height: 390px;
 }
 
 .single-service-4.active {
@@ -6819,3 +6820,13 @@ body p {
 		font-size: 1.8rem
 	}
 }
+
+
+
+
+.sticky-menu2{ position: static !important;}
+.nav-link:focus, .nav-link:hover{color:#fff !important;}
+.colr-1{color: #029115 !important; font-weight: 500 !important;}
+.bg-col{/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#393185+0,009846+100 */
+	background: linear-gradient(to right,  #393185 0%,#009846 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}

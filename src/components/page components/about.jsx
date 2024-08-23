@@ -1,7 +1,6 @@
 import { useNavigate, Link } from "react-router-dom";
 import { Sidecard } from "./side-card";
 import aboutImage from "../assets/images/ai_image.jpg";
-
 const About = () => {
   const navigate = useNavigate();
   return (
@@ -69,34 +68,31 @@ const About = () => {
                   provider, specializing in PMI-ACP® (Agile Certified
                   Practitioner) Certification.
                 </p>
-                <p>
-                  Below are the training sessions we provide for: AI-900T00-A:
-                  Microsoft Azure AI Fundamentals{" "}
-                  <Link onClick={() => navigate("/")}>
-                    (Click here for the details)
-                  </Link>
-                  <br />
-                  AI-102T00-A: Designing and Implementing a Microsoft Azure AI
-                  Solution{" "}
-                  <Link onClick={() => navigate("/")}>
-                    (Click here for the details)
-                  </Link>
-                  <br /> AI, ML, Data Science Beginner Course with or without
-                  Microsoft AI &amp; Cloud Certification
-                  <Link onClick={() => navigate("/")}>
-                    (Click here for the details)
-                  </Link>
-                  <br /> AI, ML, Data Science Intermediate Course with or
-                  without Microsoft AI Certification{" "}
-                  <Link onClick={() => navigate("/")}>
-                    (Click here for the details)
-                  </Link>
-                  <br /> AI, ML, Data Science Advanced Course{" "}
-                  <Link onClick={() => navigate("/")}>
-                    (Click here for the details)
-                  </Link>
-                  <br />
-                </p>
+                <p> We provide intensive personalized classroom + Online training on the following curriculums: </p>
+
+                <aside class="sticky-menu sticky-menu2">
+                  <div class="card"><div class="card-body">
+                    <h3>Training Courses</h3>
+                    <div class="side-menu">
+                      <ul>
+                  <li>	Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A <a href="/ai-900t00"><i class="far fa-check-square"></i> Microsoft AI- 900T00-A</a></li>
+                  <li> Microsoft Certification - AI-102T00-A - Designing and Implementing a Microsoft Azure AI Solution <a href="/ai-102t00"><i class="far fa-check-square"></i> Microsoft AI-102T00</a></li>
+                  
+                  <li> Python for Data Science, AI & Development <a href="/python-data-science"><i class="far fa-check-square"></i> Python for Data Science</a></li>
+                  <li> Data Analytics <a href="/data-analyst"><i class="far fa-check-square"></i> Data Analyst</a></li>
+                  <li> Build Next-Generation AI Solutions with Generative AI and LLM <a href="/gen-ai"><i class="far fa-check-square"></i> Generative AI</a></li>
+                  <li> Microsoft Copilot - AI in Excel, Word, PowerPoint & More <a href="/ms-copilot"><i class="far fa-check-square"></i>Microsoft Copilot</a></li>
+                  <li> PMI-ACP (Agile Certified Practitioner) Certification Training <a href="/pmi-acp"><i class="far fa-check-square"></i> PMI ACP (Agile Certification)</a>
+                  </li>
+                  </ul>
+                  </div>
+                  </div>
+                  </div>
+                  </aside> <br></br>
+
+
+
+
                 <img
                   src={aboutImage}
                   alt=""
@@ -105,9 +101,7 @@ const About = () => {
                     width: "54%",
                     border: "1px solid transparent",
                     borderRadius: "6px",
-                    boxShadow:
-                      "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-                  }}
+                     }}
                 />
 
                 <p>

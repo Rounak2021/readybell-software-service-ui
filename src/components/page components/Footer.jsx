@@ -74,9 +74,7 @@ const Footer = () => {
                         <li>
                           <Link to="/team">Our Team</Link>
                         </li>
-                        <li>
-                          <Link to="/services">Our Services</Link>
-                        </li>
+                        
                         <li>
                           <Link to="/contact">Contact Us</Link>
                         </li>
@@ -106,12 +104,7 @@ const Footer = () => {
                               AI-102T00
                             </Link>
                           </li>
-                          <li>
-                            <Link to="/ai-advanced">
-                              <i className="far fa-check-square" /> Artificial
-                              Intelligence Engineer
-                            </Link>
-                          </li>
+                          
                           <li>
                             <Link to="/python-data-science">
                               <i className="far fa-check-square" /> Python for

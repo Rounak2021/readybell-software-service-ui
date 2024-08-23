@@ -94,82 +94,271 @@ const Team = () => {
                       </div>
                     </div>
                     <div className="theme-list-3 mb-4">
-                      <h5 style={{ marginTop: "2em" }}>Trainer-1 </h5>
+                      <h5 style={{ marginTop: "2em" }}>
+                        Trainer for Microsoft AI-900T00-A{" "}
+                      </h5>
                       <ul>
-                        <li>Ex Google Software Developer and Instructor</li>
                         <li>
-                          A Passionate Software&nbsp;Developer&nbsp;/
-                          Software&nbsp;Architect&nbsp;/ Software&nbsp;Engineer
+                          Previous Experience: Ex Microsoft Software Engineer,
+                          AI Specialist
                         </li>
                         <li>
-                          Full-stack Development with&nbsp;MEAN,
-                          MERN&nbsp;and&nbsp;Java Spring Framework
+                          Years of Experience: 7+ years in AI and machine
+                          learning
+                        </li>
+                        <li>Expertise in Azure AI services</li>
+                        <li>
+                          Skilled in natural language processing and computer
+                          vision
+                        </li>
+                        <li>Experience in developing AI-driven applications</li>
+                        <li>Proficient in Python and R programming</li>
+                        <li>
+                          Strong knowledge of data analysis and visualization
+                          tools
                         </li>
                         <li>
-                          Website Front-end Development&nbsp;Angular, ReactJS,
-                          VueJS
+                          Previous Roles: AI Consultant, Machine Learning
+                          Engineer
+                        </li>
+                        <li>
+                          Current Role: Senior AI Engineer at a Fortune 500
+                          company
                         </li>
                       </ul>
                     </div>
                     <hr style={{ backgroundColor: "#0000a6" }} />
                     <div className="theme-list-3 mb-4">
-                      <h5 style={{ marginTop: "2em" }}>Trainer-2 </h5>
+                      <h5 style={{ marginTop: "2em" }}>
+                        Trainer for Microsoft AI-102T00
+                      </h5>
                       <ul>
                         <li>
-                          10+ years of experience in Front End and Back End
-                          Design and Development
+                          Previous Experience: Ex Amazon Software Engineer
                         </li>
-                        <li>Expert level Node.js developer</li>
-                        <li>Expert level React and Angular developer</li>
-                        <li>Expert level Express js developer</li>
+                        <li>
+                          Years of Experience: 8+ years in AI and cloud
+                          computing
+                        </li>
+                        <li>
+                          Expert in designing and implementing AI solutions
+                          using Azure Cognitive Services
+                        </li>
+                        <li>
+                          Skilled in integrating AI models into existing
+                          enterprise applications
+                        </li>
+                        <li>
+                          Experience with REST APIs, chatbot development, and
+                          virtual assistants
+                        </li>
+                        <li>
+                          Strong understanding of ethical AI practices and data
+                          security
+                        </li>
+                        <li>Proficient in C#, Python, and JavaScript</li>
+                        <li>
+                          Previous Roles: AI Solution Architect, Cloud Developer
+                        </li>
+                        <li>
+                          Current Role: Principal AI Consultant at a leading
+                          tech consulting firm
+                        </li>
                       </ul>
                     </div>
                     <hr style={{ backgroundColor: "#0000a6" }} />
                     <div className="theme-list-3 mb-4">
-                      <h5 style={{ marginTop: "2em" }}>Trainer-3 </h5>
+                      <h5 style={{ marginTop: "2em" }}>
+                        Trainer for Python for Data Science
+                      </h5>
                       <ul>
-                        <li>9 Years experience in development in C/C++</li>
-                        <li>Expert level React Native developer</li>
-                        <li>Intermediate expertise in Advanced PHP, Angular</li>
+                        <li>Previous Experience: Ex PwC Data Scientist</li>
+                        <li>
+                          Years of Experience: 5+ years in data science and
+                          analytics
+                        </li>
+                        <li>
+                          Proficient in Python, including libraries such as
+                          Pandas, NumPy, and Matplotlib
+                        </li>
+                        <li>
+                          Expertise in machine learning frameworks like
+                          TensorFlow and scikit-learn
+                        </li>
+                        <li>
+                          Experience with data preprocessing, cleaning, and
+                          exploratory data analysis
+                        </li>
+                        <li>
+                          Skilled in building predictive models and statistical
+                          analysis
+                        </li>
+                        <li>Knowledge of SQL and database management</li>
+                        <li>
+                          Previous Roles: Data Analyst, Research Scientist
+                        </li>
+                        <li>
+                          Current Role: Lead Data Scientist at a global
+                          analytics firm
+                        </li>
                       </ul>
                     </div>
                     <hr style={{ backgroundColor: "#0000a6" }} />
                     <div className="theme-list-3 mb-4">
-                      <h5 style={{ marginTop: "2em" }}>Trainer-4 </h5>
+                      <h5 style={{ marginTop: "2em" }}>
+                        Trainer for Data Analyst
+                      </h5>
                       <ul>
+                        <li>Previous Experience: Ex Accenture Data Analyst</li>
                         <li>
-                          Seasoned Java, Data Structure and JEE (Servlets and
-                          JSP) Instructor with excellent technical skills
+                          Years of Experience: 6+ years in data analysis and
+                          business intelligence
                         </li>
-                        <li>Expert level programming skills using OOPS</li>
-                        <li>Expert level Algorithms skills</li>
                         <li>
-                          6+ years of experience in providing Java/JSP/Servlets
-                          to experienced corporate software professionals
+                          Skilled in Excel, SQL, and Tableau for data
+                          visualization and reporting
+                        </li>
+                        <li>
+                          Proficient in Python for data manipulation and
+                          analysis
+                        </li>
+                        <li>
+                          Experience in analyzing large datasets and deriving
+                          actionable insights
+                        </li>
+                        <li>
+                          Strong understanding of statistical methods and data
+                          mining techniques
+                        </li>
+                        <li>
+                          Expertise in using Power BI and other BI tools for
+                          dashboard creation
+                        </li>
+                        <li>
+                          Previous Roles: Business Analyst, Data Visualization
+                          Specialist
+                        </li>
+                        <li>
+                          Current Role: Senior Data Analyst at a multinational
+                          corporation
                         </li>
                       </ul>
                     </div>
                     <hr style={{ backgroundColor: "#0000a6" }} />
                     <div className="theme-list-3 mb-4">
-                      <h5 style={{ marginTop: "2em" }}>Trainer-5 </h5>
+                      <h5 style={{ marginTop: "2em" }}>
+                        Trainer for Generative AI
+                      </h5>
                       <ul>
+                        <li>Previous Experience: Ex Accenture AI Researcher</li>
                         <li>
-                          10+ years of teaching experience in RDBMS in colleges
-                          &amp; universities
+                          Years of Experience: 20+ years in AI and deep learning
                         </li>
-                        <li>Expert level knowledge in Python</li>
+                        <li>
+                          Expert in generative models, including GANs and VAEs
+                        </li>
+                        <li>
+                          Skilled in PyTorch and TensorFlow for model
+                          development
+                        </li>
+                        <li>
+                          Experience with natural language generation (NLG) and
+                          image synthesis
+                        </li>
+                        <li>
+                          Knowledge of ethical implications and responsible AI
+                          practices
+                        </li>
+                        <li>
+                          Proficient in Python and deep learning libraries
+                        </li>
+                        <li>
+                          Previous Roles: AI Research Scientist, Machine
+                          Learning Engineer
+                        </li>
+                        <li>
+                          Current Role: Director of AI Research at a tech
+                          startup
+                        </li>
                       </ul>
                     </div>
                     <hr style={{ backgroundColor: "#0000a6" }} />
                     <div className="theme-list-3 mb-4">
-                      <h5 style={{ marginTop: "2em" }}>Trainer-6 </h5>
+                      <h5 style={{ marginTop: "2em" }}>
+                        Trainer for Microsoft Copilot
+                      </h5>
                       <ul>
                         <li>
-                          Microsoft and AWS Cloud Certified professional having
-                          over 15+ years of teaching exp
+                          Previous Experience: Ex Salesforce Technical Lead
                         </li>
-                        <li>Expert level Azure and AWS Cloud skills</li>
-                        <li>Certified CCNA Professional</li>
+                        <li>
+                          Years of Experience: 10+ years in software development
+                          and cloud technologies
+                        </li>
+                        <li>
+                          Skilled in integrating Microsoft Copilot features with
+                          business applications
+                        </li>
+                        <li>
+                          Proficient in Azure, Microsoft 365, and Power Platform
+                        </li>
+                        <li>
+                          Experience in automating workflows and enhancing
+                          productivity with AI
+                        </li>
+                        <li>
+                          Strong understanding of cloud security and data
+                          privacy
+                        </li>
+                        <li>Expertise in C#, JavaScript, and PowerShell</li>
+                        <li>
+                          Previous Roles: Cloud Solutions Architect, Enterprise
+                          Software Developer
+                        </li>
+                        <li>
+                          Current Role: Principal Solutions Engineer at a cloud
+                          services firm
+                        </li>
+                      </ul>
+                    </div>
+                    <hr style={{ backgroundColor: "#0000a6" }} />
+                    <div className="theme-list-3 mb-4">
+                      <h5 style={{ marginTop: "2em" }}>
+                        Trainer for PMI ACP (Agile Certification)
+                      </h5>
+                      <ul>
+                        <li>Previous Experience: Ex Cisco Project Manager</li>
+                        <li>
+                          Years of Experience: 12+ years in project management
+                          and agile methodologies
+                        </li>
+                        <li>
+                          Certified PMI-ACP, Scrum Master, and Lean Six Sigma
+                          professional
+                        </li>
+                        <li>
+                          Expertise in Agile frameworks such as Scrum, Kanban,
+                          and XP
+                        </li>
+                        <li>
+                          Experience in coaching and leading agile
+                          transformations in large organizations
+                        </li>
+                        <li>
+                          Skilled in JIRA, Trello, and other agile project
+                          management tools
+                        </li>
+                        <li>
+                          Proficient in stakeholder management and team
+                          collaboration
+                        </li>
+                        <li>
+                          Previous Roles: Agile Coach, Senior Project Manager
+                        </li>
+                        <li>
+                          Current Role: Agile Transformation Consultant at a
+                          global management consulting firm
+                        </li>
                       </ul>
                     </div>
                   </div>

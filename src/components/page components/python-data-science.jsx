@@ -169,6 +169,8 @@ const PythonDataScience = () => {
                         </div>
                       </div>
                     </div>
+                    <div><Link  to="/register"  className="dropdown-item colr-1"> Register For this Course </Link>
+                    </div>
                   </div>
                 </div>
                 {/* <div className="col-md-4">

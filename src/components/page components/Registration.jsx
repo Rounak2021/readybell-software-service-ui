@@ -222,7 +222,7 @@ const Registration = () => {
           className=""
           style={{ textAlign: "center", marginTop: "2%", position: "initial" }}
         >
-          Register in one step
+          Register 
         </h2>
         <div className="container register mb-4" data-aos="fade-up">
           <div className="row">

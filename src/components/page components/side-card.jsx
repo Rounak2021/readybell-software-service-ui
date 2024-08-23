@@ -21,12 +21,7 @@ export const Sidecard = () => {
                       <i className="far fa-check-square" /> Microsoft AI-102T00
                     </Link>
                   </li>
-                  <li>
-                    <Link to="/ai-advanced">
-                      <i className="far fa-check-square" /> Artificial
-                      Intelligence Engineer
-                    </Link>
-                  </li>
+                  
                   <li>
                     <Link to="/python-data-science">
                       <i className="far fa-check-square" /> Python for Data

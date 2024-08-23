@@ -311,6 +311,7 @@ const PMIacp = () => {
                   </div>
                 </div>
               </div>
+              <div><a class="dropdown-item colr-1" href="/register"> Register For this Course </a></div>
 
               <Sidecard />
             </div>

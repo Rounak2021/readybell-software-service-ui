@@ -89,9 +89,7 @@ const Home = () => {
                             learn/upgrade/upskill into the field of Artificial
                             Intelligence.
                           </p>
-                          {/* <Link to="/ai" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link> */}
+                          <a href="assets/images/pdf/Build Next-Generation AI Solutions with Generative AI.pdf" target={"_blank"}> Read More +</a>
                         </div>
                       </div>
                     </div>
@@ -107,9 +105,7 @@ const Home = () => {
                             AI-102T00-A: Designing and Implementing a Microsoft
                             Azure AI Solution
                           </p>
-                          {/* <Link to="/ml" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link> */}
+                          <a href="assets/images/pdf/Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A.pdf" target={"_blank"}> Read More +</a>
                         </div>
                       </div>
                     </div>
@@ -127,30 +123,10 @@ const Home = () => {
                             from any corner of the globe. Please reach out to us
                             to experience our quality output
                           </p>
-                          {/* <Link to="/mern" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link> */}
+                          <a href="assets/images/pdf/ .pdf" target={"_blank"}> Read More +</a>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>TOGAF Certification</h4>
-                          <p>
-                            We provide TOGAF® Foundation and Practitioner
-                            training by highly experienced TOGAF® Certified
-                            professionals having 10+ years of experience in the
-                            field. This will help aspiring Enterprise Architects
-                            understand how TOGAF® can address an enterprise's
-                            requirements.
-                          </p>
-                          {/* <Link to="/node-sql" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link> */}
-                        </div>
-                      </div>
-                    </div>
+                    </div>                   
                     <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
@@ -162,66 +138,56 @@ const Home = () => {
                             PMI ACP and PMP Certified professionals having 15+
                             years of experience in the field
                           </p>
-                          {/* <Link to="/java" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link> */}
+                          <a href="assets/images/pdf/PMI Agile Certified Practitioner (PMI ACP) - Certification Course.pdf" target={"_blank"}> Read More +</a>
                         </div>
                       </div>
                     </div>
-                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
+
+                   <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
-                          <h4>Python Developer</h4>
+                          <h4>PYTHON FOR DATA SCIENCE, AI & DEVELOPMENT</h4>
                           <p>
-                            Specially designed for absolute beginners who want
-                            to build their programming foundation using Python
-                            language an easy to learn programming language
-                            gaining higher and higher popularity day by day.
-                            Considering its rapid proliferation there is a great
-                            need for training that equips students with Python
-                            skills, especially in India. Python...
+                          This introduction to Python course will take you from zero to programming in 
+                          Python in a matter of hours—no prior programming experience necessary! You will 
+                          learn about Python basics and the different data types. You will familiarize yourself
+                           with Python Data structures like List and Tuples, as well as logic concepts like 
+                           conditions and branching.
                           </p>
-                          <Link to="/python" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link>
+                          <a href="assets/images/pdf/Python for Data Science, AI & Development.pdf" target={"_blank"}> Read More +</a>
                         </div>
                       </div>
-                    </div> */}
-                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> 
+
+                     <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
-                          <h4>Website Design and Development with UI/UX</h4>
+                          <h4> MICROSOFT COPILOT: AI IN EXCEL, WORD, POWERPOINT & MORE </h4>
                           <p>
-                            In this Web design and development program you will
-                            learn how can use HTML5, CSS3, Jquery, Bootstrap 4
-                            to create a professional Website. To enhance User
-                            Interface and User Experience Photoshop, Figma tools
-                            will be used. In this program we will undergo...
+                          Learn Microsoft Copilot, the Microsoft Artificial Intelligence (AI) tool that 
+                          combines natural language with linguistic models, data, and Microsoft Graph 
+                          to improve employee productivity using everyday applications such as Word, Excel, 
+                          Outlook, Teams, or PowerPoint. Learn ChatGPT in Microsoft 365: Generative AI,
                           </p>
-                          <Link to="/ui" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link>
+                          <a href="assets/images/pdf/Microsoft Copilot - AI in Excel, Word, PowerPoint & More.pdf" target={"_blank"}> Read More +</a>
                         </div>
                       </div>
-                    </div> */}
-                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div> 
+                   <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
-                          <h4>CLOUD COMPUTING</h4>
+                          <h4>DATA ANALYST</h4>
                           <p>
-                            Drive your career forward with this industry-ready
-                            Cloud professional program to become a sought after
-                            Cloud Administrator to maintain the infrastructure
-                            and functionality of a company's cloud structures or
-                            a Cloud Solution Architect to implement and
-                            oversee...{" "}
+                          Learn the latest skills and tools used by professional data analysts including Excel spreadsheets, Python, 
+Pandas, Numpy, Jupyter Notebooks, and more. Also work with a variety of data sources and project 
+scenarios to gain practical experience with data manipulation and applying analytical skills.
                           </p>
-                          <Link to="/cloudcomputing" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link>
+                          <a href="assets/images/pdf/Data Analyst.pdf" target={"_blank"}> Read More +</a>
+                          
                         </div>
                       </div>
-                    </div> */}
+                    </div> 
+                    
                     {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
