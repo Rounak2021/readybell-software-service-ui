@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Sidecard } from "./side-card";
-import logo from "../assets/images/data-analytics.jpg";
+import logo from "../assets/images/data-analytics.png";
 const DataAnalyst = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
@@ -101,9 +101,7 @@ const DataAnalyst = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingOne">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 1 ? "" : "collapsed"
-                          }`}
+                          className="accordion-button"
                           type="button"
                           onClick={() => toggleAccordion(1)}
                         >
@@ -113,9 +111,7 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseOne"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 1 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                       >
@@ -166,9 +162,7 @@ const DataAnalyst = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingTwo">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 2 ? "" : "collapsed"
-                          }`}
+                          className="accordion-button"
                           type="button"
                           onClick={() => toggleAccordion(2)}
                         >
@@ -177,9 +171,7 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 2 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                       >
@@ -199,9 +191,7 @@ const DataAnalyst = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingThree">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 3 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(3)}
                         >
@@ -210,9 +200,7 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 3 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample"
                       >
@@ -237,9 +225,7 @@ const DataAnalyst = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingFour">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 4 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(4)}
                         >
@@ -248,9 +234,7 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 4 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample"
                       >
@@ -271,9 +255,7 @@ const DataAnalyst = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingFive">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 5 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(5)}
                         >
@@ -282,9 +264,7 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 5 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingFive"
                         data-bs-parent="#accordionExample"
                       >
@@ -329,9 +309,7 @@ const DataAnalyst = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingSix">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 6 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(6)}
                         >
@@ -340,9 +318,7 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 6 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingSix"
                         data-bs-parent="#accordionExample"
                       >
@@ -363,9 +339,7 @@ const DataAnalyst = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingSeven">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 7 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(7)}
                         >
@@ -374,9 +348,7 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 7 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingSeven"
                         data-bs-parent="#accordionExample"
                       >
@@ -395,13 +367,11 @@ const DataAnalyst = () => {
                         </div>
                       </div>
                     </div>
-                    
+
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingNine">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 9 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(9)}
                         >
@@ -410,9 +380,7 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 9 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingNine"
                         data-bs-parent="#accordionExample"
                       >
@@ -428,9 +396,7 @@ const DataAnalyst = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headinTen">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 10 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(10)}
                         >
@@ -439,9 +405,7 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 10 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headinTen"
                         data-bs-parent="#accordionExample"
                       >
@@ -460,9 +424,7 @@ const DataAnalyst = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingEleven">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 11 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(11)}
                         >
@@ -471,9 +433,7 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 11 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingEleven"
                         data-bs-parent="#accordionExample"
                       >
@@ -492,9 +452,7 @@ const DataAnalyst = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingTwelve">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 12 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(12)}
                         >
@@ -503,9 +461,6 @@ const DataAnalyst = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 12 ? "show" : ""
-                        }`}
                         aria-labelledby="headingTwelve"
                         data-bs-parent="#accordionExample"
                       >
@@ -519,7 +474,12 @@ const DataAnalyst = () => {
                       </div>
                     </div>
                   </div>
-                  <div><a class="dropdown-item colr-1" href="/register"> Register For this Course </a></div>
+                  <div>
+                    <a class="dropdown-item colr-1" href="/register">
+                      {" "}
+                      Register For this Course{" "}
+                    </a>
+                  </div>
                 </div>
 
                 <Sidecard />

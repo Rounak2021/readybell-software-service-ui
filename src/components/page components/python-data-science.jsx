@@ -80,7 +80,7 @@ const PythonDataScience = () => {
                   </p>
                   <img
                     src={logo}
-                    style={{ width: "50%" }}
+                    style={{ width: "34%" }}
                     alt=""
                     className="float-right ml-3 mb-2 img-fluid"
                   />
@@ -110,9 +110,7 @@ const PythonDataScience = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingOne">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 1 ? "" : "collapsed"
-                          }`}
+                          className="accordion-button"
                           type="button"
                           onClick={() => toggleAccordion(1)}
                         >
@@ -121,9 +119,7 @@ const PythonDataScience = () => {
                       </h2>
                       <div
                         id="collapseOne"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 1 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                       >
@@ -143,9 +139,7 @@ const PythonDataScience = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingTwo">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 2 ? "" : "collapsed"
-                          }`}
+                          className="accordion-button"
                           type="button"
                           onClick={() => toggleAccordion(2)}
                         >
@@ -154,22 +148,22 @@ const PythonDataScience = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 2 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                       >
                         <div className="accordion-body">
                           <ul>
                             <li>Capstone Project on Python</li>
-
                             <b>Total Duration : 12 Hrs.</b>
                           </ul>
                         </div>
                       </div>
                     </div>
-                    <div><Link  to="/register"  className="dropdown-item colr-1"> Register For this Course </Link>
+                    <div>
+                      <Link to="/register" className="dropdown-item colr-1">
+                        Register For this Course
+                      </Link>
                     </div>
                   </div>
                 </div>

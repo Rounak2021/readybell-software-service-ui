@@ -92,7 +92,7 @@ const GenAi = () => {
                     alt=""
                     className="float-right ml-3 mb-2 img-fluid"
                   />
-                  
+
                   <h3>Mode of Training</h3>
                   <p>
                     Instructor-led 100% Online or Online + Classroom (Salt Lake,
@@ -118,9 +118,7 @@ const GenAi = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingOne">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 1 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(1)}
                         >
@@ -130,9 +128,7 @@ const GenAi = () => {
                       </h2>
                       <div
                         id="collapseOne"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 1 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                       >
@@ -167,9 +163,7 @@ const GenAi = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingTwo">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 2 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(2)}
                         >
@@ -179,9 +173,7 @@ const GenAi = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 2 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                       >
@@ -203,9 +195,7 @@ const GenAi = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingThree">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 3 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(3)}
                         >
@@ -214,9 +204,7 @@ const GenAi = () => {
                       </h2>
                       <div
                         id="collapseThree"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 3 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample"
                       >
@@ -239,9 +227,7 @@ const GenAi = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingFour">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 4 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(4)}
                         >
@@ -250,9 +236,7 @@ const GenAi = () => {
                       </h2>
                       <div
                         id="collapseThree"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 4 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample"
                       >
@@ -270,9 +254,7 @@ const GenAi = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingFive">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 5 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(5)}
                         >
@@ -281,9 +263,7 @@ const GenAi = () => {
                       </h2>
                       <div
                         id="collapseThree"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 5 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingFive"
                         data-bs-parent="#accordionExample"
                       >
@@ -299,9 +279,7 @@ const GenAi = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingSix">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 6 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(6)}
                         >
@@ -310,9 +288,7 @@ const GenAi = () => {
                       </h2>
                       <div
                         id="collapseThree"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 6 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingSix"
                         data-bs-parent="#accordionExample"
                       >
@@ -335,9 +311,7 @@ const GenAi = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingSeven">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 7 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(7)}
                         >
@@ -346,9 +320,7 @@ const GenAi = () => {
                       </h2>
                       <div
                         id="collapseThree"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 7 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingSeven"
                         data-bs-parent="#accordionExample"
                       >
@@ -360,7 +332,12 @@ const GenAi = () => {
                       </div>
                     </div>
                   </div>
-                  <div><a class="dropdown-item colr-1" href="/register"> Register For this Course </a></div>
+                  <div>
+                    <a class="dropdown-item colr-1" href="/register">
+                      {" "}
+                      Register For this Course{" "}
+                    </a>
+                  </div>
                 </div>
 
                 <Sidecard />

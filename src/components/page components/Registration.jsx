@@ -14,6 +14,16 @@ const Registration = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false); // State to manage loading spinner
 
+  const options = [
+    { value: "Microsoft AI- 900T00-A" },
+    { value: "Microsoft AI-102T00" },
+    { value: "Python for Data Science" },
+    { value: "Data Analyst" },
+    { value: "Generative AI" },
+    { value: "Microsoft Copilot" },
+    { value: "PMI ACP (Agile Certification)" },
+  ];
+
   const [responseData, setResponseData] = useState({
     email: "",
     mobile_number: "",
@@ -76,6 +86,7 @@ const Registration = () => {
           responseData.city === "" ||
           responseData.state === "" ||
           responseData.date_of_birth === "" ||
+          responseData.course_name === "" ||
           responseData.pincode === ""
         : radioSelecter === "Proffesional"
         ? responseData.email === "" ||
@@ -90,6 +101,7 @@ const Registration = () => {
           responseData.pincode === "" ||
           responseData.company_name === "" ||
           responseData.date_of_birth === "" ||
+          responseData.course_name === "" ||
           responseData.year_of_experience === ""
         : null
     ) {
@@ -174,6 +186,7 @@ const Registration = () => {
       user_category: radioSelecter,
       company_name: responseData.company_name,
       year_of_experience: responseData.year_of_experience,
+      course_name: responseData.course_name,
     };
 
     try {
@@ -222,7 +235,7 @@ const Registration = () => {
           className=""
           style={{ textAlign: "center", marginTop: "2%", position: "initial" }}
         >
-          Register 
+          Register
         </h2>
         <div className="container register mb-4" data-aos="fade-up">
           <div className="row">
@@ -267,6 +280,24 @@ const Registration = () => {
                   {radioSelecter === "Student" && (
                     <div className="row register-form">
                       <div className="col-md-6">
+                        <div className="form-group">
+                          <select
+                            name="course_name"
+                            value={responseData.course_name}
+                            onChange={handleChange}
+                            className="form-control"
+                            
+                          >
+                            <option value="" disabled>
+                              Select Course Name
+                            </option>
+                            {options.map((option) => (
+                              <option key={option.value} value={option.value}>
+                                {option.value}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
                         <div className="form-group">
                           <input
                             type="text"
@@ -382,7 +413,10 @@ const Registration = () => {
                           </div>
                         </div>
                       </div>
+                      <br />
                       <div className="col-md-6">
+                        <br />
+                        <br />
                         <div className="form-group">
                           <input
                             type="text"
@@ -511,6 +545,23 @@ const Registration = () => {
                   {radioSelecter === "Proffesional" && (
                     <div className="row register-form">
                       <div className="col-md-6">
+                        <div className="form-group">
+                          <select
+                            name="course_name"
+                            value={responseData.course_name}
+                            onChange={handleChange}
+                            className="form-control"
+                          >
+                            <option value="" disabled>
+                              Select Course Name
+                            </option>
+                            {options.map((option) => (
+                              <option key={option.value} value={option.value}>
+                                {option.value}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
                         <div className="form-group">
                           <input
                             type="text"
@@ -645,6 +696,8 @@ const Registration = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
+                        <br/>
+                        <br/>
                         <div className="form-group">
                           <input
                             type="text"

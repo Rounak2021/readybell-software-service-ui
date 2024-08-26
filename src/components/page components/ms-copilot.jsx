@@ -104,9 +104,7 @@ const MsCopilot = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingOne">
                         <button
-                          className={`accordion-button ${
-                            activeAccordion === 1 ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button`}
                           type="button"
                           onClick={() => toggleAccordion(1)}
                         >
@@ -116,9 +114,7 @@ const MsCopilot = () => {
                       </h2>
                       <div
                         id="collapseOne"
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 1 ? "show" : ""
-                        }`}
+                        className="accordion-collapse collapse show"
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                       >
