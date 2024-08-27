@@ -76,20 +76,20 @@ const Registration = () => {
     if (
       radioSelecter === "Student"
         ? responseData.email === "" ||
-          responseData.mobile_number === "" ||
-          responseData.password === "" ||
-          responseData.first_name === "" ||
-          responseData.last_name === "" ||
-          responseData.gender === "" ||
-          responseData.university_name === "" ||
-          responseData.country === "" ||
-          responseData.city === "" ||
-          responseData.state === "" ||
-          responseData.date_of_birth === "" ||
-          responseData.course_name === "" ||
-          responseData.pincode === ""
+        responseData.mobile_number === "" ||
+        responseData.password === "" ||
+        responseData.first_name === "" ||
+        responseData.last_name === "" ||
+        responseData.gender === "" ||
+        responseData.university_name === "" ||
+        responseData.country === "" ||
+        responseData.city === "" ||
+        responseData.state === "" ||
+        responseData.date_of_birth === "" ||
+        responseData.course_name === "" ||
+        responseData.pincode === ""
         : radioSelecter === "Proffesional"
-        ? responseData.email === "" ||
+          ? responseData.email === "" ||
           responseData.mobile_number === "" ||
           responseData.password === "" ||
           responseData.first_name === "" ||
@@ -103,7 +103,7 @@ const Registration = () => {
           responseData.date_of_birth === "" ||
           responseData.course_name === "" ||
           responseData.year_of_experience === ""
-        : null
+          : null
     ) {
       setError(`This field is mandatory to fill`);
     } else {
@@ -156,6 +156,7 @@ const Registration = () => {
       company_name: "",
       year_of_experience: "",
       date_of_birth: "",
+      course_name: ""
     });
     setConfirmPassword("");
     setconfirm_password_error("");
@@ -170,7 +171,7 @@ const Registration = () => {
     };
     const detailRequest = {
       email: responseData.email,
-      mobile_number: responseData.mobile_number,
+      mobile_number: `+91${responseData.mobile_number}`,
       password: responseData.password,
       confirm_password: responseData.confirm_password,
       first_name: responseData.first_name,
@@ -280,13 +281,12 @@ const Registration = () => {
                   {radioSelecter === "Student" && (
                     <div className="row register-form">
                       <div className="col-md-6">
-                        <div className="form-group">
-                          <select
+                      <div className="form-group">
+                      <select
                             name="course_name"
                             value={responseData.course_name}
                             onChange={handleChange}
                             className="form-control"
-                            
                           >
                             <option value="" disabled>
                               Select Course Name
@@ -373,7 +373,7 @@ const Registration = () => {
                           />
                           {error.trim().length > 0 &&
                             responseData.university_name.trim().length ===
-                              0 && (
+                            0 && (
                               <p className="text-danger mb-0 p-0">{error}</p>
                             )}
                         </div>
@@ -404,6 +404,8 @@ const Registration = () => {
                               onChange={handleChange}
                               className="form-control"
                               placeholder="Pincode*"
+                              minLength={6}
+                              maxLength={6}
                               defaultValue=""
                             />
                             {error.trim().length > 0 &&
@@ -436,8 +438,8 @@ const Registration = () => {
                         <div className="form-group">
                           <input
                             type="text"
-                            minLength={13}
-                            maxLength={13}
+                            minLength={10}
+                            maxLength={10}
                             name="mobile_number"
                             value={responseData.mobile_number}
                             onChange={handleChange}
@@ -545,7 +547,7 @@ const Registration = () => {
                   {radioSelecter === "Proffesional" && (
                     <div className="row register-form">
                       <div className="col-md-6">
-                        <div className="form-group">
+                      <div className="form-group">
                           <select
                             name="course_name"
                             value={responseData.course_name}
@@ -653,7 +655,7 @@ const Registration = () => {
                             />
                             {error.trim().length > 0 &&
                               responseData.year_of_experience.trim().length ===
-                                0 && (
+                              0 && (
                                 <p className="text-danger mb-0 p-0">{error}</p>
                               )}
                           </div>
@@ -687,6 +689,8 @@ const Registration = () => {
                               className="form-control"
                               placeholder="Pincode*"
                               defaultValue=""
+                              minLength={6}
+                              maxLength={6}
                             />
                             {error.trim().length > 0 &&
                               responseData.pincode.trim().length === 0 && (
@@ -696,8 +700,8 @@ const Registration = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         <div className="form-group">
                           <input
                             type="text"
@@ -717,8 +721,8 @@ const Registration = () => {
                         <div className="form-group">
                           <input
                             type="text"
-                            minLength={13}
-                            maxLength={13}
+                            minLength={10}
+                            maxLength={10}
                             name="mobile_number"
                             value={responseData.mobile_number}
                             onChange={handleChange}
