@@ -96,8 +96,7 @@ const Ai900Too = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingOne">
                         <button className={`accordion-button`}>
-                          Microsoft Certification: AI- 102T00-A: Designing and
-                          Implementing a Microsoft Azure AI Solution
+                        MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS AI-900T00-A
                         </button>
                       </h2>
                       <div

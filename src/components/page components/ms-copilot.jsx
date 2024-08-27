@@ -177,7 +177,7 @@ const MsCopilot = () => {
                             <li>Ethics of Artificial Intelligence</li>
                             <li>Outlook on the Future of AI</li>
                             <li>Quiz/Project</li>
-                            <b>Total Duration : 4 Hrs.</b>
+                            <b>Total Duration : 16 Hrs.</b>
                           </ul>
                         </div>
                       </div>
