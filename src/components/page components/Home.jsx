@@ -4,7 +4,7 @@ import Background from "./ParticleBackground";
 import homeSideIcon from "../assets/images/ai_image.jpg";
 import file1 from "../assets/images/pdf/Build Next-Generation AI Solutions with Generative AI (1).pdf";
 import file2 from "../assets/images/pdf/Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A.pdf";
-import file3 from "../assets/images/pdf/Build Next-Generation AI Solutions with Generative AI (1).pdf";
+import file3 from "../assets/images/pdf/Microsoft Certification - AI-102T00-A Designing and Implementing a Microsoft Azure AI Solution.pdf";
 import file4 from "../assets/images/pdf/PMI Agile Certified Practitioner (PMI ACP) - Certification Course.pdf";
 import file5 from "../assets/images/pdf/Python for Data Science, AI & Development.pdf";
 import file6 from "../assets/images/pdf/Microsoft Copilot - AI in Excel, Word, PowerPoint & More.pdf";
@@ -96,23 +96,10 @@ const Home = () => {
                             learn/upgrade/upskill into the field of Artificial
                             Intelligence.
                           </p>
-                          <Link to = {file1} target={"_blank"}> Read More +</Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>Microsoft Azure AI Certification Courses</h4>
-                          <p>
-                            We provide Certification Training on Microsoft
-                            Certified: Azure AI Fundamentals AI-900T00-A:
-                            Microsoft Azure AI Fundamentals (for beginners) &
-                            Microsoft Certified: Azure AI Engineer Associate
-                            AI-102T00-A: Designing and Implementing a Microsoft
-                            Azure AI Solution
-                          </p>
-                          <Link to = {file2} target={"_blank"}> Read More +</Link>
+                          <Link to={file1} target={"_blank"}>
+                            {" "}
+                            Read More +
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -120,20 +107,47 @@ const Home = () => {
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>
-                            Artificial Intelligence Projects and Assignments
+                            Microsoft Certification - Microsoft Azure AI
+                            Fundamentals AI-900T00-A
                           </h4>
                           <p>
-                            We have pool of highly qualified, experienced
-                            professionals to design/solution/execute projects
-                            and assignments of any level of complexity in the
-                            field of Data Science and Artificial Intelligence
-                            from any corner of the globe. Please reach out to us
-                            to experience our quality output
+                            This course introduces fundamentals concepts related
+                            to artificial intelligence (AI), and the services in
+                            Microsoft Azure that can be used to create AI
+                            solutions Demonstrate fundamental AI concepts
+                            related to the development of software and services
+                            of Microsoft Azure to create AI solutions.
                           </p>
-                          <Link to = {file3} target={"_blank"}> Read More +</Link>
+                          <Link to={file2} target={"_blank"}>
+                            {" "}
+                            Read More +
+                          </Link>
                         </div>
                       </div>
-                    </div>                   
+                    </div>
+                    <div className="col-md-4 mb-4" data-aos="fade-up">
+                      <div className="single-service-4 text-center p-4 border-5">
+                        <div className="service-text">
+                          <h4>
+                            Microsoft Certification - AI-102T00-A - Designing
+                            and Implementing a Microsoft Azure AI Solution
+                          </h4>
+                          <p>
+                            AI-102 Designing and Implementing an Azure AI
+                            Solution is intended for software developers wanting
+                            to build AI infused applications that leverage Azure
+                            AI Services, Azure AI Search, and Azure OpenAI
+                            Building AI infused applications leveraging Azure
+                            Cognitive Services, Azure Cognitive Search, and
+                            Microsoft Bot Framework
+                          </p>
+                          <Link to={file3} target={"_blank"}>
+                            {" "}
+                            Read More +
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
                     <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
@@ -146,58 +160,83 @@ const Home = () => {
                             years of experience in the field
                           </p>
                           {/* <a href="assets/images/pdf/PMI Agile Certified Practitioner (PMI ACP) - Certification Course.pdf" target={"_blank"}> Read More +</a> */}
-                          <Link to = {file4} target={"_blank"}> Read More +</Link>
+                          <Link to={file4} target={"_blank"}>
+                            {" "}
+                            Read More +
+                          </Link>
                         </div>
                       </div>
                     </div>
 
-                   <div className="col-md-4 mb-4" data-aos="fade-up">
+                    <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>PYTHON FOR DATA SCIENCE, AI & DEVELOPMENT</h4>
                           <p>
-                          This introduction to Python course will take you from zero to programming in 
-                          Python in a matter of hours—no prior programming experience necessary! You will 
-                          learn about Python basics and the different data types. You will familiarize yourself
-                           with Python Data structures like List and Tuples, as well as logic concepts like 
-                           conditions and branching.
+                            This introduction to Python course will take you
+                            from zero to programming in Python in a matter of
+                            hours—no prior programming experience necessary! You
+                            will learn about Python basics and the different
+                            data types. You will familiarize yourself with
+                            Python Data structures like List and Tuples, as well
+                            as logic concepts like conditions and branching.
                           </p>
                           {/* <a href="assets/images/pdf/Python for Data Science, AI & Development.pdf" target={"_blank"}> Read More +</a> */}
-                          <Link to = {file5} target={"_blank"}> Read More +</Link>
+                          <Link to={file5} target={"_blank"}>
+                            {" "}
+                            Read More +
+                          </Link>
                         </div>
                       </div>
-                    </div> 
+                    </div>
 
-                     <div className="col-md-4 mb-4" data-aos="fade-up">
+                    <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
-                          <h4> MICROSOFT COPILOT: AI IN EXCEL, WORD, POWERPOINT & MORE </h4>
+                          <h4>
+                            {" "}
+                            MICROSOFT COPILOT: AI IN EXCEL, WORD, POWERPOINT &
+                            MORE{" "}
+                          </h4>
                           <p>
-                          Learn Microsoft Copilot, the Microsoft Artificial Intelligence (AI) tool that 
-                          combines natural language with linguistic models, data, and Microsoft Graph 
-                          to improve employee productivity using everyday applications such as Word, Excel, 
-                          Outlook, Teams, or PowerPoint. Learn ChatGPT in Microsoft 365: Generative AI,
+                            Learn Microsoft Copilot, the Microsoft Artificial
+                            Intelligence (AI) tool that combines natural
+                            language with linguistic models, data, and Microsoft
+                            Graph to improve employee productivity using
+                            everyday applications such as Word, Excel, Outlook,
+                            Teams, or PowerPoint. Learn ChatGPT in Microsoft
+                            365: Generative AI,
                           </p>
                           {/* <a href="assets/images/pdf/Microsoft Copilot - AI in Excel, Word, PowerPoint & More.pdf" target={"_blank"}> Read More +</a> */}
-                          <Link to = {file6} target={"_blank"}> Read More +</Link>
+                          <Link to={file6} target={"_blank"}>
+                            {" "}
+                            Read More +
+                          </Link>
                         </div>
                       </div>
-                    </div> 
-                   <div className="col-md-4 mb-4" data-aos="fade-up">
+                    </div>
+                    <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">
                           <h4>DATA ANALYST</h4>
                           <p>
-                          Learn the latest skills and tools used by professional data analysts including Excel spreadsheets, Python, 
-Pandas, Numpy, Jupyter Notebooks, and more. Also work with a variety of data sources and project 
-scenarios to gain practical experience with data manipulation and applying analytical skills.
+                            Learn the latest skills and tools used by
+                            professional data analysts including Excel
+                            spreadsheets, Python, Pandas, Numpy, Jupyter
+                            Notebooks, and more. Also work with a variety of
+                            data sources and project scenarios to gain practical
+                            experience with data manipulation and applying
+                            analytical skills.
                           </p>
                           {/* <a href="assets/images/pdf/Data Analyst.pdf" target={"_blank"}> Read More +</a> */}
-                          <Link to = {file7} target={"_blank"}> Read More +</Link>
+                          <Link to={file7} target={"_blank"}>
+                            {" "}
+                            Read More +
+                          </Link>
                         </div>
                       </div>
-                    </div> 
-                    
+                    </div>
+
                     {/* <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="single-service-4 text-center p-4 border-5">
                         <div className="service-text">

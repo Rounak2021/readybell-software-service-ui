@@ -123,6 +123,30 @@ const Ai900Too = () => {
                               Intelligence and Knowledge Mining Microsoft Azure
                               AI Fundamentals: Generative AI
                             </li>
+                            <b>Total Duration : 14 Hrs.</b>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingOne">
+                        <button className={`accordion-button`}>
+                        Exam Preparation
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        className={`accordion-collapse`}
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <ul>
+                            <li>
+                            Certification Exam Preparation
+                            </li>
+                            <b>Total Duration : 10 Hrs.</b>
                           </ul>
                         </div>
                       </div>

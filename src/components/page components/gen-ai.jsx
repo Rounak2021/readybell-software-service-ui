@@ -156,6 +156,7 @@ const GenAi = () => {
                               technologies
                             </li>
                             <li>Quiz/Project</li>
+                            <b>Total Duration : 16 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -188,6 +189,7 @@ const GenAi = () => {
                             <li>Low Code No Code ML/AI Platforms</li>
                             <li>Basic Prompting to Build AI Applications</li>
                             <li>Quiz/Project</li>
+                            <b>Total Duration : 12 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -220,6 +222,7 @@ const GenAi = () => {
                             <li>Speech Models</li>
                             <li>Interacting with Trained Models</li>
                             <li>Quiz/Project</li>
+                            <b>Total Duration : 12 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -246,6 +249,7 @@ const GenAi = () => {
                             <li>Image and Video Generation</li>
                             <li>Tools for Generating Images</li>
                             <li>Quiz/Project</li>
+                            <b>Total Duration : 12 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -272,6 +276,7 @@ const GenAi = () => {
                             <li>Vector Data Base</li>
                             <li>LangChain with RAG and LLM Agents</li>
                             <li>Quiz/Project</li>
+                            <b>Total Duration : 10 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -304,6 +309,7 @@ const GenAi = () => {
                               Cloud, IBM Watson
                             </li>
                             <li>Quiz/Project</li>
+                            <b>Total Duration : 10 Hrs.</b>
                           </ul>
                         </div>
                       </div>
@@ -327,6 +333,7 @@ const GenAi = () => {
                         <div className="accordion-body">
                           <ul>
                             <li>Gen AI Capstone Project</li>
+                            <b>Total Duration : 24 Hrs.</b>
                           </ul>
                         </div>
                       </div>
