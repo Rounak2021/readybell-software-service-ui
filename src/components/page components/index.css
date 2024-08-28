@@ -265,4 +265,40 @@ input[type="checkbox"]:checked {
 
 
   
+/* --------------------------------- */
+/* 
+/* Ensure all cards have the same height */
+.service-wrapper .single-service-4 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Use flex-grow to push the button to the bottom */
+.service-wrapper .single-service-4 .service-text {
+  flex-grow: 1;
+}
+
+/* Button styling */
+.read-more-btn {
+  display: inline-block;
+  width: 150px; /* Fixed width for the button */
+  padding: 10px 0;
+  text-align: center;
+  background-color: #ffffff; /* Button color */
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.read-more-btn:hover {
+  background-color: #a1a3a4; /* Darken on hover */
+}
+
+/* Ensuring margin-top: auto pushes button to the bottom */
+.mt-auto {
+  margin-top: auto;
+}
 

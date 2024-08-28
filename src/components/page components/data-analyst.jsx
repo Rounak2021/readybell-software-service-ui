@@ -48,7 +48,9 @@ const DataAnalyst = () => {
                     experience with data manipulation and applying analytical
                     skills.
                   </p>
-
+                  <div className="section-title">
+                    <h2>Key Skills You Will Learn</h2>
+                  </div>
                   <p>
                     Data Analysis, Querying Databases, Data Generation, Data
                     Augmenting, Data Science, Python Programming, Pandas,
@@ -67,8 +69,12 @@ const DataAnalyst = () => {
                     Anyone aspiring for/advancing into Data Analyst/Data
                     Science/AI/ML Jobs
                   </p>
+                  <h3>Course Duration</h3>
+                  <p>100 Hrs (7 Hrs a week total ~ 15 Weeks)</p>
                   <h3>Course Cetification</h3>
                   <p>READYBELL Data Analyst Certificate</p>
+                  <h3>Job prospects with this role</h3>
+                  <p>Entry Level - Data Analyst/ Data Scientist</p>
                   <img
                     src={logo}
                     style={{ width: "50%" }}

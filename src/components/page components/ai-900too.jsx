@@ -16,7 +16,8 @@ const Ai900Too = () => {
             <div className="row justify-content-between">
               <div className="col-md-7">
                 <h5 className="mb-0">
-                  MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS AI-900T00-A
+                  MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS
+                  AI-900T00-A
                 </h5>
               </div>
               <div className="col-md-5">
@@ -24,7 +25,8 @@ const Ai900Too = () => {
                   <Link className="text-dark" to="/" data-aos="fade-up">
                     Home
                   </Link>{" "}
-                  - MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS AI-900T00-A
+                  - MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS
+                  AI-900T00-A
                 </span>
               </div>
             </div>
@@ -47,7 +49,9 @@ const Ai900Too = () => {
                     artificial intelligence (AI), and the services in Microsoft
                     Azure that can be used to create AI solutions
                   </p>
-
+                  <div className="section-title">
+                    <h2>Key Skills You Will Learn</h2>
+                  </div>
                   <p>
                     Demonstrate fundamental AI concepts related to the
                     development of software and services of Microsoft Azure to
@@ -65,6 +69,10 @@ const Ai900Too = () => {
                     Anyone aspiring for/advancing career into Artificial
                     Intelligence/AI/ML Jobs
                   </p>
+                  <h3>Job prospects with this role</h3>
+                  <p>Entry Level - AI Engineer</p>
+                  <h3>Course Duration</h3>
+                  <p>24 Hrs (7 Hrs a week total ~ 3 Weeks)</p>
                   <h3>Course Cetification</h3>
                   <p>
                     READYBELL Course Attendence Certificate (MS Certification is
@@ -75,7 +83,7 @@ const Ai900Too = () => {
                     alt=""
                     className="float-right ml-3 mb-2 img-fluid"
                   />
-                 
+
                   <h3>Mode of Training</h3>
                   <p>
                     Instructor-led 100% Online or Online + Classroom (Salt Lake,
@@ -89,70 +97,74 @@ const Ai900Too = () => {
                   </p>
 
                   {/* ---- */}
-                  
-                  <div className="card" style={{padding:"20px"}}>
-                  <h3>Course Syllabus</h3>
-                  <div className="accordion" id="accordionExample">
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="headingOne">
-                        <button className={`accordion-button`}>
-                        MICROSOFT CERTIFICATION - MICROSOFT AZURE AI FUNDAMENTALS AI-900T00-A
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseOne"
-                        className={`accordion-collapse`}
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          <ul>
-                            <li>
-                              Microsoft Azure AI Fundamentals: AI Overview
-                              Microsoft
-                            </li>
-                            <li>
-                              Azure AI Fundamentals: Computer Vision Microsoft
-                              Azure
-                            </li>
-                            <li>
-                              AI Fundamentals: Natural Language Processing
-                            </li>
-                            <li>
-                              Microsoft Azure AI Fundamentals: Document
-                              Intelligence and Knowledge Mining Microsoft Azure
-                              AI Fundamentals: Generative AI
-                            </li>
-                            <b>Total Duration : 14 Hrs.</b>
-                          </ul>
+
+                  <div className="card" style={{ padding: "20px" }}>
+                    <h3>Course Syllabus</h3>
+                    <div className="accordion" id="accordionExample">
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingOne">
+                          <button className={`accordion-button`}>
+                            MICROSOFT CERTIFICATION - MICROSOFT AZURE AI
+                            FUNDAMENTALS AI-900T00-A
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          className={`accordion-collapse`}
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div className="accordion-body">
+                            <ul>
+                              <li>
+                                Microsoft Azure AI Fundamentals: AI Overview
+                                Microsoft
+                              </li>
+                              <li>
+                                Azure AI Fundamentals: Computer Vision Microsoft
+                                Azure
+                              </li>
+                              <li>
+                                AI Fundamentals: Natural Language Processing
+                              </li>
+                              <li>
+                                Microsoft Azure AI Fundamentals: Document
+                                Intelligence and Knowledge Mining Microsoft
+                                Azure AI Fundamentals: Generative AI
+                              </li>
+                              <b>Total Duration : 14 Hrs.</b>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingOne">
+                          <button className={`accordion-button`}>
+                            Exam Preparation
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          className={`accordion-collapse`}
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div className="accordion-body">
+                            <ul>
+                              <li>Certification Exam Preparation</li>
+                              <b>Total Duration : 10 Hrs.</b>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="headingOne">
-                        <button className={`accordion-button`}>
-                        Exam Preparation
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseOne"
-                        className={`accordion-collapse`}
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          <ul>
-                            <li>
-                            Certification Exam Preparation
-                            </li>
-                            <b>Total Duration : 10 Hrs.</b>
-                          </ul>
-                        </div>
-                      </div>
+                    <div>
+                      <a class="dropdown-item colr-1" href="/register">
+                        {" "}
+                        Register For this Course{" "}
+                      </a>
                     </div>
-                  </div>
-                  <div><a class="dropdown-item colr-1" href="/register"> Register For this Course </a></div>
                   </div>
                 </div>
                 <Sidecard />

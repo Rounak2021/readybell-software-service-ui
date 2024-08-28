@@ -3,6 +3,9 @@ import "./index.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <footer>
@@ -60,26 +63,40 @@ const Footer = () => {
                     <div className="widget-list">
                       <ul>
                         <li>
-                          <Link to="/">Home</Link>
+                          <Link onClick={scrollToTop} to="/">
+                            Home
+                          </Link>
                         </li>
                         <li>
-                          <Link to="/about">About Us</Link>
+                          <Link onClick={scrollToTop} to="/about">
+                            About Us
+                          </Link>
                         </li>
                         <li>
-                          <Link to="/why-readybell">Why ReadyBell</Link>
+                          <Link onClick={scrollToTop} to="/why-readybell">
+                            Why ReadyBell
+                          </Link>
                         </li>
                         <li>
-                          <Link to="/affiliations">Our Affiliations</Link>
+                          <Link onClick={scrollToTop} to="/affiliations">
+                            Our Affiliations
+                          </Link>
                         </li>
                         <li>
-                          <Link to="/team">Our Team</Link>
+                          <Link onClick={scrollToTop} to="/team">
+                            Our Team
+                          </Link>
                         </li>
-                        
+
                         <li>
-                          <Link to="/contact">Contact Us</Link>
+                          <Link onClick={scrollToTop} to="/contact">
+                            Contact Us
+                          </Link>
                         </li>
                         <li>
-                          <Link to="/register">Register</Link>
+                          <Link onClick={scrollToTop} to="/register">
+                            Register
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -87,63 +104,55 @@ const Footer = () => {
                 </div>
                 <div className="col-lg-5 col-md-6 mb-3d-5">
                   <div className="row single_widget">
-                    {/* <div class="col-12"><h3>Training List</h3></div> */}
                     <div className="col-6">
                       <div className="widget-list">
                         <h3>Software Courses</h3>
                         <ul>
                           <li>
-                            <Link to="/ai-900t00">
+                            <Link onClick={scrollToTop} to="/ai-900t00">
                               <i className="far fa-check-square" /> Microsoft
                               AI- 900T00-A
                             </Link>
                           </li>
                           <li>
-                            <Link to="/ai-102t00">
+                            <Link onClick={scrollToTop} to="/ai-102t00">
                               <i className="far fa-check-square" /> Microsoft
                               AI-102T00
                             </Link>
                           </li>
-                          
+
                           <li>
-                            <Link to="/python-data-science">
+                            <Link
+                              onClick={scrollToTop}
+                              to="/python-data-science"
+                            >
                               <i className="far fa-check-square" /> Python for
                               Data Science
                             </Link>
                           </li>
                           <li>
-                            <Link to="/data-analyst">
+                            <Link onClick={scrollToTop} to="/data-analyst">
                               <i className="far fa-check-square" /> Data Analyst
                             </Link>
                           </li>
                           <li>
-                            <Link to="/gen-ai">
+                            <Link onClick={scrollToTop} to="/gen-ai">
                               <i className="far fa-check-square" /> Generative
                               AI
                             </Link>
                           </li>
                           <li>
-                            <Link to="/ms-copilot">
+                            <Link onClick={scrollToTop} to="/ms-copilot">
                               <i className="far fa-check-square" />
                               Microsoft Copilot
                             </Link>
                           </li>
-                          {/* <li>
-                    <Link to="/togaf">
-                      <i className="far fa-check-square" /> TOGAF
-                    </Link>
-                  </li> */}
                           <li>
-                            <Link to="/pmi-acp">
+                            <Link onClick={scrollToTop} to="/pmi-acp">
                               <i className="far fa-check-square" /> PMI ACP
                               (Agile Certification)
                             </Link>
                           </li>
-                          {/* <li>
-                    <Link to="/pmi-pmp">
-                      <i className="far fa-check-square" /> PMI PMP
-                    </Link>
-                  </li> */}
                         </ul>
                       </div>
                     </div>

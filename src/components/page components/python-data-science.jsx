@@ -57,7 +57,9 @@ const PythonDataScience = () => {
                     you’ll feel comfortable creating basic programs, working
                     with data, and automating real-world tasks using Python.
                   </p>
-
+                  <div className="section-title">
+                    <h2>Key Skills You Will Learn</h2>
+                  </div>
                   <p>
                     Learn Python - the most popular programming language and for
                     Data Science and Software Development, learn Numpy, Pandas,
@@ -73,6 +75,10 @@ const PythonDataScience = () => {
                     Development, Data Engineering, AI, and DevOps as well as a
                     number of other job roles
                   </p>
+                  <h3>Job prospects with this role</h3>
+                  <p>Python Developer</p>
+                  <h3>Course Duration</h3>
+                  <p>36 Hrs (7 Hrs a week total ~ 5 Weeks)</p>
                   <h3>Course Cetification</h3>
                   <p>
                     READYBELL Python for Data Science, AI & Development

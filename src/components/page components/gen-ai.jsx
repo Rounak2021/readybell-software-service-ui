@@ -18,7 +18,6 @@ const GenAi = () => {
               <div className="col-md-7">
                 <h5 className="mb-0">
                   BUILD NEXT-GENERATION AI SOLUTIONS WITH GENERATIVE AI
-                  GENERATIVE AI AND PROMPT ENGINEERING
                 </h5>
               </div>
               <div className="col-md-5">
@@ -27,7 +26,6 @@ const GenAi = () => {
                     Home
                   </Link>{" "}
                   - BUILD NEXT-GENERATION AI SOLUTIONS WITH GENERATIVE AI
-                  GENERATIVE AI AND PROMPT ENGINEERING
                 </span>
               </div>
             </div>
@@ -54,6 +52,9 @@ const GenAi = () => {
                     Generative AI tools and industry-standard LLMOps (Large
                     Language Model Operations) methodologies
                   </p>
+                  <div className="section-title">
+                    <h2>Key Skills You Will Learn</h2>
+                  </div>
                   <p>
                     A comprehensive curriculum that deep dives from foundational
                     AI/ML to advanced prompt engineering, building a solid grasp
@@ -82,6 +83,17 @@ const GenAi = () => {
                       and Prompt Engineering roles
                     </li>
                   </ul>
+                  <h3>Job prospects with this role</h3>
+                  <p>
+                    Software Engineer - Gen AI, AI Prompt Engineer, ML Engineer
+                    - LLMs & Gen AI, Engineer - Gen AI, AI Architect, ML/NLP
+                    Engineer
+                  </p>
+                  <h3>Course Duration</h3>
+                  <p>
+                    ~ 96 Hrs (8 Hrs a week total ~ 12 Weeks) including
+                    assignments & Gen AI Capstone Project
+                  </p>
                   <h3>Course Cetification</h3>
                   <p>
                     READYBELL Generative AI and Prompt Engineering Certificate

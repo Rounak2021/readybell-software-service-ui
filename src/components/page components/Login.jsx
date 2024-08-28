@@ -101,7 +101,7 @@ const Login = () => {
         });
       }
       if (response?.data?.status === 401) {
-        setLoading(false); 
+        setLoading(false);
         const message = response?.data?.message;
         swal({
           title: "Warning",
@@ -228,14 +228,16 @@ const Login = () => {
                             fontWeight: "bolder",
                           }}
                         >
-                          Readybell Software Services Pvt Limited is an IT
-                          service provider pioneering in the filed of IT
-                          Education and Computer Based Testing headquartered in
-                          Kolkata, India. Company imparts niche quality IT
-                          education in the field of Cyber Security, Cloud
-                          Security, IT Security, Networking, Network Security,
-                          IT Fundamental and Hardware courses to IT
-                          professionals as well as to fresh IT career aspirants
+                          Readybell is swiftly emerging as a frontrunner in the
+                          training and consulting domain. With a core focus on
+                          advancing knowledge and skills in cutting-edge digital
+                          technologies, Readybell caters to a global audience of
+                          students and professionals. Our commitment lies in
+                          delivering top-tier classroom and online training,
+                          alongside comprehensive project assistance, in fields
+                          such as Artificial Intelligence (AI), Machine Learning
+                          (ML), Data Science, Generative AI, and Agile Project
+                          Management.
                         </h2>
                       </b>
                     </div>

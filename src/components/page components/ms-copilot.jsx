@@ -54,6 +54,9 @@ const MsCopilot = () => {
                     course is exclusively designed for Corporates for AI/Gen AI
                     Adoption.
                   </p>
+                  <div className="section-title">
+                    <h2>Key Skills You Will Learn</h2>
+                  </div>
                   <p>
                     Everything about Microsoft Copilot and the Integration of
                     ChatGPT into Microsoft 365, Microsoft Copilot in Excel,
@@ -72,6 +75,10 @@ const MsCopilot = () => {
                   <p>
                     Exclusively Designed for Corporates for AI/Gen AI Adoption
                   </p>
+                  <h3>Job prospects with this role</h3>
+                  <p>Technical Specialist - CoPilot,</p>
+                  <h3>Course Duration</h3>
+                  <p>16 Hrs (8 Hrs a week total ~ 2 Weeks) including assignments</p>
                   <h3>Course Cetification</h3>
                   <p>READYBELL Microsoft Copilot Certificate</p>
                   <img
@@ -182,7 +189,12 @@ const MsCopilot = () => {
                         </div>
                       </div>
                     </div>
-                    <div><a class="dropdown-item colr-1" href="/register"> Register For this Course </a></div>
+                    <div>
+                      <a class="dropdown-item colr-1" href="/register">
+                        {" "}
+                        Register For this Course{" "}
+                      </a>
+                    </div>
                   </div>
                 </div>
 

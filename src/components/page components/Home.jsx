@@ -11,6 +11,54 @@ import file6 from "../assets/images/pdf/Microsoft Copilot - AI in Excel, Word, P
 import file7 from "../assets/images/pdf/Data Analyst.pdf";
 
 const Home = () => {
+  const services = [
+    {
+      title: "PYTHON FOR DATA SCIENCE, AI & DEVELOPMENT",
+      description: `This introduction to Python course will take you from zero to programming in Python in a matter of
+      hours—no prior programming experience necessary! You will learn about Python basics and the different data types. 
+      You will familiarize yourself with Python Data structures like List and Tuples, as well as logic concepts like conditions and branching.`,
+      link: `${file5}`,
+    },
+    {
+      title: "DATA ANALYST",
+      description: `Learn the latest skills and tools used by professional data analysts including Excel spreadsheets, Python, Pandas, Numpy, Jupyter Notebooks, and more. Also work with a variety of data sources and project scenarios to gain practical experience with data manipulation and applying analytical skills.`,
+      link: `${file7}`,
+    },
+    {
+      title:
+        "Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A",
+      description: `This course introduces fundamental concepts related to artificial intelligence (AI), and the services in
+      Microsoft Azure that can be used to create AI solutions. Demonstrate fundamental AI concepts
+      related to the development of software and services of Microsoft Azure to create AI solutions.`,
+      link: `${file2}`,
+    },
+    {
+      title:
+        "Microsoft Certification - AI-102T00-A - Designing and Implementing a Microsoft Azure AI Solution",
+      description: `AI-102 Designing and Implementing an Azure AI Solution is intended for software developers wanting to build 
+      AI-infused applications that leverage Azure AI Services, Azure AI Search, and Azure OpenAI. Building AI-infused applications leveraging Azure Cognitive Services, Azure Cognitive Search, and Microsoft Bot Framework.`,
+      link: `${file3}`,
+    },
+    {
+      title: "MICROSOFT COPILOT: AI IN EXCEL, WORD, POWERPOINT & MORE",
+      description: `Learn Microsoft Copilot, the Microsoft Artificial Intelligence (AI) tool that combines natural language with linguistic models, data, and Microsoft Graph to improve employee productivity using everyday applications such as Word, Excel, Outlook, Teams, or PowerPoint. Learn ChatGPT in Microsoft 365: Generative AI.`,
+      link: `${file6}`,
+    },
+    {
+      title:
+        "Artificial Intelligence, Generative AI, Machine Learning, Data Science",
+      description: `We provide premium quality education in the field of
+      Artificial Intelligence, Generative AI, Machine Learning, and Data Science for all levels of personnel, 
+      starting from experienced working professionals to school-level students willing to learn/upgrade/upskill into the field of Artificial Intelligence.`,
+      link: `${file1}`,
+    },
+    {
+      title: "PMI ACP and PMI PMP Certification Course",
+      description: `We provide certification training in PMI Agile Certified Practitioner (PMI-ACP)® & Project Management Professional (PMP)® by highly experienced PMI ACP and PMP Certified professionals having 15+ years of experience in the field.`,
+      link: `${file4}`,
+    },
+  ];
+
   return (
     <>
       <section className="welcome-section section-pt">
@@ -56,16 +104,16 @@ const Home = () => {
               >
                 <div
                   className="half_column_image"
-                  style={{
-                    boxShadow:
-                      "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px",
-                  }}
+                  // style={{
+                  //   boxShadow:
+                  //     "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px",
+                  // }}
                 >
                   <img
                     src={homeSideIcon}
                     alt="welcome"
                     className="img-fluid"
-                    style={{ height: "345px", width: "1458px" }}
+                    style={{ height: "345px" }}
                   />
                 </div>
               </div>
@@ -80,284 +128,29 @@ const Home = () => {
               <div className="col-md-12">
                 <div className="service-wrapper bg-white">
                   <div className="row">
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>
-                            Artificial Intelligence, Generative AI, Machine
-                            Learning, Data Science
-                          </h4>
-                          <p>
-                            We provide premium quality education in the filed of
-                            Artificial Intelligence, Generative AI, Machine
-                            Learning, Data Science for all levels of personnel
-                            starting from experienced working professionals to
-                            school level students willing to
-                            learn/upgrade/upskill into the field of Artificial
-                            Intelligence.
-                          </p>
-                          <Link to={file1} target={"_blank"}>
-                            {" "}
-                            Read More +
-                          </Link>
+                    {services.map((service, index) => (
+                      <div
+                        key={index}
+                        className="col-md-4 mb-4"
+                        data-aos="fade-up"
+                      >
+                        <div className="single-service-4 d-flex flex-column text-center p-4 border-5 h-100">
+                          <div className="service-text flex-grow-1">
+                            <h4>{service.title}</h4>
+                            <p>{service.description}</p>
+                          </div>
+                          <div className="mt-auto">
+                            <a
+                              href={service.link}
+                              target={"_blank"}
+                              className="read-more-btn"
+                            >
+                              Read More +
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>
-                            Microsoft Certification - Microsoft Azure AI
-                            Fundamentals AI-900T00-A
-                          </h4>
-                          <p>
-                            This course introduces fundamentals concepts related
-                            to artificial intelligence (AI), and the services in
-                            Microsoft Azure that can be used to create AI
-                            solutions Demonstrate fundamental AI concepts
-                            related to the development of software and services
-                            of Microsoft Azure to create AI solutions.
-                          </p>
-                          <Link to={file2} target={"_blank"}>
-                            {" "}
-                            Read More +
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>
-                            Microsoft Certification - AI-102T00-A - Designing
-                            and Implementing a Microsoft Azure AI Solution
-                          </h4>
-                          <p>
-                            AI-102 Designing and Implementing an Azure AI
-                            Solution is intended for software developers wanting
-                            to build AI infused applications that leverage Azure
-                            AI Services, Azure AI Search, and Azure OpenAI
-                            Building AI infused applications leveraging Azure
-                            Cognitive Services, Azure Cognitive Search, and
-                            Microsoft Bot Framework
-                          </p>
-                          <Link to={file3} target={"_blank"}>
-                            {" "}
-                            Read More +
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>PMI ACP and PMI PMP Certification Course</h4>
-                          <p>
-                            We provide certification training in PMI Agile
-                            Certified Practitioner (PMI-ACP)® & Project
-                            Management Professional (PMP)® by highly experienced
-                            PMI ACP and PMP Certified professionals having 15+
-                            years of experience in the field
-                          </p>
-                          {/* <a href="assets/images/pdf/PMI Agile Certified Practitioner (PMI ACP) - Certification Course.pdf" target={"_blank"}> Read More +</a> */}
-                          <Link to={file4} target={"_blank"}>
-                            {" "}
-                            Read More +
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>PYTHON FOR DATA SCIENCE, AI & DEVELOPMENT</h4>
-                          <p>
-                            This introduction to Python course will take you
-                            from zero to programming in Python in a matter of
-                            hours—no prior programming experience necessary! You
-                            will learn about Python basics and the different
-                            data types. You will familiarize yourself with
-                            Python Data structures like List and Tuples, as well
-                            as logic concepts like conditions and branching.
-                          </p>
-                          {/* <a href="assets/images/pdf/Python for Data Science, AI & Development.pdf" target={"_blank"}> Read More +</a> */}
-                          <Link to={file5} target={"_blank"}>
-                            {" "}
-                            Read More +
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>
-                            {" "}
-                            MICROSOFT COPILOT: AI IN EXCEL, WORD, POWERPOINT &
-                            MORE{" "}
-                          </h4>
-                          <p>
-                            Learn Microsoft Copilot, the Microsoft Artificial
-                            Intelligence (AI) tool that combines natural
-                            language with linguistic models, data, and Microsoft
-                            Graph to improve employee productivity using
-                            everyday applications such as Word, Excel, Outlook,
-                            Teams, or PowerPoint. Learn ChatGPT in Microsoft
-                            365: Generative AI,
-                          </p>
-                          {/* <a href="assets/images/pdf/Microsoft Copilot - AI in Excel, Word, PowerPoint & More.pdf" target={"_blank"}> Read More +</a> */}
-                          <Link to={file6} target={"_blank"}>
-                            {" "}
-                            Read More +
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>DATA ANALYST</h4>
-                          <p>
-                            Learn the latest skills and tools used by
-                            professional data analysts including Excel
-                            spreadsheets, Python, Pandas, Numpy, Jupyter
-                            Notebooks, and more. Also work with a variety of
-                            data sources and project scenarios to gain practical
-                            experience with data manipulation and applying
-                            analytical skills.
-                          </p>
-                          {/* <a href="assets/images/pdf/Data Analyst.pdf" target={"_blank"}> Read More +</a> */}
-                          <Link to={file7} target={"_blank"}>
-                            {" "}
-                            Read More +
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>CISCO CCNA</h4>
-                          <p>
-                            Readybell offers the most comprehensive CISCO
-                            Certification Training Courses in Kolkata for all
-                            networking professionals and aspiring students. Our
-                            CISCO training has been specially designed to
-                            provide in-depth knowledge of Cisco technology. We
-                            have a dedicated highly experienced certified pool
-                            of CISCO trainers.
-                          </p>
-                          <Link to="/ccna" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>CISCO CCNP Enterprise 350-401 ENCOR</h4>
-                          <p>
-                            Readybell offers the most comprehensive CISCO
-                            Certification Training Courses in Kolkata for all
-                            networking professionals and aspiring students. Our
-                            CISCO training has been specially designed...
-                          </p>
-                          <Link to="/ccnp-encor" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>CISCO CCNP Security Core (350-701) SCOR</h4>
-                          <p>
-                            Readybell offers the most comprehensive CISCO
-                            Certification Training Courses in Kolkata for all
-                            networking professionals and aspiring students. Our
-                            CISCO training has been specially designed to
-                            provide in-depth knowledge of Cisco technology.
-                          </p>
-                          <Link to="/ccnp-scor" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>CCNP Secure Solutions with VPN 300-730 SVPN</h4>
-                          <p>
-                            Readybell offers the most comprehensive CISCO
-                            Certification Training Courses in Kolkata for all
-                            networking professionals and aspiring students. Our
-                            CISCO training has been specially designed to
-                            provide in-depth knowledge of Cisco technology.
-                          </p>
-                          <Link to="/ccnp-vpn" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>CCIE Security VPN</h4>
-                          <p>
-                            Readybell offers the most comprehensive CISCO
-                            Certification Training Courses in Kolkata for all
-                            networking professionals and aspiring students. Our
-                            CISCO training has been specially designed to
-                            provide in-depth knowledge of Cisco technology. We
-                            have a dedicated...
-                          </p>
-                          <Link to="/vpn" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>CCIE Security FTD FMC</h4>
-                          <p>
-                            Readybell offers the most comprehensive CISCO
-                            Certification Training Courses in Kolkata for all
-                            networking professionals and aspiring students. Our
-                            CISCO training has been specially designed to
-                            provide in-depth knowledge of Cisco technology.{" "}
-                          </p>
-                          <Link to="/ftd-fmc" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <div className="col-md-4 mb-4" data-aos="fade-up">
-                      <div className="single-service-4 text-center p-4 border-5">
-                        <div className="service-text">
-                          <h4>CCIE Security ASA</h4>
-                          <p>
-                            Readybell offers the most comprehensive CISCO
-                            Certification Training Courses in Kolkata for all
-                            networking professionals and aspiring students. Our
-                            CISCO training has been specially designed to
-                            provide in-depth knowledge of Cisco technology.
-                          </p>
-                          <Link to="/asa" className="rounded-btn">
-                            <i className="fas fa-angle-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div> */}
+                    ))}
                   </div>
                 </div>
               </div>
@@ -365,6 +158,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section
         className="two-columns-section section-ptb"
         style={{ backgroundImage: "url(assets/images/big_bg_3.jpg)" }}

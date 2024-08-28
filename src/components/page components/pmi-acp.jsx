@@ -49,7 +49,9 @@ const PMIacp = () => {
                   truly Agile mindset and a team-centric approach sure to earn
                   recognition from peers, employers, and stakeholders alike
                 </p>
-
+                <div className="section-title">
+                  <h2>Key Skills You Will Learn</h2>
+                </div>
                 <p>
                   Master yourself in agile principles, practices, and values
                   across various frameworks through this PMI- ACP Certification
@@ -71,12 +73,18 @@ const PMIacp = () => {
                     8 months of agile project experience within the last 3 years
                   </li>
                 </ul>
-
                 <h3>Target Audience</h3>
                 <p>
                   Project managers, team leads, Scrum Masters, developers, and
                   anyone involved in agile project management
                 </p>
+                <h3>Job prospects with this role</h3>
+                <p>
+                  Scrum Master, Agile Project Manager, Project Manager, Deputy
+                  Project Manager, Agile Trainer, Business Analyst,
+                </p>
+                <h3>Course Duration</h3>
+                  <p>21 Hrs (Only Saturdays & Sundays 3 Hrs each - 3 Weekends and 1 Sat )</p>
                 <h3>Course Cetification</h3>
                 <p>
                   READYBELL PMI-ACP 21 contact hours of agile practices training
@@ -84,11 +92,10 @@ const PMIacp = () => {
                 </p>
                 <img
                   src={logo}
-                  style={{ width: "50%" }}
+                  style={{ width: "35%" }}
                   alt=""
                   className="float-right ml-3 mb-2 img-fluid"
                 />
-
                 <h3>Mode of Training</h3>
                 <p>
                   Instructor-led 100% Online or Online + Classroom (Salt Lake,
@@ -106,9 +113,10 @@ const PMIacp = () => {
                   Leaders working in the course relevant field, Job Guidance,
                   Techniques of resume preparation, Networking.
                 </p>
-
                 {/* ---- */}
-                <h3>Course Curriculam</h3>
+                <h3>
+                  Course Curriculam <b>(Total Duration : 21 Hrs)</b>
+                </h3>
                 {/* ---- */}
                 <div className="accordion" id="accordionExample">
                   <div className="accordion-item">
@@ -283,15 +291,10 @@ const PMIacp = () => {
                   </div>
                 </div>
               </div>
-              <div>
-                <a class="dropdown-item colr-1" href="/register">
-                  {" "}
-                  Register For this Course{" "}
-                </a>
-              </div>
-
               <Sidecard />
-            </div>
+              <a style={{textAlign:"center", width:"65%"}} class="dropdown-item colr-1" href="/register"> Register For this Course </a>
+              </div>
+            <div></div>
           </div>
         </div>
       </section>

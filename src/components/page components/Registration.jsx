@@ -76,20 +76,20 @@ const Registration = () => {
     if (
       radioSelecter === "Student"
         ? responseData.email === "" ||
-        responseData.mobile_number === "" ||
-        responseData.password === "" ||
-        responseData.first_name === "" ||
-        responseData.last_name === "" ||
-        responseData.gender === "" ||
-        responseData.university_name === "" ||
-        responseData.country === "" ||
-        responseData.city === "" ||
-        responseData.state === "" ||
-        responseData.date_of_birth === "" ||
-        responseData.course_name === "" ||
-        responseData.pincode === ""
+          responseData.mobile_number === "" ||
+          responseData.password === "" ||
+          responseData.first_name === "" ||
+          responseData.last_name === "" ||
+          responseData.gender === "" ||
+          responseData.university_name === "" ||
+          responseData.country === "" ||
+          responseData.city === "" ||
+          responseData.state === "" ||
+          responseData.date_of_birth === "" ||
+          responseData.course_name === "" ||
+          responseData.pincode === ""
         : radioSelecter === "Proffesional"
-          ? responseData.email === "" ||
+        ? responseData.email === "" ||
           responseData.mobile_number === "" ||
           responseData.password === "" ||
           responseData.first_name === "" ||
@@ -103,7 +103,7 @@ const Registration = () => {
           responseData.date_of_birth === "" ||
           responseData.course_name === "" ||
           responseData.year_of_experience === ""
-          : null
+        : null
     ) {
       setError(`This field is mandatory to fill`);
     } else {
@@ -156,7 +156,7 @@ const Registration = () => {
       company_name: "",
       year_of_experience: "",
       date_of_birth: "",
-      course_name: ""
+      course_name: "",
     });
     setConfirmPassword("");
     setconfirm_password_error("");
@@ -281,14 +281,18 @@ const Registration = () => {
                   {radioSelecter === "Student" && (
                     <div className="row register-form">
                       <div className="col-md-6">
-                      <div className="form-group">
-                      <select
+                        <div className="form-group">
+                          <select
                             name="course_name"
-                            value={responseData.course_name}
+                            value={responseData.course_name || ""}
                             onChange={handleChange}
                             className="form-control"
                           >
-                            <option value="" disabled>
+                            <option
+                              value=""
+                              disabled
+                              selected={!responseData.course_name}
+                            >
                               Select Course Name
                             </option>
                             {options.map((option) => (
@@ -298,6 +302,7 @@ const Registration = () => {
                             ))}
                           </select>
                         </div>
+
                         <div className="form-group">
                           <input
                             type="text"
@@ -373,7 +378,7 @@ const Registration = () => {
                           />
                           {error.trim().length > 0 &&
                             responseData.university_name.trim().length ===
-                            0 && (
+                              0 && (
                               <p className="text-danger mb-0 p-0">{error}</p>
                             )}
                         </div>
@@ -547,7 +552,7 @@ const Registration = () => {
                   {radioSelecter === "Proffesional" && (
                     <div className="row register-form">
                       <div className="col-md-6">
-                      <div className="form-group">
+                        <div className="form-group">
                           <select
                             name="course_name"
                             value={responseData.course_name}
@@ -655,7 +660,7 @@ const Registration = () => {
                             />
                             {error.trim().length > 0 &&
                               responseData.year_of_experience.trim().length ===
-                              0 && (
+                                0 && (
                                 <p className="text-danger mb-0 p-0">{error}</p>
                               )}
                           </div>

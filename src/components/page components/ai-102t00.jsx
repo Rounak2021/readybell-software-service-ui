@@ -45,7 +45,9 @@ const Ai102Too = () => {
                     applications that leverage Azure AI Services, Azure AI
                     Search, and Azure OpenAI
                   </p>
-
+                  <div className="section-title">
+                    <h2>Key Skills You Will Learn</h2>
+                  </div>
                   <p>
                     Building AI infused applications leveraging Azure Cognitive
                     Services, Azure Cognitive Search, and Microsoft Bot
@@ -67,6 +69,10 @@ const Ai102Too = () => {
                     Anyone aspiring for/advancing career into Artificial
                     Intelligence/AI/ML Jobs
                   </p>
+                  <h3>Job prospects with this role</h3>
+                  <p>Entry Level - AI Engineer, Data Scientist</p>
+                  <h3>Course Duration</h3>
+                  <p>45 Hrs (7 Hrs a week total ~ 6 Weeks)</p>
                   <h3>Course Cetification</h3>
                   <p>
                     READYBELL Course Attendence Certificate (MS Certification is
@@ -77,7 +83,7 @@ const Ai102Too = () => {
                     alt=""
                     className="float-right ml-3 mb-2 img-fluid"
                   />
-                  
+
                   <h3>Mode of Training</h3>
                   <p>
                     Instructor-led 100% Online or Online + Classroom (Salt Lake,
@@ -132,28 +138,31 @@ const Ai102Too = () => {
                         </div>
                       </div>
                       <div className="accordion-item">
-                      <h2 className="accordion-header" id="headingOne">
-                        <button className={`accordion-button`}>
-                        Exam Preparation
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseOne"
-                        className={`accordion-collapse`}
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div className="accordion-body">
-                          <ul>
-                            <li>
-                            Certification Exam Preparation
-                            </li>
-                            <b>Total Duration : 10 Hrs.</b>
-                          </ul>
+                        <h2 className="accordion-header" id="headingOne">
+                          <button className={`accordion-button`}>
+                            Exam Preparation
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          className={`accordion-collapse`}
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div className="accordion-body">
+                            <ul>
+                              <li>Certification Exam Preparation</li>
+                              <b>Total Duration : 10 Hrs.</b>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                      <div><a class="dropdown-item colr-1" href="/register"> Register For this Course </a></div>
+                      <div>
+                        <a class="dropdown-item colr-1" href="/register">
+                          {" "}
+                          Register For this Course{" "}
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -175,17 +175,40 @@ const Header = () => {
                         className="navbar-nav mt-2 mt-lg-0"
                         data-aos="fade-up"
                       >
-                       
-                      <li className="nav-item dropdown">
-                       <Link  className="nav-link dropdown-toggle" to="#" id="navbarDropdownMenuLink"
-                            role="button" aria-haspopup="true"  aria-expanded="false" > About Us </Link>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-                      <Link  to="/about"  className="dropdown-item"> About Us </Link>
-                      <Link  to="/why-readybell"  className="dropdown-item"> Why Readybell </Link>
-                      <Link  to="/team"  className="dropdown-item"> Our Team   </Link>
-                      <Link  to="/affiliations"  className="dropdown-item"> Our Affiliations   </Link>
+                        <li className="nav-item dropdown">
+                          <Link
+                            className="nav-link dropdown-toggle"
+                            to="#"
+                            id="navbarDropdownMenuLink"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            {" "}
+                            About Us{" "}
+                          </Link>
+                          <div
+                            className="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink"
+                          >
+                            <Link to="/about" className="dropdown-item">
+                              {" "}
+                              About Us{" "}
+                            </Link>
+                            <Link to="/why-readybell" className="dropdown-item">
+                              {" "}
+                              Why Readybell{" "}
+                            </Link>
+                            <Link to="/team" className="dropdown-item">
+                              {" "}
+                              Our Team{" "}
+                            </Link>
+                            <Link to="/affiliations" className="dropdown-item">
+                              {" "}
+                              Our Affiliations{" "}
+                            </Link>
                           </div>
-                      </li>
+                        </li>
 
                         {/* <li
                           className={`nav-item dropdown ${
@@ -282,8 +305,6 @@ const Header = () => {
                           </div>
                         </li> */}
 
-                        
-
                         <li className="nav-item dropdown">
                           <Link
                             className="nav-link dropdown-toggle"
@@ -293,13 +314,12 @@ const Header = () => {
                             aria-haspopup="true"
                             aria-expanded="false"
                           >
-                            	Python
+                            Python
                           </Link>
                           <div
                             className="dropdown-menu"
                             aria-labelledby="navbarDropdownMenuLink"
                           >
-                           
                             <Link
                               to="/python-data-science"
                               className="dropdown-item"
@@ -324,27 +344,13 @@ const Header = () => {
                             className="dropdown-menu"
                             aria-labelledby="navbarDropdownMenuLink"
                           >
-                           
-                            <Link
-                              to="/data-analyst"
-                              className="dropdown-item"
-                            >
+                            <Link to="/data-analyst" className="dropdown-item">
                               Data Analyst
                             </Link>
                           </div>
                         </li>
 
                         <li className="nav-item dropdown">
-                       <Link  className="nav-link dropdown-toggle" to="#" id="navbarDropdownMenuLink"
-                            role="button" aria-haspopup="true"  aria-expanded="false" > AI & Gen AI  </Link>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-                      <Link  to="/ai-900t00"  className="dropdown-item"> Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A </Link>
-                      <Link  to="/ai-102t00"  className="dropdown-item">Microsoft Certification - AI-102T00-A - Designing and Implementing a Microsoft Azure AI Solution </Link>
-                      <Link  to="/gen-ai"  className="dropdown-item"> Build Next-Generation AI Solutions with Generative AI  </Link>
-                      <Link  to="/ms-copilot"  className="dropdown-item"> Microsoft Copilot - AI in Excel, Word, PowerPoint & More  </Link>
-                          </div>
-                      </li>
-                      <li className="nav-item dropdown">
                           <Link
                             className="nav-link dropdown-toggle"
                             to="#"
@@ -353,21 +359,54 @@ const Header = () => {
                             aria-haspopup="true"
                             aria-expanded="false"
                           >
-                           AI Projects
+                            {" "}
+                            AI & Gen AI{" "}
                           </Link>
                           <div
                             className="dropdown-menu"
                             aria-labelledby="navbarDropdownMenuLink"
                           >
-                           
-                            <Link
-                              to="/ai"
-                              className="dropdown-item"
-                            >
-                              Artificial Intelligence Projects and Assignments 
+                            <Link to="/ai-900t00" className="dropdown-item">
+                              {" "}
+                              Microsoft Certification - Microsoft Azure AI
+                              Fundamentals AI-900T00-A{" "}
+                            </Link>
+                            <Link to="/ai-102t00" className="dropdown-item">
+                              Microsoft Certification - AI-102T00-A - Designing
+                              and Implementing a Microsoft Azure AI Solution{" "}
+                            </Link>
+                            <Link to="/gen-ai" className="dropdown-item">
+                              {" "}
+                              Build Next-Generation AI Solutions with Generative
+                              AI{" "}
+                            </Link>
+                            <Link to="/ms-copilot" className="dropdown-item">
+                              {" "}
+                              Microsoft Copilot - AI in Excel, Word, PowerPoint
+                              & More{" "}
                             </Link>
                           </div>
                         </li>
+                        {/* <li className="nav-item dropdown">
+                          <Link
+                            className="nav-link dropdown-toggle"
+                            to="#"
+                            id="navbarDropdownMenuLink"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            AI Projects
+                          </Link>
+                          <div
+                            className="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink"
+                          >
+                            <Link to="/ai" className="dropdown-item">
+                              Artificial Intelligence Projects and Assignments
+                            </Link>
+                          </div>
+                        </li> */}
                         <li className="nav-item dropdown">
                           <Link
                             className="nav-link dropdown-toggle"
@@ -377,24 +416,18 @@ const Header = () => {
                             aria-haspopup="true"
                             aria-expanded="false"
                           >
-                           PMI ACP
+                            PMI ACP
                           </Link>
                           <div
                             className="dropdown-menu"
                             aria-labelledby="navbarDropdownMenuLink"
                           >
-                           
-                            <Link
-                              to="/pmi-acp"
-                              className="dropdown-item"
-                            >
-                              PMI ACP Certification Course  
+                            <Link to="/pmi-acp" className="dropdown-item">
+                              PMI ACP Certification Course
                             </Link>
                           </div>
                         </li>
 
-
-                        
                         <li>
                           <Link to="/affiliations" className="nav-link">
                             Test Centre
@@ -448,17 +481,17 @@ const Header = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <div
-                className="slider-area-2 height-300 swiper-slide bg-col">
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-12">
                       <div className="slider-content-2 py-lg-5 py-md-4 py-3">
                         <h2 className="display-3">
                           Artificial Intelligence, Generative AI, Machine
-                          Learning, Data Science, Python, Data Analytics, Microsoft Copilot, Gen AI. 
+                          Learning, Data Science, Python, Data Analytics,
+                          Microsoft Copilot, Gen AI.
                         </h2>
-                        
+
                         <p>
                           We provide premium quality education in the filed of
                           Artificial Intelligence, Generative AI, Machine
@@ -474,10 +507,9 @@ const Header = () => {
                 </div>
               </div>
             </SwiperSlide>
-            
+
             <SwiperSlide>
-              <div
-                className="slider-area-2 height-300 swiper-slide bg-col">
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-12">
@@ -500,10 +532,9 @@ const Header = () => {
                 </div>
               </div>
             </SwiperSlide>
-            
+
             <SwiperSlide>
-              <div
-                className="slider-area-2 height-300 swiper-slide bg-col">
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-12">
@@ -526,10 +557,9 @@ const Header = () => {
                 </div>
               </div>
             </SwiperSlide>
-            
+
             <SwiperSlide>
-              <div
-                className="slider-area-2 height-300 swiper-slide bg-col">
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-12">
@@ -551,10 +581,9 @@ const Header = () => {
                 </div>
               </div>
             </SwiperSlide>
-            
+
             <SwiperSlide>
-              <div
-                className="slider-area-2 height-300 swiper-slide bg-col">
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-12">
@@ -576,7 +605,6 @@ const Header = () => {
                 </div>
               </div>
             </SwiperSlide>
-
           </Swiper>
         </div>
       </section>

@@ -11,55 +11,51 @@ export const Sidecard = () => {
               <div className="side-menu">
                 <ul>
                   <li>
-                    <Link to="/ai-900t00">
-                      <i className="far fa-check-square" /> Microsoft AI-
-                      900T00-A
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/ai-102t00">
-                      <i className="far fa-check-square" /> Microsoft AI-102T00
-                    </Link>
-                  </li>
-                  
-                  <li>
                     <Link to="/python-data-science">
-                      <i className="far fa-check-square" /> Python for Data
-                      Science
+                      <i className="far fa-check-square" /> PYTHON FOR DATA
+                      SCIENCE, AI & DEVELOPMENT
                     </Link>
                   </li>
                   <li>
                     <Link to="/data-analyst">
-                      <i className="far fa-check-square" /> Data Analyst
+                      <i className="far fa-check-square" /> DATA ANALYST
                     </Link>
                   </li>
                   <li>
-                    <Link to="/gen-ai">
-                      <i className="far fa-check-square" /> Generative AI
+                    <Link to="/ai-900t00">
+                      <i className="far fa-check-square" /> Microsoft
+                      Certification - Microsoft Azure AI Fundamentals
+                      AI-900T00-A
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/ai-102t00">
+                      <i className="far fa-check-square" /> Microsoft
+                      Certification - AI-102T00-A - Designing and Implementing a
+                      Microsoft Azure AI Solution
                     </Link>
                   </li>
                   <li>
                     <Link to="/ms-copilot">
                       <i className="far fa-check-square" />
-                      Microsoft Copilot
+                      MICROSOFT COPILOT: AI IN EXCEL, WORD, POWERPOINT & MORE
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link to="/togaf">
-                      <i className="far fa-check-square" /> TOGAF
+
+                  <li>
+                    <Link to="/gen-ai">
+                      <i className="far fa-check-square" /> Artificial
+                      Intelligence, Generative AI, Machine Learning, Data
+                      Science
                     </Link>
-                  </li> */}
+                  </li>
+
                   <li>
                     <Link to="/pmi-acp">
-                      <i className="far fa-check-square" /> PMI ACP (Agile
-                      Certification)
+                      <i className="far fa-check-square" /> PMI ACP and PMI PMP
+                      Certification Course
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link to="/pmi-pmp">
-                      <i className="far fa-check-square" /> PMI PMP
-                    </Link>
-                  </li> */}
                 </ul>
               </div>
             </div>
