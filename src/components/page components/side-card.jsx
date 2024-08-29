@@ -44,9 +44,7 @@ export const Sidecard = () => {
 
                   <li>
                     <Link to="/gen-ai">
-                      <i className="far fa-check-square" /> Artificial
-                      Intelligence, Generative AI, Machine Learning, Data
-                      Science
+                      <i className="far fa-check-square" /> Build Next-Generation AI Solutions With Generative AI And Prompt Engineering
                     </Link>
                   </li>
 

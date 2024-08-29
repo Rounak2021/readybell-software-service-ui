@@ -46,7 +46,7 @@ const Home = () => {
     },
     {
       title:
-        "Artificial Intelligence, Generative AI, Machine Learning, Data Science",
+        "BUILD NEXT-GENERATION AI SOLUTIONS WITH GENERATIVE AI AND PROMPT ENGINEERING",
       description: `We provide premium quality education in the field of
       Artificial Intelligence, Generative AI, Machine Learning, and Data Science for all levels of personnel, 
       starting from experienced working professionals to school-level students willing to learn/upgrade/upskill into the field of Artificial Intelligence.`,
@@ -199,7 +199,7 @@ const Home = () => {
                     knowledge of the technical architecture around their matter
                     of expertise. Readybell’s founders are highly qualified
                     professionals from reputed educational institutes of India
-                    and the mentor has over 26 years of global IT experience
+                    and the mentor has over 30+ years of global IT experience
                     having delivered numerous large IT Programs across the
                     world. Readybell was founded with the vision of its mentor
                     and committed to assure:

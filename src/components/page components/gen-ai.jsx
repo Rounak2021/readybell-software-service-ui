@@ -17,7 +17,7 @@ const GenAi = () => {
             <div className="row justify-content-between">
               <div className="col-md-7">
                 <h5 className="mb-0">
-                  BUILD NEXT-GENERATION AI SOLUTIONS WITH GENERATIVE AI
+                  BUILD NEXT-GENERATION AI SOLUTIONS WITH GENERATIVE AI AND PROMPT ENGINEERING
                 </h5>
               </div>
               <div className="col-md-5">
@@ -25,7 +25,7 @@ const GenAi = () => {
                   <Link className="text-dark" to="/" data-aos="fade-up">
                     Home
                   </Link>{" "}
-                  - BUILD NEXT-GENERATION AI SOLUTIONS WITH GENERATIVE AI
+                  - BUILD NEXT-GENERATION AI SOLUTIONS WITH GENERATIVE AI AND PROMPT ENGINEERING
                 </span>
               </div>
             </div>
