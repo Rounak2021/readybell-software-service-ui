@@ -195,8 +195,8 @@ const Contact = () => {
                   </li>
                   <li>
                     <i className="fas fa-envelope" />{" "}
-                    <a href="mailto:info@readybellsoftware.com">
-                      info@readybellsoftware.com
+                    <a href="mailto:contact@readybellsoftware.com">
+                      contact@readybellsoftware.com
                     </a>
                   </li>
                 </ul>
