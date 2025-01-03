@@ -302,3 +302,46 @@ input[type="checkbox"]:checked {
   margin-top: auto;
 }
 
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-item {
+  margin: 5px; /* Optional: Adds spacing between menu items */
+}
+
+
+/* Base styles for the navigation bar */
+.navbar-nav .nav-link {
+  font-size: 14px; /* Smaller font size */
+  padding: 5px 10px; /* Adjust padding */
+}
+
+.navbar-nav .dropdown-menu {
+  font-size: 12px; /* Smaller font size for submenus */
+  padding: 5px 0; /* Reduce top and bottom padding */
+  min-width: 150px; /* Reduce submenu width */
+}
+
+.navbar-nav .dropdown-menu li a {
+  padding: 5px 10px; /* Adjust link padding */
+}
+
+.navbar-nav .dropdown-menu li {
+  margin: 0; /* Remove margins for compact layout */
+}
+
+/* Additional hover effects for better visibility */
+.navbar-nav .dropdown-menu li a:hover {
+  background-color: #f8f9fa13; /* Light gray background on hover */
+  color: #000; /* Dark text on hover */
+}
+
+/* Adjust the submenu arrow icon size */
+.navbar-nav .nav-link.dropdown-toggle::after {
+  font-size: 10px; /* Smaller arrow icon */
+}
