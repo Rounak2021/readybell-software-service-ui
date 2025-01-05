@@ -89,19 +89,19 @@ import file59 from "../assets/images/pdf/New_Courses/Palo Alto Networks Certifie
 
 import file60 from "../assets/images/pdf/New_Courses/Fortinet NSE 4 Network Security Professional.pdf";
 
-// ---------firepower course missing, pabitra to ask
-import file61 from "../assets/images/pdf/New_Courses/PMI - AGILE CERTIFIED PRACTITIONER (ACP).pdf";
-import file62 from "../assets/images/pdf/New_Courses/PMI - AGILE CERTIFIED PRACTITIONER (ACP).pdf";
-// ---------
+
+import file61 from "../assets/images/pdf/New_Courses/Securing Networks with Cisco Firepower Next Generation Firewall (SSNGFW) v1.0.pdf";
+import file62 from "../assets/images/pdf/New_Courses/Securing Networks with Cisco Firepower Next-Generation IPS (SSFIPS4) 4.0 (SSFIPS4).pdf";
+
 
 import file63 from "../assets/images/pdf/New_Courses/Check Point Certified Security Administrator (CCSA) R81.20.pdf";
 import file64 from "../assets/images/pdf/New_Courses/Check Point Certified Security Expert (CCSE) R81.20.pdf";
 import file65 from "../assets/images/pdf/New_Courses/Check Point Threat Prevention Specialist (CTPS) R81_20.pdf";
 import file66 from "../assets/images/pdf/New_Courses/Check Point Next Generation Secure Web Gateway.pdf";
 
-// -----cyber security course not present----pabitra to ask
-import file67 from "../assets/images/pdf/New_Courses/Cisco Certified CyberOps Associate (200-201 CBROPS).pdf";
-// -----
+
+import file67 from "../assets/images/pdf/New_Courses/EC-Council curriculum - Ethical Hacker v13.pdf";
+
 import file68 from "../assets/images/pdf/New_Courses/AZ-800 Administering Windows Server Hybrid Core Infrastructure.pdf";
 import file69 from "../assets/images/pdf/New_Courses/AZ-801 Configuring Windows Server Hybrid Advanced Services.pdf";
 
@@ -568,7 +568,23 @@ const Header = () => {
                         src={logo}
                         alt="logo"
                         className="img-fluid"
-                        style={{ width: "50%" }}
+                        style={{ width: "30%" }}
+                      />
+                    </Link>
+                    <Link to="/">
+                      <img
+                        src="https://prothoughts.co.in/wp-content/uploads/2024/04/ProThoughts-Verify-Badge-1.webp"
+                        alt="logo"
+                        className="img-fluid"
+                        style={{ width: "15%", marginLeft: "15px" }}
+                      />
+                    </Link>
+                    <Link to="/">
+                      <img
+                        src="https://www.hadartraining.com/wp-content/uploads/2022/11/cropped-Progetto-senza-titolo-2.png"
+                        alt="logo"
+                        className="img-fluid"
+                        style={{ width: "15%", marginLeft: "15px" }}
                       />
                     </Link>
                   </div>
@@ -991,14 +1007,22 @@ const Header = () => {
                     <div className="col-lg-12">
                       <div className="slider-content-2 py-lg-5 py-md-4 py-3">
                         <h2 className="display-3">
-                          PMI ACP Certification Course
+                          PMI PMP and ACP Certification Programs
                         </h2>
-                        <p>
+                        {/* <p>
                           We provide certification training in PMI Agile
                           Certified Practitioner (PMI-ACP)® & Project Management
                           Professional (PMP)® by highly experienced PMI ACP and
                           PMP Certified professionals having 15+ years of
                           experience in the field
+                        </p> */}
+                        <p>
+                          READYBELL is a PMI (Project Management Institute) Authorised Training Partner (ATP).
+                          PMI ATP status is awarded to only established, high-quality, financially-sound project
+                          management education providers who are aligned to PMI core values, have mature
+                          business practices. READYBELL uses exclusive, PMI-authorized training content,
+                          aligned to evolving PMP® &amp; ACP® examination subject areas, for PMP® &amp; ACP®
+                          examination preparations.
                         </p>
                         {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
                       </div>
@@ -1023,6 +1047,231 @@ const Header = () => {
                           have State-of-the-art Computer Based Testing Exam
                           Centre in Salt Lake, Kolkata (India) where we conduct
                           exams of Pearson Vue and PSI clients.
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Advanced Certification Programme in Generative AI and Prompt Engineering
+                        </h2>
+                        <p>
+                          The Advanced Certification Programme in Generative AI and Prompt Engineering is
+                          an intensive AI course that equips you with the knowledge and tools to build and
+                          deploy cutting-edge Generative AI solutions for real-world language and vision AI
+                          tasks. This is a comprehensive curriculum that deep dives from foundational AI/ML to
+                          advanced prompt engineering, building a solid grasp of Generative AI concepts and
+                          applications.
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Cloud Computing
+                        </h2>
+                        <p>
+                          Become a Cloud Computing expert with our Cloud computing and DevOps
+                          Certification Courses. Explore our extensive courses on Microsoft Azure, Amazon
+                          AWS and Google Cloud Certification courses. Gain hands-on experience through
+                          real-world projects
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Blockchain
+                        </h2>
+                        <p>
+                          READYBELL imparts training for Certified Ethereum Developer Program. An
+                          Ethereum developer is one who has expertise in one of the best decentralized
+                          blockchain platforms available today, Ethereum. Students acquire the skills required
+                          to excel in the world of blockchain networks, having varied knowledge of the basics
+                          and advanced concepts of Ethereum. Earning this certification will entitle you to become an Ethereum developer, which is an extremely in-demand skill in the
+                          international job market currently.
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Robotic Process Automation
+                        </h2>
+                        <p>
+                          Robotic Process Automation (RPA) is in high demand across many industries, and
+                          the market is expected to grow significantly in the coming years. READYBELL offers
+                          Beginner, Intermediate and Advanced level courses in RPA with UI Path
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Artificial Internet of Things (AIoT)
+                        </h2>
+                        <p>
+                          Artificial intelligence of things (AIoT) is the combination of artificial intelligence (AI)
+                          technologies and the internet of things (IoT) infrastructure. In this course students will
+                          learn to innovate solutions by integrating the two powerful emerging technologies –
+                          AI and IOT
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Virtual reality (VR) Augmented reality (AR)
+                        </h2>
+                        <p>
+                          Augmented reality (AR) and virtual reality (VR) are both technological experiences
+                          that change how digital technology interacts with the physical world. The current job
+                          demand for AR VR engineers is 1400% and it&#39;s growing at the rate of 280% every
+                          year. In order to exploit these opportunities, students need VR and AR training which
+                          READYBELL is providing
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Drone Building
+                        </h2>
+                        <p>
+                          It is the perfect course of college students and drone entrepreneurs, or anyone with a
+                          DIY attitude who is interested in building Dones, Operating Drones, Flying Robot
+                          things. Students have used this course as a launch pad to create their own drone
+                          applications, so it is highly recommend checking it out if you are trying to develop a
+                          new drone innovation
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          Semiconductor
+                        </h2>
+                        <p>
+                          UNLOCK YOUR POTENTIAL IN THE SEMICONDUCTOR INDUSTRY. READYBELL
+                          is provides a premier learning platform designed for individuals passionate about
+                          advancing their careers in the global semiconductor and electronics industry
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          ServiceNow training, Certification and Placement Programs
+                        </h2>
+                        <p>
+                          Explore career opportunities in Japan by attending state-of-the-art Certification
+                          Training in ServiceNow. Land in high paying ServiceNow Roles in top companies in
+                          Japan/Europe/India. Experience the Japanese language and cultural training and
+                          gain hands-on experience with actual Japanese market specific ServiceNow
+                          scenarios
+                        </p>
+                        {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider-area-2 height-300 swiper-slide bg-col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="slider-content-2 py-lg-5 py-md-4 py-3">
+                        <h2 className="display-3">
+                          CISCO, Juniper, CompTIA, Firewall, Windows Server, Linux and MS Office 365
+                          Certification Courses
+                        </h2>
+                        <p>
+                          READYBELL offers host of CISCO, Juniper, CompTIA, Firewall, Windows Server,
+                          Linux and MS Office 365 Certification Training Courses. Our trainers are highly experienced Industry experts having in-depth subject matter expertise and real world
+                          hands-on projects.
                         </p>
                         {/* <a to="google-cloud.html" class="button_two mt-2">More Details</a> */}
                       </div>

@@ -71,7 +71,7 @@ const Home = () => {
                   data-aos="fade-up"
                   // data-aos-duration={100}
                 >
-                  <h2 className="font-weight-bold">About ReadyBell</h2>
+                  <h2 className="font-weight-bold">About READYBELL</h2>
                   <p>
                     Readybell, established in 2017 and headquartered in Kolkata,
                     India, is swiftly emerging as a frontrunner in the training
