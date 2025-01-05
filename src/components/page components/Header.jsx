@@ -114,6 +114,8 @@ import file74 from "../assets/images/pdf/New_Courses/Enterprise Linux Systems Ad
 import file75 from "../assets/images/pdf/New_Courses/MS-102 Microsoft 365 Administrator.pdf";
 import file76 from "../assets/images/pdf/New_Courses/Microsoft Windows Endpoint Administrator (MD-102).pdf";
 
+import pmiLogo from "../assets/images/pmi_logo.jpeg"
+
 const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -198,7 +200,8 @@ const Header = () => {
         { title: "Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A", link: `${file4}` },
         { title: "Microsoft Certification - AI-102T00-A Designing and Implementing a Microsoft Azure AI Solution", link: `${file5}` },
         { title: "Microsoft Copilot - AI in Excel, Word, PowerPoint & More", link: `${file6}` },
-        { title: "Build Next-Generation AI Solutions with Generative AI", link: `${file7}` },
+        { title: "Advanced Program in Generative AI and Prompt Engineering", link: `${file7}` },
+        { title: "AIOT", link: `${file7}` },
         { title: "Data Analyst", link: `${file8}` },
       ],
     },
@@ -238,7 +241,7 @@ const Header = () => {
               title: "Developer",
               submenu: [
                 { title: "AWS Certified Developer - Associate (DVA-C02)", link: `${file15}` },
-                { title: "DevOps Engineer - Professional (DOP-C02)", link: `${file16}` },
+                { title: "DevOps Engineer - Professional (DOP-C01)", link: `${file16}` },
               ],
             },
             {
@@ -540,7 +543,7 @@ const Header = () => {
                     }}
                   >
                     <p style={{ paddingTop: "1em" }}>
-                      <i className="fas fa-mobile-alt" /> +91-33-79642872,
+                      <i className="fas fa-mobile-alt" /> +91-9147708045,
                       +91-9674552097
                     </p>
                     <p style={{ paddingTop: "1em" }}>
@@ -581,10 +584,18 @@ const Header = () => {
                     </Link>
                     <Link to="/">
                       <img
-                        src="https://www.hadartraining.com/wp-content/uploads/2022/11/cropped-Progetto-senza-titolo-2.png"
+                        src="https://www.hadartraining.com/wp-content/uploads/2022/11/af_2.jpg"
                         alt="logo"
                         className="img-fluid"
                         style={{ width: "15%", marginLeft: "15px" }}
+                      />
+                    </Link>
+                    <Link to="/">
+                      <img
+                        src= {pmiLogo}
+                        alt="logo"
+                        className="img-fluid"
+                        style={{ width: "20%", marginLeft: "15px" }}
                       />
                     </Link>
                   </div>
@@ -608,7 +619,7 @@ const Header = () => {
                       />
                       <div className="info_data">
                         <h6>Phone</h6>
-                        <p>+91-33-79642872, +91-9674552097</p>
+                        <p>+91-9147708045, +91-9674552097</p>
                       </div>
                     </div>
                   </div>

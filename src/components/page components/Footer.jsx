@@ -30,7 +30,7 @@ const Footer = () => {
                         <p>AH-12, Saltlake Sector II, Kolkata, India 700091</p>
                         <h5>E-Mail &amp; Phone:</h5>
                         <p>
-                          +91-33-79642872, +91-9674552097
+                          +91-9147708045, +91-9674552097
                           <br />
                           contact@readybellsoftware.com
                         </p>
