@@ -113,6 +113,7 @@ import file73 from "../assets/images/pdf/New_Courses/Enterprise Linux Systems Ad
 import file74 from "../assets/images/pdf/New_Courses/Enterprise Linux Systems Administration (L-250).pdf";
 import file75 from "../assets/images/pdf/New_Courses/MS-102 Microsoft 365 Administrator.pdf";
 import file76 from "../assets/images/pdf/New_Courses/Microsoft Windows Endpoint Administrator (MD-102).pdf";
+import file77 from "../assets/images/pdf/New_Courses/Coming Soon.pdf";
 
 import pmiLogo from "../assets/images/pmi_logo.jpeg"
 
@@ -474,7 +475,10 @@ const Header = () => {
         },
       ],
     },
-    { title: "Office 365", submenu: [{ title: "MS-102: Microsoft 365 Administrator - Certification", link: `${file75}` }, { title: "MD-102 - Endpoint Administrator Certification", link: `${file76}` }] },
+    { title: "VR/AR", link: `${file77}` },
+    { title: "Drone Building", link: `${file77}` },
+    { title: "Semiconductor and Blockchain", link: `${file77}` },
+    { title: "Service Now and RPA", link: `${file77}` },
     { title: "Test Centre", link: "/affiliations" },
     { title: "Contact Us", link: "/contact" },
   ];
@@ -584,7 +588,7 @@ const Header = () => {
                     </Link>
                     <Link to="/">
                       <img
-                        src="https://www.hadartraining.com/wp-content/uploads/2022/11/af_2.jpg"
+                        src="https://www.hadartraining.com/wp-content/uploads/2024/04/pearson-vue-authorized-test-center.png"
                         alt="logo"
                         className="img-fluid"
                         style={{ width: "15%", marginLeft: "15px" }}
