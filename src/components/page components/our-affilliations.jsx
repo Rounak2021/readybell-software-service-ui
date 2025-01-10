@@ -27,7 +27,7 @@ const Affilliations = () => {
       <div className="featured-area-2">
         <div className="container">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-12">
               <div className="section-title">
                 <h2>Our Affilliations</h2>
               </div>
@@ -109,7 +109,7 @@ const Affilliations = () => {
                 </div>
               </div>
             </div>
-            <Sidecard />
+            {/* <Sidecard /> */}
           </div>
         </div>
       </div>

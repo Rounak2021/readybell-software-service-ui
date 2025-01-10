@@ -140,7 +140,7 @@ const Services = () => {
                   and PSI.
                 </p>
               </div>
-              <Sidecard />
+              {/* <Sidecard /> */}
             </div>
           </div>
         </div>

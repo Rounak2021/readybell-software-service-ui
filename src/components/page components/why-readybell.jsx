@@ -31,7 +31,7 @@ const WhyRreadybell = () => {
         <div className="featured-area-2">
           <div className="container">
             <div className="row">
-              <div className="col-md-8">
+              <div className="col-md-12">
                 <div className="section-title">
                   <h2>Why Readybell</h2>
                 </div>
@@ -202,7 +202,7 @@ const WhyRreadybell = () => {
                 </div>
               </aside>
             </div> */}
-              <Sidecard />
+              {/* <Sidecard /> */}
             </div>
           </div>
         </div>

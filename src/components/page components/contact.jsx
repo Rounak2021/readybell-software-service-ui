@@ -87,7 +87,7 @@ const Contact = () => {
       >
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 mb-3d-5">
+            {/* <div className="col-lg-8 mb-3d-5">
               <div className="main-content">
                 <div className="contact-from-wrapper-2">
                   <h2 className="section-heading">Get In Touch</h2>
@@ -178,8 +178,8 @@ const Contact = () => {
                   </form>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-4">
+            </div> */}
+            <div className="col-lg-12">
               <div className="highlights-section hover_bg text-white p-4">
                 <h4>
                   Don’t Hesitate to contact with us for any kind of information
@@ -189,16 +189,26 @@ const Contact = () => {
                     <i className="fas fa-paper-plane" /> AH-12, Saltlake Sector
                     II, Kolkata 700091, West Bengal, India
                   </li>
+                  <br/>
                   <li>
                     <i className="fas fa-mobile-alt" /> +91 9674552097 /
                     9874878446 / 033-79642872
                   </li>
+                  <br/>
                   <li>
                     <i className="fas fa-envelope" />{" "}
                     <a href="mailto:contact@readybellsoftware.com">
                       contact@readybellsoftware.com
                     </a>
                   </li>
+                  <br/>
+                  <li>
+                    <i className="fas fa-envelope" />{" "}
+                    <a href="mailto:contact@readybellsoftware.com">
+                      www.readybellsoftware.com
+                    </a>
+                  </li>
+                  <br/>
                 </ul>
                 <div className="social-links">
                   <ul>

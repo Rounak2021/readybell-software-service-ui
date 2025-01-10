@@ -184,8 +184,17 @@ const Header = () => {
   };
 
   const menuStructure = [
+    // {
+    //   title: "About Us", link: "/about"
+    // },
     {
-      title: "About Us", link: "/about"
+      title: "About Us",
+      submenu: [
+        { title: "About Us", link: "/about" },
+        { title: "Why Readybell", link: "/why-readybell" },
+        { title: "Our Team", link: "/team" },
+        { title: "Our Affiliations", link: "/affiliations" },
+      ],
     },
     {
       title: "Project Management",
@@ -566,6 +575,16 @@ const Header = () => {
             <div className="row">
               <div className="col-md-12">
                 <div className="header_top d-flex justify-content-between align-items-center">
+                  <div className="site_info d-flex justify-content-between">
+
+                    <div className="single_info">
+                      <div className="info_data">
+                        <h6 style={{ marginLeft: "6px" }} >PMI Authorized Training Partner</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="header_top d-flex justify-content-between align-items-center">
                   <div
                     className="site_logo"
                     style={{ width: "35%", textAlign: "left" }}
@@ -575,7 +594,7 @@ const Header = () => {
                         src={logo}
                         alt="logo"
                         className="img-fluid"
-                        style={{ width: "30%" }}
+                        style={{ width: "32%" }}
                       />
                     </Link>
                     <Link to="/">
@@ -596,10 +615,10 @@ const Header = () => {
                     </Link>
                     <Link to="/">
                       <img
-                        src= {pmiLogo}
+                        src={pmiLogo}
                         alt="logo"
                         className="img-fluid"
-                        style={{ width: "20%", marginLeft: "15px" }}
+                        style={{ width: "20%", marginLeft: "17px" }}
                       />
                     </Link>
                   </div>
