@@ -184,9 +184,7 @@ const Header = () => {
   };
 
   const menuStructure = [
-    // {
-    //   title: "About Us", link: "/about"
-    // },
+
     {
       title: "About Us",
       submenu: [
@@ -202,96 +200,6 @@ const Header = () => {
         { title: "PMI - PMP Certification PDU Only Training", link: `${file1}` },
         { title: "PMI - PMP Certification PDU + Exam Prep", link: `${file2}` },
         { title: "PMI-ACP (AGILE CERTIFIED PRACTITIONER) CERTIFICATION PDU + Exam Prep", link: `${file3}` },
-      ],
-    },
-    {
-      title: "AI & IoT",
-      submenu: [
-        { title: "Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A", link: `${file4}` },
-        { title: "Microsoft Certification - AI-102T00-A Designing and Implementing a Microsoft Azure AI Solution", link: `${file5}` },
-        { title: "Microsoft Copilot - AI in Excel, Word, PowerPoint & More", link: `${file6}` },
-        { title: "Advanced Program in Generative AI and Prompt Engineering", link: `${file7}` },
-        { title: "AIOT", link: `${file7}` },
-        { title: "Data Analyst", link: `${file8}` },
-      ],
-    },
-    {
-      title: "Programming",
-      submenu: [
-        { title: "Python Programming - Beginner to Expert", link: `${file9}` },
-        { title: "Java Programming - Beginner to Expert", link: `${file10}` },
-        // { title: "MySQL Database Administration", link: `${file11}`  },
-      ],
-    },
-
-    {
-      title: "Cloud & IT",
-      submenu: [
-        {
-          title: "Amazon AWS Cloud Certifications",
-          submenu: [
-            {
-              title: "Cloud Practitioner",
-              submenu: [{ title: "AWS Certified Cloud Practitioner (CLF-C02)", link: `${file11}` }],
-            },
-            {
-              title: "Solutions Architect",
-              submenu: [
-                { title: "AWS Certified Solutions Architect – Associate (SAA-C03)", link: `${file12}` },
-                { title: "AWS Certified Solutions Architect - Professional (SAP-C02)", link: `${file13}` },
-              ],
-            },
-            {
-              title: "SysOps Administrator",
-              submenu: [
-                { title: "AWS Certified SysOps Administrator – Associate (SOA-C02)", link: `${file14}` },
-              ],
-            },
-            {
-              title: "Developer",
-              submenu: [
-                { title: "AWS Certified Developer - Associate (DVA-C02)", link: `${file15}` },
-                { title: "DevOps Engineer - Professional (DOP-C01)", link: `${file16}` },
-              ],
-            },
-            {
-              title: "Specialty Learning",
-              submenu: [
-                { title: "AWS Certified Security – Specialty (SCS-C02)", link: `${file17}` },
-                { title: "AWS Certified Advanced Networking - Specialty (ANS-C01)", link: `${file18}` },
-              ],
-            },
-            // Add other AWS subcategories similarly
-          ],
-        },
-        {
-          title: "Microsoft Azure Cloud Certifications",
-          submenu: [
-            { title: "AZ-900: Microsoft Azure Fundamentals", link: `${file19}` },
-            { title: "AZ-104: Microsoft Azure Administrator", link: `${file20}` },
-            { title: "AZ-305: Designing Microsoft Azure Infrastructure Solutions", link: `${file21}` },
-            { title: "AZ-204: Microsoft Azure Developer Associate", link: `${file22}` },
-            { title: "AZ-400: Microsoft Azure DevOps Solutions", link: `${file23}` },
-            { title: "AZ-500: Microsoft Azure Security Technologies", link: `${file24}` },
-            { title: "AZ-700: Microsoft Azure Networking Solutions", link: `${file25}` },
-          ],
-        },
-        {
-          title: "Google Cloud Certifications",
-          submenu: [
-            { title: "Associate Cloud Engineer", link: `${file26}` },
-            { title: "Professional Cloud Architect", link: `${file27}` },
-            { title: "Professional Cloud Security Engineer", link: `${file28}` },
-            { title: "G Suite Certification", link: `${file29}` },
-          ],
-        },
-        {
-          title: "VMware",
-          submenu: [
-            { title: "VMware Certified Professional-Data Center Virtualization", link: `${file30}` }
-          ],
-        },
-        // Add Google Cloud and VMware subcategories similarly
       ],
     },
     {
@@ -398,6 +306,76 @@ const Header = () => {
       ],
     },
     {
+      title: "Cloud & IT",
+      submenu: [
+        {
+          title: "Amazon AWS Cloud Certifications",
+          submenu: [
+            {
+              title: "Cloud Practitioner",
+              submenu: [{ title: "AWS Certified Cloud Practitioner (CLF-C02)", link: `${file11}` }],
+            },
+            {
+              title: "Solutions Architect",
+              submenu: [
+                { title: "AWS Certified Solutions Architect – Associate (SAA-C03)", link: `${file12}` },
+                { title: "AWS Certified Solutions Architect - Professional (SAP-C02)", link: `${file13}` },
+              ],
+            },
+            {
+              title: "SysOps Administrator",
+              submenu: [
+                { title: "AWS Certified SysOps Administrator – Associate (SOA-C02)", link: `${file14}` },
+              ],
+            },
+            {
+              title: "Developer",
+              submenu: [
+                { title: "AWS Certified Developer - Associate (DVA-C02)", link: `${file15}` },
+                { title: "DevOps Engineer - Professional (DOP-C01)", link: `${file16}` },
+              ],
+            },
+            {
+              title: "Specialty Learning",
+              submenu: [
+                { title: "AWS Certified Security – Specialty (SCS-C02)", link: `${file17}` },
+                { title: "AWS Certified Advanced Networking - Specialty (ANS-C01)", link: `${file18}` },
+              ],
+            },
+            // Add other AWS subcategories similarly
+          ],
+        },
+        {
+          title: "Microsoft Azure Cloud Certifications",
+          submenu: [
+            { title: "AZ-900: Microsoft Azure Fundamentals", link: `${file19}` },
+            { title: "AZ-104: Microsoft Azure Administrator", link: `${file20}` },
+            { title: "AZ-305: Designing Microsoft Azure Infrastructure Solutions", link: `${file21}` },
+            { title: "AZ-204: Microsoft Azure Developer Associate", link: `${file22}` },
+            { title: "AZ-400: Microsoft Azure DevOps Solutions", link: `${file23}` },
+            { title: "AZ-500: Microsoft Azure Security Technologies", link: `${file24}` },
+            { title: "AZ-700: Microsoft Azure Networking Solutions", link: `${file25}` },
+          ],
+        },
+        {
+          title: "Google Cloud Certifications",
+          submenu: [
+            { title: "Associate Cloud Engineer", link: `${file26}` },
+            { title: "Professional Cloud Architect", link: `${file27}` },
+            { title: "Professional Cloud Security Engineer", link: `${file28}` },
+            { title: "G Suite Certification", link: `${file29}` },
+          ],
+        },
+        {
+          title: "VMware",
+          submenu: [
+            { title: "VMware Certified Professional-Data Center Virtualization", link: `${file30}` }
+          ],
+        },
+        // Add Google Cloud and VMware subcategories similarly
+      ],
+    },
+    {
       title: "Firewall",
       submenu: [
         {
@@ -454,6 +432,29 @@ const Header = () => {
 
       ],
     },
+    
+    {
+      title: "AI & IoT",
+      submenu: [
+        { title: "Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A", link: `${file4}` },
+        { title: "Microsoft Certification - AI-102T00-A Designing and Implementing a Microsoft Azure AI Solution", link: `${file5}` },
+        { title: "Microsoft Copilot - AI in Excel, Word, PowerPoint & More", link: `${file6}` },
+        { title: "Advanced Program in Generative AI and Prompt Engineering", link: `${file7}` },
+        { title: "AIOT", link: `${file7}` },
+        { title: "Data Analyst", link: `${file8}` },
+      ],
+    },
+    {
+      title: "Programming",
+      submenu: [
+        { title: "Python Programming - Beginner to Expert", link: `${file9}` },
+        { title: "Java Programming - Beginner to Expert", link: `${file10}` },
+        // { title: "MySQL Database Administration", link: `${file11}`  },
+      ],
+    },
+
+    
+    
     {
       title: "Cyber Security", link: `${file67}`
     },
