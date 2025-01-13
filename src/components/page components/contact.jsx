@@ -203,7 +203,7 @@ const Contact = () => {
                   </li>
                   <br/>
                   <li>
-                    <i className="fas fa-envelope" />{" "}
+                    <i className="fas fa-globe" />{" "}
                     <a href="mailto:contact@readybellsoftware.com">
                       www.readybellsoftware.com
                     </a>

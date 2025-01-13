@@ -88,10 +88,6 @@ const About = () => {
                         <li><a ><i class="far fa-check-square"></i> Blockchain Training</a></li>
                         <li><a ><i class="far fa-check-square"></i> Drone Building</a></li>
                         <li><a ><i class="far fa-check-square"></i> Cyber Security</a></li>
-                        <li><a ><i class="far fa-check-square"></i> Drone Building</a></li>
-                        <li><a ><i class="far fa-check-square"></i> Drone Building</a></li>
-                        <li><a ><i class="far fa-check-square"></i> Drone Building</a></li>
-                        <li><a ><i class="far fa-check-square"></i> Drone Building</a></li>
 
                       </ul>
                     </div>

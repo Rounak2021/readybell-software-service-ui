@@ -69,7 +69,7 @@ const Home = () => {
                 <div
                   className="half_column_content_2"
                   data-aos="fade-up"
-                  // data-aos-duration={100}
+                // data-aos-duration={100}
                 >
                   <h2 className="font-weight-bold">About READYBELL</h2>
                   <p>
@@ -99,15 +99,15 @@ const Home = () => {
               </div>
               <div
                 className="col-lg-5 mt-3d-5"
-                //
-                //   data-aos-duration={600}
+              //
+              //   data-aos-duration={600}
               >
                 <div
                   className="half_column_image"
-                  // style={{
-                  //   boxShadow:
-                  //     "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px",
-                  // }}
+                // style={{
+                //   boxShadow:
+                //     "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px",
+                // }}
                 >
                   <img
                     src={homeSideIcon}
@@ -121,7 +121,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="services-section section-ptb">
+      {/* <section className="services-section section-ptb">
         <div className="services-area">
           <div className="container">
             <div className="row">
@@ -157,7 +157,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <br />
 
       <section
         className="two-columns-section section-ptb"
@@ -256,6 +257,19 @@ const Home = () => {
             {/* </div> */}
             {/* </div> */}
             {/* </div> */}
+            <p>
+              READYBELL is a PMI (Project Management Institute) Authorised Training Partner. PMI ATP status is awarded to only established, high-quality, financially-sound project
+              management education providers who are aligned to PMI core values, have mature business practices READYBELL uses exclusive, PMI-authorized training content, aligned to evolving PMP®
+              examination subject areas, for PMP® examination preparation, READYBELL uses PMI authorized examination preparation materials.
+            </p>
+            <p>
+              Trainings are given ONLY BY PMI CERTIFIED TRAINERS and PMI AUTHORISED TRAINERS Authorized Training Partner Train the Trainer course - Authorized Training Partner Instructor
+              approved by PMI. This ensures our candidates are being taught by qualified instructors who understand the content and can meet their needs as modern-day learners.
+              READYBELL ONLY USES PMI-developed/PMI-licensed course content - This ensures a consistent, high-quality learning experience and provides the PMI-approved content
+              customers asked for—and the comprehensive knowledge needed to prepare for these exams. This ensures consistent and high-quality training for our students.
+              Being PMI’s Authorised Trainer Provider, READYBELL purchases student materials directly from PMI for each individual student enrolled. READYBELL also maintains Student
+              Checklists: Online lists for students to ensure adequate coverage of key concepts Being the PMI Authorised Training Provider, READYBELL has the ability to offer PMI- approved PDUs and submit PDU claims for students
+            </p>
             <div className="col-lg-4 col-md-6 py-3" data-aos-delay={200}>
               <div className="single-item">
                 <div className="item-icon">

@@ -432,16 +432,17 @@ const Header = () => {
 
       ],
     },
-    
+
     {
       title: "AI & IoT",
       submenu: [
+        { title: "Data Analyst", link: `${file8}` },
         { title: "Microsoft Certification - Microsoft Azure AI Fundamentals AI-900T00-A", link: `${file4}` },
         { title: "Microsoft Certification - AI-102T00-A Designing and Implementing a Microsoft Azure AI Solution", link: `${file5}` },
         { title: "Microsoft Copilot - AI in Excel, Word, PowerPoint & More", link: `${file6}` },
         { title: "Advanced Program in Generative AI and Prompt Engineering", link: `${file7}` },
-        { title: "AIOT", link: `${file7}` },
-        { title: "Data Analyst", link: `${file8}` },
+        { title: "AIOT", link: `${file77}` },
+
       ],
     },
     {
@@ -453,8 +454,8 @@ const Header = () => {
       ],
     },
 
-    
-    
+
+
     {
       title: "Cyber Security", link: `${file67}`
     },
@@ -479,16 +480,28 @@ const Header = () => {
           submenu: [
             { title: "Core Linux Administration", link: `${file71}` },
             { title: "Advanced Linux Administration", link: `${file72}` },
-            { title: "Enterprise Linux Administration- 1", link: `${file73}` },
-            { title: "Enterprise Linux Administration- 2", link: `${file74}` },
+            { title: "Enterprise Linux Administration", link: `${file73}` },
+            // { title: "Enterprise Linux Administration- 2", link: `${file74}` },
           ],
         },
       ],
     },
     { title: "VR/AR", link: `${file77}` },
     { title: "Drone Building", link: `${file77}` },
-    { title: "Semiconductor and Blockchain", link: `${file77}` },
-    { title: "Service Now and RPA", link: `${file77}` },
+    {
+      title: "Semiconductor and Blockchain",
+      submenu: [
+        { title: "Semiconductor", link: `${file77}` },
+        { title: "Blockchain", link: `${file77}` },
+      ],
+    },
+    {
+      title: "Service Now and RPA",
+      submenu: [
+        { title: "Service Now", link: `${file77}` },
+        { title: "RPA", link: `${file77}` },
+      ],
+    },
     { title: "Test Centre", link: "/affiliations" },
     { title: "Contact Us", link: "/contact" },
   ];
@@ -611,7 +624,7 @@ const Header = () => {
                         src="https://www.hadartraining.com/wp-content/uploads/2024/04/pearson-vue-authorized-test-center.png"
                         alt="logo"
                         className="img-fluid"
-                        style={{ width: "15%", marginLeft: "15px" }}
+                        style={{ width: "20%", marginLeft: "5px" }}
                       />
                     </Link>
                     <Link to="/">
@@ -619,7 +632,7 @@ const Header = () => {
                         src={pmiLogo}
                         alt="logo"
                         className="img-fluid"
-                        style={{ width: "20%", marginLeft: "17px" }}
+                        style={{ width: "24%", marginLeft: "11px" }}
                       />
                     </Link>
                   </div>
